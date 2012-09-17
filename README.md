@@ -1,2 +1,1 @@
-CMPT385
-=======
+Please visit the Team Red Panda homepage at Http://hobbit.github.com/CMPT385
