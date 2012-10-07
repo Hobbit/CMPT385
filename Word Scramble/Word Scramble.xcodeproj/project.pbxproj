@@ -25,6 +25,7 @@
 		830BB756160EE28C009BC210 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BB755160EE28C009BC210 /* ViewController.m */; };
 		830BB759160EE7A2009BC210 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BB758160EE7A2009BC210 /* MenuViewController.m */; };
 		830BB75C160EE894009BC210 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BB75B160EE894009BC210 /* TRPViewController.m */; };
+		83A9ADF81620E8A900484400 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A9ADF71620E8A900484400 /* GameIO.m */; };
 		83FB492B15FD0EAD000E3E57 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492A15FD0EAD000E3E57 /* Default@2x.png */; };
 		83FB492E15FD0EB6000E3E57 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492D15FD0EB6000E3E57 /* Default.png */; };
 		83FB493015FD10E5000E3E57 /* icon_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492F15FD10E5000E3E57 /* icon_r.png */; };
@@ -70,6 +71,9 @@
 		830BB758160EE7A2009BC210 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		830BB75A160EE894009BC210 /* TRPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPViewController.h; sourceTree = "<group>"; };
 		830BB75B160EE894009BC210 /* TRPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPViewController.m; sourceTree = "<group>"; };
+		83A9ADF61620E8A900484400 /* GameIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameIO.h; sourceTree = "<group>"; };
+		83A9ADF71620E8A900484400 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameIO.m; sourceTree = "<group>"; };
+		83A9ADFC1620E94C00484400 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		83FB492A15FD0EAD000E3E57 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		83FB492D15FD0EB6000E3E57 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		83FB492F15FD10E5000E3E57 /* icon_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_r.png; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 			children = (
 				830BB749160EDF93009BC210 /* AppDelegate */,
 				830BB747160EDF37009BC210 /* Controllers */,
+				83A9ADF41620E84F00484400 /* Support */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -234,6 +239,16 @@
 				83FB493315FD17DC000E3E57 /* wordlist.txt */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		83A9ADF41620E84F00484400 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				83A9ADF61620E8A900484400 /* GameIO.h */,
+				83A9ADF71620E8A900484400 /* GameIO.m */,
+				83A9ADFC1620E94C00484400 /* Config.xcconfig */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +371,7 @@
 				830BB756160EE28C009BC210 /* ViewController.m in Sources */,
 				830BB759160EE7A2009BC210 /* MenuViewController.m in Sources */,
 				830BB75C160EE894009BC210 /* TRPViewController.m in Sources */,
+				83A9ADF81620E8A900484400 /* GameIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
