@@ -13,11 +13,7 @@
 @end
 
 @implementation GameViewController
-@synthesize WSScrambledWord;
 @synthesize WSTextEntry;
-@synthesize WSCorrectCount;
-@synthesize WSIncorrectCount;
-@synthesize WSResult;
 
 NSString *word;
 NSArray *words;
@@ -28,31 +24,17 @@ int incorrectCount = 0;
 
 
 - (IBAction)WSSubmit:(id)sender {
-    [WSTextEntry resignFirstResponder];
     
     if ([WSTextEntry.text isEqualToString: @""]){
         
     }
     else{
         if ([WSTextEntry.text.uppercaseString isEqualToString:word.uppercaseString]){
-            WSResult.text = @"CORRECT!";
-            correctCount++;
-            NSString *CorValue = [[NSString alloc]initWithFormat:@"%d",correctCount];
-            WSCorrectCount.text = CorValue;
-            [self WSResetBoard];
-        }
-        else{
-            WSResult.text = @"Sorry, Please Try Again";
-            incorrectCount++;
-            NSString *InCorValue = [[NSString alloc]initWithFormat:@"%d",incorrectCount];
-            WSIncorrectCount.text = InCorValue;
+        }else{
         }
     }
 }
 
-- (IBAction)WSNextWord:(id)sender {
-    [self WSResetBoard];
-}
 
 - (NSMutableString *)WSScrambleWord:(NSString *)localCurrentWord {
     NSMutableString *localRandomizedWord = [NSMutableString stringWithString:localCurrentWord];
@@ -69,12 +51,6 @@ int incorrectCount = 0;
     return localRandomizedWord;
 }
 
-- (void)WSResetBoard{
-    word = [self WSGetWord:words];
-    WSScrambledWord.text = [self WSScrambleWord:word];
-    WSTextEntry.text = @"";
-    WSResult.text = @"";
-}
 
 - (NSArray *)WSLoadWordlist{
     NSString *path = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
@@ -90,9 +66,9 @@ int incorrectCount = 0;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [WSTextEntry becomeFirstResponder];
     words = [self WSLoadWordlist];
     word = [self WSGetWord:words];
-    WSScrambledWord.text = [self WSScrambleWord:word];
 	// Do any additional setup after loading the view, typically from a nib.
     WSTextEntry.clearsOnBeginEditing = YES;
 
@@ -105,11 +81,7 @@ int incorrectCount = 0;
 
 - (void)viewDidUnload
 {
-    [self setWSScrambledWord:nil];
     [self setWSTextEntry:nil];
-    [self setWSCorrectCount:nil];
-    [self setWSIncorrectCount:nil];
-    [self setWSResult:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
