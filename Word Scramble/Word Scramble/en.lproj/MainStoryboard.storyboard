@@ -211,9 +211,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ASq-EI-Cxt" appends="YES" id="HcZ-bc-JJ5"/>
-                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58N-ql-z5X">
                                 <rect key="frame" x="225" y="203" width="75" height="37"/>
@@ -416,6 +413,7 @@
                         <outlet property="PlainWordLabel5" destination="2wp-0y-ZWd" id="Cco-Uf-jex"/>
                         <outlet property="PlainWordLabel6" destination="86X-fe-jZX" id="dc7-QH-Kff"/>
                         <outlet property="ScrambledWordLabel1" destination="iat-2V-Lgs" id="haq-05-C5C"/>
+                        <outlet property="ScrambledWordLabel2" destination="Cr9-Nx-9Yf" id="RUS-Lg-wqq"/>
                         <outlet property="ScrambledWordLabel3" destination="leq-Z3-8YY" id="X02-3y-WrQ"/>
                         <outlet property="ScrambledWordLabel4" destination="X3F-Je-iJ1" id="Ksr-R6-zqU"/>
                         <outlet property="ScrambledWordLabel5" destination="xS2-KW-y4W" id="ycH-Js-Yd1"/>
@@ -424,7 +422,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="down" id="ASq-EI-Cxt"/>
             </objects>
             <point key="canvasLocation" x="298" y="369"/>
         </scene>

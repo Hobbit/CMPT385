@@ -26,7 +26,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel6;
 
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (NSMutableString *)WSScrambleWord:(NSString *)localCurrentWord;
 - (NSString *)WSGetWord:(NSArray *)localWordlist;
 - (NSArray *)WSLoadWordlist;

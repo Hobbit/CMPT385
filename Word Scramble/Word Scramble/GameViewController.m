@@ -65,6 +65,7 @@ int incorrectCount = 0;
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
     [WSTextEntry becomeFirstResponder];
     words = [self WSLoadWordlist];
@@ -74,10 +75,7 @@ int incorrectCount = 0;
 
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [self.view endEditing:YES];
-}
+
 
 - (void)viewDidUnload
 {
