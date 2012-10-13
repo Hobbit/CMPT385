@@ -398,10 +398,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iat-2V-Lgs">
+                                <rect key="frame" x="62" y="25" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="PlainWordLabel1" destination="g0V-6l-Ul6" id="LXo-cX-YQ1"/>
+                        <outlet property="PlainWordLabel2" destination="8qW-8b-287" id="YkA-AX-fbN"/>
+                        <outlet property="PlainWordLabel3" destination="Mok-ss-5FI" id="V35-wz-fD5"/>
+                        <outlet property="PlainWordLabel4" destination="wHg-3b-cQA" id="5RK-iz-Jal"/>
+                        <outlet property="PlainWordLabel5" destination="2wp-0y-ZWd" id="Cco-Uf-jex"/>
+                        <outlet property="PlainWordLabel6" destination="86X-fe-jZX" id="dc7-QH-Kff"/>
+                        <outlet property="ScrambledWordLabel1" destination="iat-2V-Lgs" id="haq-05-C5C"/>
+                        <outlet property="ScrambledWordLabel3" destination="leq-Z3-8YY" id="X02-3y-WrQ"/>
+                        <outlet property="ScrambledWordLabel4" destination="X3F-Je-iJ1" id="Ksr-R6-zqU"/>
+                        <outlet property="ScrambledWordLabel5" destination="xS2-KW-y4W" id="ycH-Js-Yd1"/>
+                        <outlet property="ScrambledWordLabel6" destination="r8s-el-m39" id="YE7-jj-Cz6"/>
                         <outlet property="WSTextEntry" destination="aRh-jr-V4Z" id="cdB-Ym-88x"/>
                     </connections>
                 </viewController>
@@ -420,6 +438,18 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
             <relationships>
                 <relationship kind="action" name="WSSubmit:"/>
+                <relationship kind="outlet" name="PlainWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PlainWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PlainWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PlainWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PlainWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PlainWordLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ScrambledWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ScrambledWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ScrambledWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ScrambledWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ScrambledWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ScrambledWordLabel6" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="WSTextEntry" candidateClass="UITextField"/>
             </relationships>
         </class>
