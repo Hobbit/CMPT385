@@ -133,7 +133,6 @@ int incorrectCount = 0;
     [self generateGame:currentGameList];
     
     [WSTextEntry becomeFirstResponder];
-    WSTextEntry.clearButtonMode = YES;
 }
 
 - (void)viewDidUnload
