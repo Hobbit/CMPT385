@@ -27,6 +27,7 @@
 		830BB75C160EE894009BC210 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BB75B160EE894009BC210 /* TRPViewController.m */; };
 		83A9ADF81620E8A900484400 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A9ADF71620E8A900484400 /* GameIO.m */; };
 		83BA8C591628B3FA00BE351A /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BA8C581628B3FA00BE351A /* redpanda.png */; };
+		83BA8C64162A973F00BE351A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BA8C63162A973F00BE351A /* logo.png */; };
 		83FB492B15FD0EAD000E3E57 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492A15FD0EAD000E3E57 /* Default@2x.png */; };
 		83FB492E15FD0EB6000E3E57 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492D15FD0EB6000E3E57 /* Default.png */; };
 		83FB493015FD10E5000E3E57 /* icon_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492F15FD10E5000E3E57 /* icon_r.png */; };
@@ -76,6 +77,7 @@
 		83A9ADF71620E8A900484400 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameIO.m; sourceTree = "<group>"; };
 		83A9ADFC1620E94C00484400 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		83BA8C581628B3FA00BE351A /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpanda.png; sourceTree = "<group>"; };
+		83BA8C63162A973F00BE351A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		83FB492A15FD0EAD000E3E57 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		83FB492D15FD0EB6000E3E57 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		83FB492F15FD10E5000E3E57 /* icon_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_r.png; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		830BB74B160EDFAE009BC210 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				83BA8C63162A973F00BE351A /* logo.png */,
 				83BA8C581628B3FA00BE351A /* redpanda.png */,
 				83FB492F15FD10E5000E3E57 /* icon_r.png */,
 				83FB493115FD10E9000E3E57 /* icon.png */,
@@ -335,6 +338,7 @@
 				83FB493415FD17DC000E3E57 /* wordlist.txt in Resources */,
 				830BB746160EDEA9009BC210 /* Default-568h@2x.png in Resources */,
 				83BA8C591628B3FA00BE351A /* redpanda.png in Resources */,
+				83BA8C64162A973F00BE351A /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,9 +26,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel6;
 
 
-- (NSMutableString *)WSScrambleWord:(NSString *)localCurrentWord;
-- (NSString *)WSGetWord:(NSArray *)localWordlist;
-- (NSArray *)WSLoadWordlist;
+- (NSMutableString *)ScrambleWord:(NSString *)localCurrentWord;
+- (NSMutableArray *)GetWordList:(NSArray *)inputWordList;
+- (NSArray *)LoadWordlist;
+-(void)generateGame:(NSArray *)inputWordList ;
 
 
 

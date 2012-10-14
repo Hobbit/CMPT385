@@ -15,12 +15,45 @@
 @implementation GameViewController
 @synthesize WSTextEntry;
 
+@synthesize ScrambledWordLabel1;
+@synthesize ScrambledWordLabel2;
+@synthesize ScrambledWordLabel3;
+@synthesize ScrambledWordLabel4;
+@synthesize ScrambledWordLabel5;
+@synthesize ScrambledWordLabel6;
+
+@synthesize PlainWordLabel1;
+@synthesize PlainWordLabel2;
+@synthesize PlainWordLabel3;
+@synthesize PlainWordLabel4;
+@synthesize PlainWordLabel5;
+@synthesize PlainWordLabel6;
+
 NSString *word;
-NSArray *words;
+NSArray *currentGameList;
+NSArray *masterWordLits;
+NSMutableArray *scrambledWordLabelArray;
+NSMutableArray *plainWordLabelArray;
 int correctCount = 0;
 int incorrectCount = 0;
 
 
+-(void)initUIArrays {
+    scrambledWordLabelArray = [[NSMutableArray alloc] init];
+    [scrambledWordLabelArray insertObject:ScrambledWordLabel1 atIndex:0];
+    [scrambledWordLabelArray insertObject:ScrambledWordLabel2 atIndex:1];
+    [scrambledWordLabelArray insertObject:ScrambledWordLabel3 atIndex:2];
+    [scrambledWordLabelArray insertObject:ScrambledWordLabel4 atIndex:3];
+    [scrambledWordLabelArray insertObject:ScrambledWordLabel5 atIndex:4];
+    [scrambledWordLabelArray insertObject:ScrambledWordLabel6 atIndex:5];
+
+    [plainWordLabelArray insertObject:PlainWordLabel1 atIndex:0];
+    [plainWordLabelArray insertObject:PlainWordLabel2 atIndex:1];
+    [plainWordLabelArray insertObject:PlainWordLabel3 atIndex:2];
+    [plainWordLabelArray insertObject:PlainWordLabel4 atIndex:3];
+    [plainWordLabelArray insertObject:PlainWordLabel5 atIndex:4];
+    [plainWordLabelArray insertObject:PlainWordLabel6 atIndex:5];
+}
 
 
 - (IBAction)WSSubmit:(id)sender {
@@ -36,7 +69,7 @@ int incorrectCount = 0;
 }
 
 
-- (NSMutableString *)WSScrambleWord:(NSString *)localCurrentWord {
+- (NSMutableString *)ScrambleWord:(NSString *)localCurrentWord {
     NSMutableString *localRandomizedWord = [NSMutableString stringWithString:localCurrentWord];
     
     NSString *buffer;
@@ -51,31 +84,57 @@ int incorrectCount = 0;
     return localRandomizedWord;
 }
 
-
-- (NSArray *)WSLoadWordlist{
+- (NSArray *)LoadWordlist{
     NSString *path = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
     NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
     NSArray *localWords = [contents componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     return localWords;
 }
 
-- (NSString *)WSGetWord:(NSArray *)localWordlist{
-    return [localWordlist objectAtIndex:(arc4random() %([localWordlist count]))];
+- (NSMutableArray *)GetWordList:(NSArray *)inputWordList{
+    NSMutableArray *indexSelected = [[NSMutableArray alloc] init];
+    NSMutableArray *localExportList = [[NSMutableArray alloc] init];
+    int i = 0;
+    
+    while (i < 6) {
+        int randIndex = arc4random() %([inputWordList count]);
+        bool duplicate = NO;
+        
+        for (int n = 0; n < [indexSelected count]; n++) {
+            if ([[indexSelected objectAtIndex:n] intValue ]== randIndex) {
+                duplicate = YES;
+            }
+        }
+        
+        if (duplicate == NO) {
+            [indexSelected addObject: [NSNumber numberWithInt:randIndex]];
+            [localExportList addObject:[inputWordList objectAtIndex:randIndex]];
+            i++;
+        }
+    }
+    return localExportList;
 }
+
+-(void)generateGame:(NSArray *)inputWordList {
+    for (NSUInteger i = 0; i < [currentGameList count]; i++) {
+        [[scrambledWordLabelArray objectAtIndex:i] setText:[self ScrambleWord:[inputWordList objectAtIndex:i]]];
+    }
+}
+
 
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
+    
+    [self initUIArrays];
+    masterWordLits = [self LoadWordlist];
+    currentGameList = [self GetWordList:masterWordLits];
+    
+    [self generateGame:currentGameList];
+    
     [WSTextEntry becomeFirstResponder];
-    words = [self WSLoadWordlist];
-    word = [self WSGetWord:words];
-	// Do any additional setup after loading the view, typically from a nib.
-    WSTextEntry.clearsOnBeginEditing = YES;
-
+    WSTextEntry.clearButtonMode = YES;
 }
-
-
 
 - (void)viewDidUnload
 {

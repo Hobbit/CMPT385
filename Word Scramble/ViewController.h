@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  ViewController.h
 //  Word Scramble
 //
 //  Created by Chris on 2012-09-22.
