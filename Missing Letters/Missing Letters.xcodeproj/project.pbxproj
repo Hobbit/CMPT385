@@ -23,6 +23,13 @@
 		835C19F6162A9DE10097FA98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C19D1162A9DE10097FA98 /* Foundation.framework */; };
 		835C19FE162A9DE10097FA98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 835C19FC162A9DE10097FA98 /* InfoPlist.strings */; };
 		835C1A01162A9DE10097FA98 /* Missing_LettersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 835C1A00162A9DE10097FA98 /* Missing_LettersTests.m */; };
+		8394D14A162B4B8000FC6576 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D149162B4B8000FC6576 /* background.png */; };
+		8394D14D162B4BEB00FC6576 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D14C162B4BEB00FC6576 /* GameViewController.m */; };
+		8394D1D5162B4E8400FC6576 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D1D4162B4E8400FC6576 /* MenuViewController.m */; };
+		8394D1D9162B4EE000FC6576 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D1D8162B4EE000FC6576 /* TRPViewController.m */; };
+		8394D1DC162B500F00FC6576 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D1DB162B500F00FC6576 /* GameIO.m */; };
+		8394D1DF162B562700FC6576 /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1DE162B562700FC6576 /* redpanda.png */; };
+		8394D1E1162B5B9000FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E0162B5B9000FC6576 /* githubButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,20 +51,32 @@
 		835C19D9162A9DE10097FA98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		835C19DB162A9DE10097FA98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		835C19DD162A9DE10097FA98 /* Missing Letters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Missing Letters-Prefix.pch"; sourceTree = "<group>"; };
-		835C19DE162A9DE10097FA98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		835C19DF162A9DE10097FA98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		835C19E1162A9DE10097FA98 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		835C19E3162A9DE10097FA98 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		835C19E5162A9DE10097FA98 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		835C19DE162A9DE10097FA98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Missing Letters/AppDelegate.h"; sourceTree = "<group>"; };
+		835C19DF162A9DE10097FA98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Missing Letters/AppDelegate.m"; sourceTree = "<group>"; };
+		835C19E1162A9DE10097FA98 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Missing Letters/Default.png"; sourceTree = "<group>"; };
+		835C19E3162A9DE10097FA98 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Missing Letters/Default@2x.png"; sourceTree = "<group>"; };
+		835C19E5162A9DE10097FA98 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Missing Letters/Default-568h@2x.png"; sourceTree = "<group>"; };
 		835C19E8162A9DE10097FA98 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		835C19EA162A9DE10097FA98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		835C19EB162A9DE10097FA98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		835C19EA162A9DE10097FA98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Missing Letters/ViewController.h"; sourceTree = "<group>"; };
+		835C19EB162A9DE10097FA98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Missing Letters/ViewController.m"; sourceTree = "<group>"; };
 		835C19F2162A9DE10097FA98 /* Missing LettersTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Missing LettersTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835C19F3162A9DE10097FA98 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		835C19FB162A9DE10097FA98 /* Missing LettersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Missing LettersTests-Info.plist"; sourceTree = "<group>"; };
 		835C19FD162A9DE10097FA98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		835C19FF162A9DE10097FA98 /* Missing_LettersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Missing_LettersTests.h; sourceTree = "<group>"; };
 		835C1A00162A9DE10097FA98 /* Missing_LettersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Missing_LettersTests.m; sourceTree = "<group>"; };
+		8394D149162B4B8000FC6576 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		8394D14B162B4BEB00FC6576 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = "Missing Letters/GameViewController.h"; sourceTree = "<group>"; };
+		8394D14C162B4BEB00FC6576 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = "Missing Letters/GameViewController.m"; sourceTree = "<group>"; };
+		8394D1D3162B4E8400FC6576 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = "Missing Letters/MenuViewController.h"; sourceTree = "<group>"; };
+		8394D1D4162B4E8400FC6576 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = "Missing Letters/MenuViewController.m"; sourceTree = "<group>"; };
+		8394D1D7162B4EE000FC6576 /* TRPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRPViewController.h; path = "Missing Letters/TRPViewController.h"; sourceTree = "<group>"; };
+		8394D1D8162B4EE000FC6576 /* TRPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRPViewController.m; path = "Missing Letters/TRPViewController.m"; sourceTree = "<group>"; };
+		8394D1DA162B500F00FC6576 /* GameIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameIO.h; path = "Missing Letters/GameIO.h"; sourceTree = "<group>"; };
+		8394D1DB162B500F00FC6576 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameIO.m; path = "Missing Letters/GameIO.m"; sourceTree = "<group>"; };
+		8394D1DD162B509700FC6576 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = "Missing Letters/Config.xcconfig"; sourceTree = "<group>"; };
+		8394D1DE162B562700FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpanda.png; sourceTree = "<group>"; };
+		8394D1E0162B5B9000FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +106,9 @@
 		835C19C0162A9DE10097FA98 = {
 			isa = PBXGroup;
 			children = (
-				835C19D5162A9DE10097FA98 /* Missing Letters */,
+				8394D140162B410B00FC6576 /* Classes */,
+				8394D145162B413200FC6576 /* Resources */,
+				835C19D6162A9DE10097FA98 /* Supporting Files */,
 				835C19F9162A9DE10097FA98 /* Missing LettersTests */,
 				835C19CE162A9DE10097FA98 /* Frameworks */,
 				835C19CC162A9DE10097FA98 /* Products */,
@@ -114,19 +135,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		835C19D5162A9DE10097FA98 /* Missing Letters */ = {
-			isa = PBXGroup;
-			children = (
-				835C19DE162A9DE10097FA98 /* AppDelegate.h */,
-				835C19DF162A9DE10097FA98 /* AppDelegate.m */,
-				835C19E7162A9DE10097FA98 /* MainStoryboard.storyboard */,
-				835C19EA162A9DE10097FA98 /* ViewController.h */,
-				835C19EB162A9DE10097FA98 /* ViewController.m */,
-				835C19D6162A9DE10097FA98 /* Supporting Files */,
-			);
-			path = "Missing Letters";
-			sourceTree = "<group>";
-		};
 		835C19D6162A9DE10097FA98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +142,9 @@
 				835C19D8162A9DE10097FA98 /* InfoPlist.strings */,
 				835C19DB162A9DE10097FA98 /* main.m */,
 				835C19DD162A9DE10097FA98 /* Missing Letters-Prefix.pch */,
-				835C19E1162A9DE10097FA98 /* Default.png */,
-				835C19E3162A9DE10097FA98 /* Default@2x.png */,
-				835C19E5162A9DE10097FA98 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = "Missing Letters";
 			sourceTree = "<group>";
 		};
 		835C19F9162A9DE10097FA98 /* Missing LettersTests */ = {
@@ -158,6 +164,88 @@
 				835C19FC162A9DE10097FA98 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8394D140162B410B00FC6576 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8394D142162B411200FC6576 /* AppDelegate */,
+				8394D143162B411E00FC6576 /* Controllers */,
+				8394D144162B412800FC6576 /* Support */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8394D142162B411200FC6576 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				835C19DF162A9DE10097FA98 /* AppDelegate.m */,
+				835C19DE162A9DE10097FA98 /* AppDelegate.h */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8394D143162B411E00FC6576 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				835C19EA162A9DE10097FA98 /* ViewController.h */,
+				835C19EB162A9DE10097FA98 /* ViewController.m */,
+				8394D14B162B4BEB00FC6576 /* GameViewController.h */,
+				8394D14C162B4BEB00FC6576 /* GameViewController.m */,
+				8394D1D3162B4E8400FC6576 /* MenuViewController.h */,
+				8394D1D4162B4E8400FC6576 /* MenuViewController.m */,
+				8394D1D7162B4EE000FC6576 /* TRPViewController.h */,
+				8394D1D8162B4EE000FC6576 /* TRPViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8394D144162B412800FC6576 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8394D1DA162B500F00FC6576 /* GameIO.h */,
+				8394D1DB162B500F00FC6576 /* GameIO.m */,
+				8394D1DD162B509700FC6576 /* Config.xcconfig */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		8394D145162B413200FC6576 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8394D146162B413C00FC6576 /* Storyboards */,
+				8394D147162B414600FC6576 /* Images */,
+				8394D148162B414C00FC6576 /* Data */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8394D146162B413C00FC6576 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				835C19E7162A9DE10097FA98 /* MainStoryboard.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8394D147162B414600FC6576 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8394D1E0162B5B9000FC6576 /* githubButton.png */,
+				8394D1DE162B562700FC6576 /* redpanda.png */,
+				8394D149162B4B8000FC6576 /* background.png */,
+				835C19E5162A9DE10097FA98 /* Default-568h@2x.png */,
+				835C19E3162A9DE10097FA98 /* Default@2x.png */,
+				835C19E1162A9DE10097FA98 /* Default.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8394D148162B414C00FC6576 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +324,9 @@
 				835C19E4162A9DE10097FA98 /* Default@2x.png in Resources */,
 				835C19E6162A9DE10097FA98 /* Default-568h@2x.png in Resources */,
 				835C19E9162A9DE10097FA98 /* MainStoryboard.storyboard in Resources */,
+				8394D14A162B4B8000FC6576 /* background.png in Resources */,
+				8394D1DF162B562700FC6576 /* redpanda.png in Resources */,
+				8394D1E1162B5B9000FC6576 /* githubButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +364,10 @@
 				835C19DC162A9DE10097FA98 /* main.m in Sources */,
 				835C19E0162A9DE10097FA98 /* AppDelegate.m in Sources */,
 				835C19EC162A9DE10097FA98 /* ViewController.m in Sources */,
+				8394D14D162B4BEB00FC6576 /* GameViewController.m in Sources */,
+				8394D1D5162B4E8400FC6576 /* MenuViewController.m in Sources */,
+				8394D1D9162B4EE000FC6576 /* TRPViewController.m in Sources */,
+				8394D1DC162B500F00FC6576 /* GameIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +404,7 @@
 				835C19E8162A9DE10097FA98 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = "Missing Letters";
 			sourceTree = "<group>";
 		};
 		835C19FC162A9DE10097FA98 /* InfoPlist.strings */ = {
@@ -344,7 +440,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -365,7 +461,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -379,6 +475,7 @@
 				GCC_PREFIX_HEADER = "Missing Letters/Missing Letters-Prefix.pch";
 				INFOPLIST_FILE = "Missing Letters/Missing Letters-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,6 +487,7 @@
 				GCC_PREFIX_HEADER = "Missing Letters/Missing Letters-Prefix.pch";
 				INFOPLIST_FILE = "Missing Letters/Missing Letters-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -447,6 +545,7 @@
 				835C1A06162A9DE10097FA98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		835C1A07162A9DE10097FA98 /* Build configuration list for PBXNativeTarget "Missing LettersTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +554,7 @@
 				835C1A09162A9DE10097FA98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

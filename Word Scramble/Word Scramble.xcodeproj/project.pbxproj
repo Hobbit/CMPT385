@@ -21,17 +21,18 @@
 		8305BCED15FC254000ABCF9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8305BCEB15FC254000ABCF9E /* InfoPlist.strings */; };
 		8305BCF015FC254000ABCF9E /* Word_ScrambleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305BCEF15FC254000ABCF9E /* Word_ScrambleTests.m */; };
 		8305BCFA15FC339400ABCF9E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8305BCF915FC339400ABCF9E /* background.png */; };
-		830BB746160EDEA9009BC210 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830BB745160EDEA9009BC210 /* Default-568h@2x.png */; };
-		830BB756160EE28C009BC210 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BB755160EE28C009BC210 /* ViewController.m */; };
-		830BB759160EE7A2009BC210 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BB758160EE7A2009BC210 /* MenuViewController.m */; };
-		830BB75C160EE894009BC210 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830BB75B160EE894009BC210 /* TRPViewController.m */; };
-		83A9ADF81620E8A900484400 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A9ADF71620E8A900484400 /* GameIO.m */; };
-		83BA8C591628B3FA00BE351A /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BA8C581628B3FA00BE351A /* redpanda.png */; };
-		83BA8C64162A973F00BE351A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BA8C63162A973F00BE351A /* logo.png */; };
-		83FB492B15FD0EAD000E3E57 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492A15FD0EAD000E3E57 /* Default@2x.png */; };
-		83FB492E15FD0EB6000E3E57 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492D15FD0EB6000E3E57 /* Default.png */; };
-		83FB493015FD10E5000E3E57 /* icon_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB492F15FD10E5000E3E57 /* icon_r.png */; };
-		83FB493215FD10E9000E3E57 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FB493115FD10E9000E3E57 /* icon.png */; };
+		8394D152162B4C2400FC6576 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D14F162B4C2400FC6576 /* MenuViewController.m */; };
+		8394D153162B4C2400FC6576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D151162B4C2400FC6576 /* ViewController.m */; };
+		8394D157162B4C4800FC6576 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D156162B4C4800FC6576 /* TRPViewController.m */; };
+		8394D15C162B4CEA00FC6576 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D15A162B4CEA00FC6576 /* GameIO.m */; };
+		8394D1C8162B4D2C00FC6576 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C1162B4D2C00FC6576 /* Default-568h@2x.png */; };
+		8394D1C9162B4D2C00FC6576 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C2162B4D2C00FC6576 /* Default.png */; };
+		8394D1CA162B4D2C00FC6576 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C3162B4D2C00FC6576 /* Default@2x.png */; };
+		8394D1CB162B4D2C00FC6576 /* icon_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C4162B4D2C00FC6576 /* icon_r.png */; };
+		8394D1CC162B4D2C00FC6576 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C5162B4D2C00FC6576 /* icon.png */; };
+		8394D1CD162B4D2C00FC6576 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C6162B4D2C00FC6576 /* logo.png */; };
+		8394D1CE162B4D2C00FC6576 /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C7162B4D2C00FC6576 /* redpanda.png */; };
+		8394D1E3162B653600FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E2162B653600FC6576 /* githubButton.png */; };
 		83FB493415FD17DC000E3E57 /* wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FB493315FD17DC000E3E57 /* wordlist.txt */; };
 /* End PBXBuildFile section */
 
@@ -66,22 +67,23 @@
 		8305BCEE15FC254000ABCF9E /* Word_ScrambleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Word_ScrambleTests.h; sourceTree = "<group>"; };
 		8305BCEF15FC254000ABCF9E /* Word_ScrambleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Word_ScrambleTests.m; sourceTree = "<group>"; };
 		8305BCF915FC339400ABCF9E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = "Word Scramble/background.png"; sourceTree = "<group>"; };
-		830BB745160EDEA9009BC210 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		830BB754160EE28C009BC210 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		830BB755160EE28C009BC210 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		830BB757160EE7A2009BC210 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		830BB758160EE7A2009BC210 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		830BB75A160EE894009BC210 /* TRPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPViewController.h; sourceTree = "<group>"; };
-		830BB75B160EE894009BC210 /* TRPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPViewController.m; sourceTree = "<group>"; };
-		83A9ADF61620E8A900484400 /* GameIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameIO.h; sourceTree = "<group>"; };
-		83A9ADF71620E8A900484400 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameIO.m; sourceTree = "<group>"; };
-		83A9ADFC1620E94C00484400 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		83BA8C581628B3FA00BE351A /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpanda.png; sourceTree = "<group>"; };
-		83BA8C63162A973F00BE351A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		83FB492A15FD0EAD000E3E57 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		83FB492D15FD0EB6000E3E57 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		83FB492F15FD10E5000E3E57 /* icon_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_r.png; sourceTree = "<group>"; };
-		83FB493115FD10E9000E3E57 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8394D14E162B4C2400FC6576 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = "Word Scramble/MenuViewController.h"; sourceTree = "<group>"; };
+		8394D14F162B4C2400FC6576 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = "Word Scramble/MenuViewController.m"; sourceTree = "<group>"; };
+		8394D150162B4C2400FC6576 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Word Scramble/ViewController.h"; sourceTree = "<group>"; };
+		8394D151162B4C2400FC6576 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Word Scramble/ViewController.m"; sourceTree = "<group>"; };
+		8394D155162B4C4800FC6576 /* TRPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRPViewController.h; path = "Word Scramble/TRPViewController.h"; sourceTree = "<group>"; };
+		8394D156162B4C4800FC6576 /* TRPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRPViewController.m; path = "Word Scramble/TRPViewController.m"; sourceTree = "<group>"; };
+		8394D158162B4CEA00FC6576 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = "Word Scramble/Config.xcconfig"; sourceTree = "<group>"; };
+		8394D159162B4CEA00FC6576 /* GameIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameIO.h; path = "Word Scramble/GameIO.h"; sourceTree = "<group>"; };
+		8394D15A162B4CEA00FC6576 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameIO.m; path = "Word Scramble/GameIO.m"; sourceTree = "<group>"; };
+		8394D1C1162B4D2C00FC6576 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Word Scramble/Default-568h@2x.png"; sourceTree = "<group>"; };
+		8394D1C2162B4D2C00FC6576 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Word Scramble/Default.png"; sourceTree = "<group>"; };
+		8394D1C3162B4D2C00FC6576 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Word Scramble/Default@2x.png"; sourceTree = "<group>"; };
+		8394D1C4162B4D2C00FC6576 /* icon_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_r.png; path = "Word Scramble/icon_r.png"; sourceTree = "<group>"; };
+		8394D1C5162B4D2C00FC6576 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "Word Scramble/icon.png"; sourceTree = "<group>"; };
+		8394D1C6162B4D2C00FC6576 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "Word Scramble/logo.png"; sourceTree = "<group>"; };
+		8394D1C7162B4D2C00FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redpanda.png; path = "Word Scramble/redpanda.png"; sourceTree = "<group>"; };
+		8394D1E2162B653600FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
 		83FB493315FD17DC000E3E57 /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wordlist.txt; path = "Word Scramble/wordlist.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,14 +177,14 @@
 		830BB747160EDF37009BC210 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				830BB754160EE28C009BC210 /* ViewController.h */,
-				830BB755160EE28C009BC210 /* ViewController.m */,
+				8394D14E162B4C2400FC6576 /* MenuViewController.h */,
+				8394D14F162B4C2400FC6576 /* MenuViewController.m */,
+				8394D150162B4C2400FC6576 /* ViewController.h */,
+				8394D151162B4C2400FC6576 /* ViewController.m */,
 				8305BCD915FC254000ABCF9E /* GameViewController.h */,
 				8305BCDA15FC254000ABCF9E /* GameViewController.m */,
-				830BB757160EE7A2009BC210 /* MenuViewController.h */,
-				830BB758160EE7A2009BC210 /* MenuViewController.m */,
-				830BB75A160EE894009BC210 /* TRPViewController.h */,
-				830BB75B160EE894009BC210 /* TRPViewController.m */,
+				8394D155162B4C4800FC6576 /* TRPViewController.h */,
+				8394D156162B4C4800FC6576 /* TRPViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -219,14 +221,15 @@
 		830BB74B160EDFAE009BC210 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				83BA8C63162A973F00BE351A /* logo.png */,
-				83BA8C581628B3FA00BE351A /* redpanda.png */,
-				83FB492F15FD10E5000E3E57 /* icon_r.png */,
-				83FB493115FD10E9000E3E57 /* icon.png */,
-				83FB492D15FD0EB6000E3E57 /* Default.png */,
-				83FB492A15FD0EAD000E3E57 /* Default@2x.png */,
+				8394D1C1162B4D2C00FC6576 /* Default-568h@2x.png */,
+				8394D1C2162B4D2C00FC6576 /* Default.png */,
+				8394D1C3162B4D2C00FC6576 /* Default@2x.png */,
+				8394D1C4162B4D2C00FC6576 /* icon_r.png */,
+				8394D1E2162B653600FC6576 /* githubButton.png */,
+				8394D1C5162B4D2C00FC6576 /* icon.png */,
+				8394D1C6162B4D2C00FC6576 /* logo.png */,
+				8394D1C7162B4D2C00FC6576 /* redpanda.png */,
 				8305BCF915FC339400ABCF9E /* background.png */,
-				830BB745160EDEA9009BC210 /* Default-568h@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -250,9 +253,9 @@
 		83A9ADF41620E84F00484400 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				83A9ADF61620E8A900484400 /* GameIO.h */,
-				83A9ADF71620E8A900484400 /* GameIO.m */,
-				83A9ADFC1620E94C00484400 /* Config.xcconfig */,
+				8394D158162B4CEA00FC6576 /* Config.xcconfig */,
+				8394D159162B4CEA00FC6576 /* GameIO.h */,
+				8394D15A162B4CEA00FC6576 /* GameIO.m */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 		8305BCB715FC254000ABCF9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = HHD;
 			};
 			buildConfigurationList = 8305BCBA15FC254000ABCF9E /* Build configuration list for PBXProject "Word Scramble" */;
@@ -331,14 +334,15 @@
 				8305BCCF15FC254000ABCF9E /* InfoPlist.strings in Resources */,
 				8305BCD815FC254000ABCF9E /* MainStoryboard.storyboard in Resources */,
 				8305BCFA15FC339400ABCF9E /* background.png in Resources */,
-				83FB492B15FD0EAD000E3E57 /* Default@2x.png in Resources */,
-				83FB492E15FD0EB6000E3E57 /* Default.png in Resources */,
-				83FB493015FD10E5000E3E57 /* icon_r.png in Resources */,
-				83FB493215FD10E9000E3E57 /* icon.png in Resources */,
 				83FB493415FD17DC000E3E57 /* wordlist.txt in Resources */,
-				830BB746160EDEA9009BC210 /* Default-568h@2x.png in Resources */,
-				83BA8C591628B3FA00BE351A /* redpanda.png in Resources */,
-				83BA8C64162A973F00BE351A /* logo.png in Resources */,
+				8394D1C8162B4D2C00FC6576 /* Default-568h@2x.png in Resources */,
+				8394D1C9162B4D2C00FC6576 /* Default.png in Resources */,
+				8394D1CA162B4D2C00FC6576 /* Default@2x.png in Resources */,
+				8394D1CB162B4D2C00FC6576 /* icon_r.png in Resources */,
+				8394D1CC162B4D2C00FC6576 /* icon.png in Resources */,
+				8394D1CD162B4D2C00FC6576 /* logo.png in Resources */,
+				8394D1CE162B4D2C00FC6576 /* redpanda.png in Resources */,
+				8394D1E3162B653600FC6576 /* githubButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,10 +380,10 @@
 				8305BCD115FC254000ABCF9E /* main.m in Sources */,
 				8305BCD515FC254000ABCF9E /* AppDelegate.m in Sources */,
 				8305BCDB15FC254000ABCF9E /* GameViewController.m in Sources */,
-				830BB756160EE28C009BC210 /* ViewController.m in Sources */,
-				830BB759160EE7A2009BC210 /* MenuViewController.m in Sources */,
-				830BB75C160EE894009BC210 /* TRPViewController.m in Sources */,
-				83A9ADF81620E8A900484400 /* GameIO.m in Sources */,
+				8394D152162B4C2400FC6576 /* MenuViewController.m in Sources */,
+				8394D153162B4C2400FC6576 /* ViewController.m in Sources */,
+				8394D157162B4C4800FC6576 /* TRPViewController.m in Sources */,
+				8394D15C162B4CEA00FC6576 /* GameIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,7 @@
 				INFOPLIST_FILE = "Word Scramble/Word Scramble-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -499,6 +504,7 @@
 				INFOPLIST_FILE = "Word Scramble/Word Scramble-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

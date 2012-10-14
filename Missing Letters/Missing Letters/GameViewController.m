@@ -1,18 +1,18 @@
 //
-//  TRPViewController.m
-//  Word Scramble
+//  GameViewController.m
+//  Missing Letters
 //
-//  Created by Chris on 2012-09-22.
+//  Created by Chris on 2012-10-14.
 //  Copyright (c) 2012 HHD. All rights reserved.
 //
 
-#import "TRPViewController.h"
+#import "GameViewController.h"
 
-@interface TRPViewController ()
+@interface GameViewController ()
 
 @end
 
-@implementation TRPViewController
+@implementation GameViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
