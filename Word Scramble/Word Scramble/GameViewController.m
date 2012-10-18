@@ -29,13 +29,15 @@
 @synthesize PlainWordLabel5;
 @synthesize PlainWordLabel6;
 
+@synthesize TotalGuessLabel;
+
 NSString *word;
 NSArray *currentGameList;
 NSArray *masterWordLits;
 NSMutableArray *scrambledWordLabelArray;
 NSMutableArray *plainWordLabelArray;
-int correctCount = 0;
-int incorrectCount = 0;
+int correctGuessCount = 0;
+int totalGuessCount = 0;
 
 
 -(void)initUIArrays {
@@ -46,7 +48,8 @@ int incorrectCount = 0;
     [scrambledWordLabelArray insertObject:ScrambledWordLabel4 atIndex:3];
     [scrambledWordLabelArray insertObject:ScrambledWordLabel5 atIndex:4];
     [scrambledWordLabelArray insertObject:ScrambledWordLabel6 atIndex:5];
-
+    
+    plainWordLabelArray = [[NSMutableArray alloc] init];
     [plainWordLabelArray insertObject:PlainWordLabel1 atIndex:0];
     [plainWordLabelArray insertObject:PlainWordLabel2 atIndex:1];
     [plainWordLabelArray insertObject:PlainWordLabel3 atIndex:2];
@@ -57,15 +60,19 @@ int incorrectCount = 0;
 
 
 - (IBAction)WSSubmit:(id)sender {
-    
     if ([WSTextEntry.text isEqualToString: @""]){
-        
     }
     else{
-        if ([WSTextEntry.text.uppercaseString isEqualToString:word.uppercaseString]){
-        }else{
+        for (int i = 0; i < currentGameList.count; i++) {
+            if ([WSTextEntry.text.uppercaseString isEqualToString:[[currentGameList objectAtIndex:i] uppercaseString]]){
+                [[plainWordLabelArray objectAtIndex:i] setText:[currentGameList objectAtIndex:i]];
+                correctGuessCount++;
+            }
         }
+        totalGuessCount++;
     }
+    WSTextEntry.text = @"";
+    TotalGuessLabel.text = [NSString stringWithFormat:@"%d",totalGuessCount];
 }
 
 
@@ -127,9 +134,7 @@ int incorrectCount = 0;
     [super viewDidLoad];
     
     [self initUIArrays];
-    masterWordLits = [self LoadWordlist];
-    currentGameList = [self GetWordList:masterWordLits];
-    
+    currentGameList = [self GetWordList:[self LoadWordlist]];
     [self generateGame:currentGameList];
     
     [WSTextEntry becomeFirstResponder];

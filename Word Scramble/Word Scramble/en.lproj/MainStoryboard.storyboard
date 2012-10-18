@@ -468,6 +468,20 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GNI-S5-040">
+                                <rect key="frame" x="269" y="0.0" width="31" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.79060712710000003" blue="0.34272485580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total Guesses:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zbf-7V-dKy">
+                                <rect key="frame" x="180" y="3" width="81" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -484,6 +498,7 @@
                         <outlet property="ScrambledWordLabel4" destination="X3F-Je-iJ1" id="Ksr-R6-zqU"/>
                         <outlet property="ScrambledWordLabel5" destination="xS2-KW-y4W" id="ycH-Js-Yd1"/>
                         <outlet property="ScrambledWordLabel6" destination="r8s-el-m39" id="YE7-jj-Cz6"/>
+                        <outlet property="TotalGuessLabel" destination="GNI-S5-040" id="LnH-Ae-tXq"/>
                         <outlet property="WSTextEntry" destination="aRh-jr-V4Z" id="cdB-Ym-88x"/>
                     </connections>
                 </viewController>
@@ -504,7 +519,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bgz-IG-Owi"/>
-        <segue reference="ATc-f3-vtR"/>
+        <segue reference="WTa-Us-Q1X"/>
+        <segue reference="YwH-J4-SSU"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel5;
 @property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel6;
 
+@property (weak, nonatomic) IBOutlet UILabel *TotalGuessLabel;
 
 - (NSMutableString *)ScrambleWord:(NSString *)localCurrentWord;
 - (NSMutableArray *)GetWordList:(NSArray *)inputWordList;
