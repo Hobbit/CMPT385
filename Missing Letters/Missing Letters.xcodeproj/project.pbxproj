@@ -30,6 +30,8 @@
 		8394D1DC162B500F00FC6576 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D1DB162B500F00FC6576 /* GameIO.m */; };
 		8394D1DF162B562700FC6576 /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1DE162B562700FC6576 /* redpanda.png */; };
 		8394D1E1162B5B9000FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E0162B5B9000FC6576 /* githubButton.png */; };
+		83D09B151630829F00D96AE7 /* MLIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B141630829F00D96AE7 /* MLIcon_retina.png */; };
+		83D09B18163082A200D96AE7 /* MLIcon_regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B17163082A200D96AE7 /* MLIcon_regular.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		8394D1DD162B509700FC6576 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = "Missing Letters/Config.xcconfig"; sourceTree = "<group>"; };
 		8394D1DE162B562700FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpanda.png; sourceTree = "<group>"; };
 		8394D1E0162B5B9000FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
+		83D09B141630829F00D96AE7 /* MLIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_retina.png; sourceTree = "<group>"; };
+		83D09B17163082A200D96AE7 /* MLIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_regular.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,8 @@
 		8394D147162B414600FC6576 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				83D09B17163082A200D96AE7 /* MLIcon_regular.png */,
+				83D09B141630829F00D96AE7 /* MLIcon_retina.png */,
 				8394D1E0162B5B9000FC6576 /* githubButton.png */,
 				8394D1DE162B562700FC6576 /* redpanda.png */,
 				8394D149162B4B8000FC6576 /* background.png */,
@@ -327,6 +333,8 @@
 				8394D14A162B4B8000FC6576 /* background.png in Resources */,
 				8394D1DF162B562700FC6576 /* redpanda.png in Resources */,
 				8394D1E1162B5B9000FC6576 /* githubButton.png in Resources */,
+				83D09B151630829F00D96AE7 /* MLIcon_retina.png in Resources */,
+				83D09B18163082A200D96AE7 /* MLIcon_regular.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

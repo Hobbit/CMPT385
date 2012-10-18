@@ -81,8 +81,6 @@
 		8394D1C1162B4D2C00FC6576 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Word Scramble/Default-568h@2x.png"; sourceTree = "<group>"; };
 		8394D1C2162B4D2C00FC6576 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Word Scramble/Default.png"; sourceTree = "<group>"; };
 		8394D1C3162B4D2C00FC6576 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Word Scramble/Default@2x.png"; sourceTree = "<group>"; };
-		8394D1C4162B4D2C00FC6576 /* icon_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_r.png; path = "Word Scramble/icon_r.png"; sourceTree = "<group>"; };
-		8394D1C5162B4D2C00FC6576 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "Word Scramble/icon.png"; sourceTree = "<group>"; };
 		8394D1C6162B4D2C00FC6576 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "Word Scramble/logo.png"; sourceTree = "<group>"; };
 		8394D1C7162B4D2C00FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redpanda.png; path = "Word Scramble/redpanda.png"; sourceTree = "<group>"; };
 		8394D1E2162B653600FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
@@ -223,14 +221,12 @@
 		830BB74B160EDFAE009BC210 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8394D1C1162B4D2C00FC6576 /* Default-568h@2x.png */,
 				837FD92616304BEB003F89FA /* WSIcon_retina.png */,
 				837FD92416304BE6003F89FA /* WSIcon_regular.png */,
 				8394D1C2162B4D2C00FC6576 /* Default.png */,
+				8394D1C1162B4D2C00FC6576 /* Default-568h@2x.png */,
 				8394D1C3162B4D2C00FC6576 /* Default@2x.png */,
-				8394D1C4162B4D2C00FC6576 /* icon_r.png */,
 				8394D1E2162B653600FC6576 /* githubButton.png */,
-				8394D1C5162B4D2C00FC6576 /* icon.png */,
 				8394D1C6162B4D2C00FC6576 /* logo.png */,
 				8394D1C7162B4D2C00FC6576 /* redpanda.png */,
 				8305BCF915FC339400ABCF9E /* background.png */,
