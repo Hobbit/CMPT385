@@ -13,7 +13,6 @@
 @end
 
 @implementation GameViewController
-@synthesize WSTextEntry;
 
 @synthesize ScrambledWordLabel1;
 @synthesize ScrambledWordLabel2;
@@ -29,11 +28,11 @@
 @synthesize PlainWordLabel5;
 @synthesize PlainWordLabel6;
 
+@synthesize WSTextEntry;
 @synthesize TotalGuessLabel;
 
 NSString *word;
 NSArray *currentGameList;
-NSArray *masterWordLits;
 NSMutableArray *scrambledWordLabelArray;
 NSMutableArray *plainWordLabelArray;
 int correctGuessCount = 0;
