@@ -13,8 +13,6 @@
 		835C19DA162A9DE10097FA98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 835C19D8162A9DE10097FA98 /* InfoPlist.strings */; };
 		835C19DC162A9DE10097FA98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 835C19DB162A9DE10097FA98 /* main.m */; };
 		835C19E0162A9DE10097FA98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 835C19DF162A9DE10097FA98 /* AppDelegate.m */; };
-		835C19E2162A9DE10097FA98 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 835C19E1162A9DE10097FA98 /* Default.png */; };
-		835C19E4162A9DE10097FA98 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 835C19E3162A9DE10097FA98 /* Default@2x.png */; };
 		835C19E6162A9DE10097FA98 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 835C19E5162A9DE10097FA98 /* Default-568h@2x.png */; };
 		835C19E9162A9DE10097FA98 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835C19E7162A9DE10097FA98 /* MainStoryboard.storyboard */; };
 		835C19EC162A9DE10097FA98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835C19EB162A9DE10097FA98 /* ViewController.m */; };
@@ -32,6 +30,9 @@
 		8394D1E1162B5B9000FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E0162B5B9000FC6576 /* githubButton.png */; };
 		83D09B151630829F00D96AE7 /* MLIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B141630829F00D96AE7 /* MLIcon_retina.png */; };
 		83D09B18163082A200D96AE7 /* MLIcon_regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B17163082A200D96AE7 /* MLIcon_regular.png */; };
+		83D09B211631CDBC00D96AE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B201631CDBC00D96AE7 /* Default@2x.png */; };
+		83D09B231631CDC000D96AE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B221631CDC000D96AE7 /* Default.png */; };
+		83D09B251631CDFF00D96AE7 /* MLInGame_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B241631CDFF00D96AE7 /* MLInGame_retina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +56,6 @@
 		835C19DD162A9DE10097FA98 /* Missing Letters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Missing Letters-Prefix.pch"; sourceTree = "<group>"; };
 		835C19DE162A9DE10097FA98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Missing Letters/AppDelegate.h"; sourceTree = "<group>"; };
 		835C19DF162A9DE10097FA98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Missing Letters/AppDelegate.m"; sourceTree = "<group>"; };
-		835C19E1162A9DE10097FA98 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Missing Letters/Default.png"; sourceTree = "<group>"; };
-		835C19E3162A9DE10097FA98 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Missing Letters/Default@2x.png"; sourceTree = "<group>"; };
 		835C19E5162A9DE10097FA98 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Missing Letters/Default-568h@2x.png"; sourceTree = "<group>"; };
 		835C19E8162A9DE10097FA98 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		835C19EA162A9DE10097FA98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Missing Letters/ViewController.h"; sourceTree = "<group>"; };
@@ -81,6 +80,9 @@
 		8394D1E0162B5B9000FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
 		83D09B141630829F00D96AE7 /* MLIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_retina.png; sourceTree = "<group>"; };
 		83D09B17163082A200D96AE7 /* MLIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_regular.png; sourceTree = "<group>"; };
+		83D09B201631CDBC00D96AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		83D09B221631CDC000D96AE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		83D09B241631CDFF00D96AE7 /* MLInGame_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLInGame_retina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,13 +238,14 @@
 			isa = PBXGroup;
 			children = (
 				83D09B17163082A200D96AE7 /* MLIcon_regular.png */,
+				83D09B241631CDFF00D96AE7 /* MLInGame_retina.png */,
 				83D09B141630829F00D96AE7 /* MLIcon_retina.png */,
+				83D09B221631CDC000D96AE7 /* Default.png */,
+				83D09B201631CDBC00D96AE7 /* Default@2x.png */,
 				8394D1E0162B5B9000FC6576 /* githubButton.png */,
 				8394D1DE162B562700FC6576 /* redpanda.png */,
 				8394D149162B4B8000FC6576 /* background.png */,
 				835C19E5162A9DE10097FA98 /* Default-568h@2x.png */,
-				835C19E3162A9DE10097FA98 /* Default@2x.png */,
-				835C19E1162A9DE10097FA98 /* Default.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -326,8 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				835C19DA162A9DE10097FA98 /* InfoPlist.strings in Resources */,
-				835C19E2162A9DE10097FA98 /* Default.png in Resources */,
-				835C19E4162A9DE10097FA98 /* Default@2x.png in Resources */,
 				835C19E6162A9DE10097FA98 /* Default-568h@2x.png in Resources */,
 				835C19E9162A9DE10097FA98 /* MainStoryboard.storyboard in Resources */,
 				8394D14A162B4B8000FC6576 /* background.png in Resources */,
@@ -335,6 +336,9 @@
 				8394D1E1162B5B9000FC6576 /* githubButton.png in Resources */,
 				83D09B151630829F00D96AE7 /* MLIcon_retina.png in Resources */,
 				83D09B18163082A200D96AE7 /* MLIcon_regular.png in Resources */,
+				83D09B211631CDBC00D96AE7 /* Default@2x.png in Resources */,
+				83D09B231631CDC000D96AE7 /* Default.png in Resources */,
+				83D09B251631CDFF00D96AE7 /* MLInGame_retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

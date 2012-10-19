@@ -34,7 +34,7 @@
 NSArray *currentGameList;
 NSMutableArray *missingWordLabelArray;
 NSMutableArray *plainWordLabelArray;
-int correct
+int correct = 0;
 
 -(void)initUIArrays {
     
