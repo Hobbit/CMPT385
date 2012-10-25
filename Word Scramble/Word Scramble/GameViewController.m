@@ -28,6 +28,13 @@
 @synthesize PlainWordLabel5;
 @synthesize PlainWordLabel6;
 
+@synthesize Checkmark1;
+@synthesize Checkmark2;
+@synthesize Checkmark3;
+@synthesize Checkmark4;
+@synthesize Checkmark5;
+@synthesize Checkmark6;
+
 @synthesize WSTextEntry;
 @synthesize TotalGuessLabel;
 
@@ -35,6 +42,7 @@ NSString *word;
 NSArray *currentGameList;
 NSMutableArray *scrambledWordLabelArray;
 NSMutableArray *plainWordLabelArray;
+NSMutableArray *checkmarkArray;
 int correctGuessCount = 0;
 int totalGuessCount = 0;
 
@@ -55,6 +63,14 @@ int totalGuessCount = 0;
     [plainWordLabelArray insertObject:PlainWordLabel4 atIndex:3];
     [plainWordLabelArray insertObject:PlainWordLabel5 atIndex:4];
     [plainWordLabelArray insertObject:PlainWordLabel6 atIndex:5];
+    
+    checkmarkArray = [[NSMutableArray alloc] init];
+    [checkmarkArray insertObject:Checkmark1 atIndex:0];
+    [checkmarkArray insertObject:Checkmark2 atIndex:1];
+    [checkmarkArray insertObject:Checkmark3 atIndex:2];
+    [checkmarkArray insertObject:Checkmark4 atIndex:3];
+    [checkmarkArray insertObject:Checkmark5 atIndex:4];
+    [checkmarkArray insertObject:Checkmark6 atIndex:5];
 }
 
 - (IBAction)PauseMenu:(id)sender {
@@ -67,6 +83,7 @@ int totalGuessCount = 0;
         for (int i = 0; i < currentGameList.count; i++) {
             if ([WSTextEntry.text.uppercaseString isEqualToString:[[currentGameList objectAtIndex:i] uppercaseString]]){
                 [[plainWordLabelArray objectAtIndex:i] setText:[currentGameList objectAtIndex:i]];
+                [[checkmarkArray objectAtIndex:i] setHidden:NO];
                 correctGuessCount++;
             }
         }

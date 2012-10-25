@@ -354,35 +354,51 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cr9-Nx-9Yf">
-                                <rect key="frame" x="20" y="74" width="85" height="21"/>
+                                <rect key="frame" x="42" y="74" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GreenCheckbox.gif" id="yzj-Nb-Rky">
+                                <rect key="frame" x="20" y="103" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GreenCheckbox.gif" id="3VZ-8b-jdp">
+                                <rect key="frame" x="20" y="132" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GreenCheckbox.gif" id="IhC-3A-M1m">
+                                <rect key="frame" x="20" y="161" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GreenCheckbox.gif" id="geB-5g-jpk">
+                                <rect key="frame" x="20" y="190" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="leq-Z3-8YY">
-                                <rect key="frame" x="20" y="103" width="85" height="21"/>
+                                <rect key="frame" x="42" y="103" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X3F-Je-iJ1">
-                                <rect key="frame" x="20" y="132" width="85" height="21"/>
+                                <rect key="frame" x="42" y="132" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xS2-KW-y4W">
-                                <rect key="frame" x="20" y="161" width="85" height="21"/>
+                                <rect key="frame" x="42" y="161" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r8s-el-m39">
-                                <rect key="frame" x="20" y="190" width="85" height="21"/>
+                                <rect key="frame" x="42" y="190" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -431,49 +447,49 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?????" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g0V-6l-Ul6">
-                                <rect key="frame" x="215" y="45" width="85" height="21"/>
+                                <rect key="frame" x="184" y="45" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?????" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8qW-8b-287">
-                                <rect key="frame" x="215" y="74" width="85" height="21"/>
+                                <rect key="frame" x="184" y="74" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?????" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mok-ss-5FI">
-                                <rect key="frame" x="215" y="103" width="85" height="21"/>
+                                <rect key="frame" x="184" y="103" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?????" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wHg-3b-cQA">
-                                <rect key="frame" x="215" y="132" width="85" height="21"/>
+                                <rect key="frame" x="184" y="132" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?????" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2wp-0y-ZWd">
-                                <rect key="frame" x="215" y="161" width="85" height="21"/>
+                                <rect key="frame" x="184" y="161" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?????" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="86X-fe-jZX">
-                                <rect key="frame" x="215" y="190" width="85" height="21"/>
+                                <rect key="frame" x="184" y="190" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iat-2V-Lgs">
-                                <rect key="frame" x="20" y="45" width="85" height="21"/>
+                                <rect key="frame" x="42" y="45" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -493,19 +509,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView hidden="YES" contentMode="scaleToFill" id="vFf-pv-Qkl">
-                                <rect key="frame" x="80" y="120" width="160" height="240"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GreenCheckbox.gif" id="37x-8v-c43">
+                                <rect key="frame" x="20" y="45" width="21" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="BkG-Yz-zSG" kind="embed" id="hKU-XJ-vK3"/>
-                                </connections>
-                            </containerView>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GreenCheckbox.gif" id="LiX-ZL-o1j">
+                                <rect key="frame" x="20" y="74" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ei4-kY-Duz"/>
                     <connections>
+                        <outlet property="Checkmark1" destination="37x-8v-c43" id="WY2-hE-bpY"/>
+                        <outlet property="Checkmark2" destination="LiX-ZL-o1j" id="kwf-th-5c1"/>
+                        <outlet property="Checkmark3" destination="yzj-Nb-Rky" id="0Da-O4-DEB"/>
+                        <outlet property="Checkmark4" destination="3VZ-8b-jdp" id="bZc-F4-Tdd"/>
+                        <outlet property="Checkmark5" destination="IhC-3A-M1m" id="hD0-EN-Ehg"/>
+                        <outlet property="Checkmark6" destination="geB-5g-jpk" id="Ji1-Dt-ee8"/>
                         <outlet property="PlainWordLabel1" destination="g0V-6l-Ul6" id="LXo-cX-YQ1"/>
                         <outlet property="PlainWordLabel2" destination="8qW-8b-287" id="YkA-AX-fbN"/>
                         <outlet property="PlainWordLabel3" destination="Mok-ss-5FI" id="V35-wz-fD5"/>
@@ -526,38 +548,10 @@
             </objects>
             <point key="canvasLocation" x="298" y="369"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="SFO-BK-YCG">
-            <objects>
-                <viewController id="BkG-Yz-zSG" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2BB-qR-zAc">
-                        <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DAD-j3-rtj">
-                                <rect key="frame" x="44" y="87" width="73" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pEi-6g-6wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="161" y="1132"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Default@2x.png" width="640" height="960"/>
+        <image name="GreenCheckbox.gif" width="32" height="28"/>
         <image name="WSInGame_retina.png" width="640" height="960"/>
         <image name="githubButton.png" width="404" height="156"/>
         <image name="redpanda.png" width="361" height="359"/>
@@ -568,6 +562,12 @@
             <relationships>
                 <relationship kind="action" name="PauseMenu:"/>
                 <relationship kind="action" name="WSSubmit:"/>
+                <relationship kind="outlet" name="Checkmark1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Checkmark2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Checkmark3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Checkmark4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Checkmark5" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Checkmark6" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PlainWordLabel1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="PlainWordLabel2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="PlainWordLabel3" candidateClass="UILabel"/>
