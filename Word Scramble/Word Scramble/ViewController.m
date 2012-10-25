@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+@synthesize versionLabel;
 
 
 
@@ -30,6 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    versionLabel.text = [NSString stringWithFormat:@"Version %@ (%@)", [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
+
     
 	// Do any additional setup after loading the view.
 }
