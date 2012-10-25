@@ -23,6 +23,7 @@
 		8305BCFA15FC339400ABCF9E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8305BCF915FC339400ABCF9E /* background.png */; };
 		83110C311639C56300DAE62D /* PauseMenuProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 83110C301639C56300DAE62D /* PauseMenuProtocol.m */; };
 		83110C3A1639CEFD00DAE62D /* GreenCheckbox.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83110C391639CEFD00DAE62D /* GreenCheckbox.gif */; };
+		83110C3D1639D93500DAE62D /* bump_build_number.sh in Resources */ = {isa = PBXBuildFile; fileRef = 83110C3C1639D93500DAE62D /* bump_build_number.sh */; };
 		837FD92516304BE6003F89FA /* WSIcon_regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92416304BE6003F89FA /* WSIcon_regular.png */; };
 		837FD92716304BEB003F89FA /* WSIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92616304BEB003F89FA /* WSIcon_retina.png */; };
 		8394D152162B4C2400FC6576 /* PauseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D14F162B4C2400FC6576 /* PauseMenuViewController.m */; };
@@ -73,6 +74,7 @@
 		83110C2F1639C56300DAE62D /* PauseMenuProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenuProtocol.h; path = "Word Scramble/PauseMenuProtocol.h"; sourceTree = "<group>"; };
 		83110C301639C56300DAE62D /* PauseMenuProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseMenuProtocol.m; path = "Word Scramble/PauseMenuProtocol.m"; sourceTree = "<group>"; };
 		83110C391639CEFD00DAE62D /* GreenCheckbox.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GreenCheckbox.gif; sourceTree = "<group>"; };
+		83110C3C1639D93500DAE62D /* bump_build_number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bump_build_number.sh; path = tools/bump_build_number.sh; sourceTree = "<group>"; };
 		837FD92416304BE6003F89FA /* WSIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_regular.png; sourceTree = "<group>"; };
 		837FD92616304BEB003F89FA /* WSIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_retina.png; sourceTree = "<group>"; };
 		8394D14E162B4C2400FC6576 /* PauseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenuViewController.h; path = "Word Scramble/PauseMenuViewController.h"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		8305BCCB15FC254000ABCF9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83110C3C1639D93500DAE62D /* bump_build_number.sh */,
 				8305BCCC15FC254000ABCF9E /* Word Scramble-Info.plist */,
 				8305BCCD15FC254000ABCF9E /* InfoPlist.strings */,
 				8305BCD015FC254000ABCF9E /* main.m */,
@@ -278,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8305BCF315FC254000ABCF9E /* Build configuration list for PBXNativeTarget "Word Scramble" */;
 			buildPhases = (
+				83110C3B1639D4CA00DAE62D /* ShellScript */,
 				8305BCBC15FC254000ABCF9E /* Sources */,
 				8305BCBD15FC254000ABCF9E /* Frameworks */,
 				8305BCBE15FC254000ABCF9E /* Resources */,
@@ -356,6 +360,7 @@
 				83D09B341631F9F700D96AE7 /* Default.png in Resources */,
 				83D09B361631FA0000D96AE7 /* Default-568h@2x.png in Resources */,
 				83110C3A1639CEFD00DAE62D /* GreenCheckbox.gif in Resources */,
+				83110C3D1639D93500DAE62D /* bump_build_number.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +387,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		83110C3B1639D4CA00DAE62D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"${PROJECT_DIR}/Word Scramble\"/tools/bump_build_number.sh \"${PROJECT_DIR}/Word Scramble/${INFOPLIST_FILE}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
