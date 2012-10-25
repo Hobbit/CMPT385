@@ -7,6 +7,8 @@
 //
 
 #import "GameViewController.h"
+#import "LevelCompleteViewController.h"
+
 
 @interface GameViewController ()
 
@@ -85,6 +87,9 @@ int totalGuessCount = 0;
                 [[plainWordLabelArray objectAtIndex:i] setText:[currentGameList objectAtIndex:i]];
                 [[checkmarkArray objectAtIndex:i] setHidden:NO];
                 correctGuessCount++;
+                if (correctGuessCount >= 6) {
+                    [self performSegueWithIdentifier:@"levelComplete" sender:self];
+                }
             }
         }
         totalGuessCount++;
@@ -152,6 +157,7 @@ int totalGuessCount = 0;
     [super viewDidLoad];
     
     [self initUIArrays];
+    correctGuessCount = 0;
     currentGameList = [self GetWordList:[self LoadWordlist]];
     [self generateGame:currentGameList];
     

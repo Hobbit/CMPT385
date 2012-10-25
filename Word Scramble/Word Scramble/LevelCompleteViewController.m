@@ -1,23 +1,18 @@
 //
-//  ViewController.m
+//  LevelCompleteViewController.m
 //  Word Scramble
 //
-//  Created by Chris on 2012-09-22.
+//  Created by Chris on 2012-10-25.
 //  Copyright (c) 2012 HHD. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LevelCompleteViewController.h"
 
-@interface ViewController ()
+@interface LevelCompleteViewController ()
 
 @end
 
-@implementation ViewController
-
-@synthesize versionLabel;
-
-
-
+@implementation LevelCompleteViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,9 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    versionLabel.text = [NSString stringWithFormat:@"Version %@ (Build %@)", [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
-
-    
 	// Do any additional setup after loading the view.
 }
 
