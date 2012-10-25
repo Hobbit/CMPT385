@@ -57,6 +57,8 @@ int totalGuessCount = 0;
     [plainWordLabelArray insertObject:PlainWordLabel6 atIndex:5];
 }
 
+- (IBAction)PauseMenu:(id)sender {
+}
 
 - (IBAction)WSSubmit:(id)sender {
     if ([WSTextEntry.text isEqualToString: @""]){
@@ -145,6 +147,7 @@ int totalGuessCount = 0;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

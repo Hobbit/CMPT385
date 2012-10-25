@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PauseMenuProtocol.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController <PauseMenuProtocol, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *WSTextEntry;
 
 @property (weak, nonatomic) IBOutlet UILabel *ScrambledWordLabel1;
