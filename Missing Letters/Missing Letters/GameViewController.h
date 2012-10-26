@@ -9,31 +9,31 @@
 #import <UIKit/UIKit.h>
 
 @interface GameViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *WSTextEntry;
+@property (weak, nonatomic) IBOutlet UITextField *ML_TextEntry;
 
-@property (weak, nonatomic) IBOutlet UILabel *MissingWordLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *MissingWordLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *MissingWordLabel3;
-@property (weak, nonatomic) IBOutlet UILabel *MissingWordLabel4;
-@property (weak, nonatomic) IBOutlet UILabel *MissingWordLabel5;
-@property (weak, nonatomic) IBOutlet UILabel *MissingWordLabel6;
+@property (weak, nonatomic) IBOutlet UILabel *ML_MissingWordLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *ML_MissingWordLabel2;
+@property (weak, nonatomic) IBOutlet UILabel *ML_MissingWordLabel3;
+@property (weak, nonatomic) IBOutlet UILabel *ML_MissingWordLabel4;
+@property (weak, nonatomic) IBOutlet UILabel *ML_MissingWordLabel5;
+@property (weak, nonatomic) IBOutlet UILabel *ML_MissingWordLabel6;
 
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel3;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel4;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel5;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel6;
+@property (weak, nonatomic) IBOutlet UILabel *ML_PlainWordLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *ML_PlainWordLabel2;
+@property (weak, nonatomic) IBOutlet UILabel *ML_PlainWordLabel3;
+@property (weak, nonatomic) IBOutlet UILabel *ML_PlainWordLabel4;
+@property (weak, nonatomic) IBOutlet UILabel *ML_PlainWordLabel5;
+@property (weak, nonatomic) IBOutlet UILabel *ML_PlainWordLabel6;
 
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark1;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark2;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark3;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark4;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark5;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark6;
+@property (weak, nonatomic) IBOutlet UIImageView *ML_Checkmark1;
+@property (weak, nonatomic) IBOutlet UIImageView *ML_Checkmark2;
+@property (weak, nonatomic) IBOutlet UIImageView *ML_Checkmark3;
+@property (weak, nonatomic) IBOutlet UIImageView *ML_Checkmark4;
+@property (weak, nonatomic) IBOutlet UIImageView *ML_Checkmark5;
+@property (weak, nonatomic) IBOutlet UIImageView *ML_Checkmark6;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *TotalGuessLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ML_TotalGuessLabel;
 
 
 @end

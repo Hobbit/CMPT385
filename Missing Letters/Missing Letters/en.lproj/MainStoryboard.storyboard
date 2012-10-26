@@ -299,7 +299,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="WSSubmit:" destination="ng0-4g-t6G" eventType="touchUpInside" id="Fpe-Ug-AMd"/>
+                                    <action selector="ML_Submit:" destination="ng0-4g-t6G" eventType="touchUpInside" id="LkO-lx-BVg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?????" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ORd-Hl-LiD">
@@ -356,6 +356,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="ML_PauseMenu:" destination="ng0-4g-t6G" eventType="touchUpInside" id="5M7-NZ-Gut"/>
                                     <segue destination="dPY-6n-GDj" kind="modal" id="hdH-mW-9jG"/>
                                 </connections>
                             </button>
@@ -388,26 +389,27 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="Checkmark1" destination="HoT-6T-ECZ" id="CRH-P7-B0D"/>
-                        <outlet property="Checkmark2" destination="cZu-Ki-slj" id="QJd-3V-2eE"/>
-                        <outlet property="Checkmark3" destination="enZ-hs-Mar" id="Wt8-hR-Dsl"/>
-                        <outlet property="Checkmark4" destination="XqX-Mc-6GE" id="DZm-s0-VN9"/>
-                        <outlet property="Checkmark6" destination="Lwr-3l-Dnl" id="gz1-bf-alP"/>
-                        <outlet property="MissingWordLabel1" destination="M8s-b1-evi" id="Umz-GQ-SeY"/>
-                        <outlet property="MissingWordLabel2" destination="prI-zK-EUn" id="P2M-dn-O1s"/>
-                        <outlet property="MissingWordLabel3" destination="zdr-1t-Te1" id="d4Y-Gj-6IE"/>
-                        <outlet property="MissingWordLabel4" destination="oUw-Ul-GWj" id="9aw-k4-i6U"/>
-                        <outlet property="MissingWordLabel5" destination="pOv-do-Bx2" id="LWn-SU-vz5"/>
-                        <outlet property="MissingWordLabel6" destination="960-i9-mqj" id="2sA-Po-Fn9"/>
-                        <outlet property="PlainWordLabel1" destination="J4i-JF-Nm3" id="OVf-qp-pbq"/>
-                        <outlet property="PlainWordLabel2" destination="Hdi-6a-Fzq" id="zSa-XT-6Dl"/>
-                        <outlet property="PlainWordLabel3" destination="ORd-Hl-LiD" id="NL8-yV-8Y0"/>
-                        <outlet property="PlainWordLabel4" destination="LG9-jB-Zfo" id="wXZ-EZ-Xpl"/>
-                        <outlet property="PlainWordLabel5" destination="1wd-eF-uaf" id="zmf-U0-JtG"/>
-                        <outlet property="PlainWordLabel6" destination="fik-o9-vLD" id="48W-Pk-GHC"/>
-                        <outlet property="TotalGuessLabel" destination="NXW-ky-14j" id="lfz-Vd-4Ey"/>
-                        <outlet property="WSTextEntry" destination="f48-h7-5gk" id="hbk-dp-fJo"/>
-                        <segue destination="rRQ-Zs-HJg" kind="modal" identifier="levelCompleted" id="wGP-Lq-zRW"/>
+                        <outlet property="ML_Checkmark1" destination="HoT-6T-ECZ" id="5s3-6b-wcZ"/>
+                        <outlet property="ML_Checkmark2" destination="cZu-Ki-slj" id="DbN-3X-Ssi"/>
+                        <outlet property="ML_Checkmark3" destination="enZ-hs-Mar" id="j8E-NT-eZ8"/>
+                        <outlet property="ML_Checkmark4" destination="scf-oZ-QJK" id="Mt7-xl-B8e"/>
+                        <outlet property="ML_Checkmark5" destination="XqX-Mc-6GE" id="5hZ-fN-oSk"/>
+                        <outlet property="ML_Checkmark6" destination="Lwr-3l-Dnl" id="dju-R5-HyR"/>
+                        <outlet property="ML_MissingWordLabel1" destination="M8s-b1-evi" id="38j-DK-gFF"/>
+                        <outlet property="ML_MissingWordLabel2" destination="prI-zK-EUn" id="yTL-6K-1fy"/>
+                        <outlet property="ML_MissingWordLabel3" destination="zdr-1t-Te1" id="VGB-Dw-K5d"/>
+                        <outlet property="ML_MissingWordLabel4" destination="oUw-Ul-GWj" id="4f2-D3-gF7"/>
+                        <outlet property="ML_MissingWordLabel5" destination="pOv-do-Bx2" id="igf-jX-mbe"/>
+                        <outlet property="ML_MissingWordLabel6" destination="960-i9-mqj" id="Kav-67-bBz"/>
+                        <outlet property="ML_PlainWordLabel1" destination="J4i-JF-Nm3" id="Xwd-tD-8MT"/>
+                        <outlet property="ML_PlainWordLabel2" destination="Hdi-6a-Fzq" id="S7a-iG-1aC"/>
+                        <outlet property="ML_PlainWordLabel3" destination="ORd-Hl-LiD" id="73n-Kr-Lr0"/>
+                        <outlet property="ML_PlainWordLabel4" destination="LG9-jB-Zfo" id="WYE-Q7-i0i"/>
+                        <outlet property="ML_PlainWordLabel5" destination="1wd-eF-uaf" id="7vY-AC-nAj"/>
+                        <outlet property="ML_PlainWordLabel6" destination="fik-o9-vLD" id="1MZ-qZ-dRg"/>
+                        <outlet property="ML_TextEntry" destination="f48-h7-5gk" id="jJH-Z9-wHU"/>
+                        <outlet property="ML_TotalGuessLabel" destination="NXW-ky-14j" id="I7v-XJ-4xf"/>
+                        <segue destination="rRQ-Zs-HJg" kind="modal" identifier="ML_levelComplete" id="wGP-Lq-zRW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1g-D2-jpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -604,28 +606,28 @@
         <class className="GameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
             <relationships>
-                <relationship kind="action" name="PauseMenu:"/>
-                <relationship kind="action" name="WSSubmit:"/>
-                <relationship kind="outlet" name="Checkmark1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark5" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark6" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="MissingWordLabel1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="MissingWordLabel2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="MissingWordLabel3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="MissingWordLabel4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="MissingWordLabel5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="MissingWordLabel6" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel6" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="TotalGuessLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="WSTextEntry" candidateClass="UITextField"/>
+                <relationship kind="action" name="ML_PauseMenu:"/>
+                <relationship kind="action" name="ML_Submit:"/>
+                <relationship kind="outlet" name="ML_Checkmark1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark5" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark6" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_TextEntry" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ML_TotalGuessLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="LevelCompleteViewController" superclassName="UIViewController">
