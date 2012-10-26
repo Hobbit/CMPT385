@@ -7,6 +7,7 @@
 //
 
 #import "GameViewController.h"
+#import "LevelCompleteViewController.h"
 
 @interface GameViewController ()
 
@@ -28,16 +29,51 @@
 @synthesize PlainWordLabel5;
 @synthesize PlainWordLabel6;
 
+@synthesize Checkmark1;
+@synthesize Checkmark2;
+@synthesize Checkmark3;
+@synthesize Checkmark4;
+@synthesize Checkmark5;
+@synthesize Checkmark6;
+
 @synthesize WSTextEntry;
 @synthesize TotalGuessLabel;
 
 NSArray *currentGameList;
 NSMutableArray *missingWordLabelArray;
 NSMutableArray *plainWordLabelArray;
+NSMutableArray *checkmarkArray;
 int correct = 0;
 
 -(void)initUIArrays {
+    missingWordLabelArray = [[NSMutableArray alloc] init];
+    [missingWordLabelArray insertObject:MissingWordLabel1 atIndex:0];
+    [missingWordLabelArray insertObject:MissingWordLabel2 atIndex:1];
+    [missingWordLabelArray insertObject:MissingWordLabel3 atIndex:2];
+    [missingWordLabelArray insertObject:MissingWordLabel4 atIndex:3];
+    [missingWordLabelArray insertObject:MissingWordLabel5 atIndex:4];
+    [missingWordLabelArray insertObject:MissingWordLabel6 atIndex:5];
     
+    plainWordLabelArray = [[NSMutableArray alloc] init];
+    [plainWordLabelArray insertObject:PlainWordLabel1 atIndex:0];
+    [plainWordLabelArray insertObject:PlainWordLabel2 atIndex:1];
+    [plainWordLabelArray insertObject:PlainWordLabel3 atIndex:2];
+    [plainWordLabelArray insertObject:PlainWordLabel4 atIndex:3];
+    [plainWordLabelArray insertObject:PlainWordLabel5 atIndex:4];
+    [plainWordLabelArray insertObject:PlainWordLabel6 atIndex:5];
+    
+    checkmarkArray = [[NSMutableArray alloc] init];
+    [checkmarkArray insertObject:Checkmark1 atIndex:0];
+    [checkmarkArray insertObject:Checkmark2 atIndex:1];
+    [checkmarkArray insertObject:Checkmark3 atIndex:2];
+    [checkmarkArray insertObject:Checkmark4 atIndex:3];
+    [checkmarkArray insertObject:Checkmark5 atIndex:4];
+    [checkmarkArray insertObject:Checkmark6 atIndex:5];
+    
+}
+
+
+- (IBAction)PauseMenu:(id)sender {
 }
 
 - (IBAction)WSSubmit:(id)sender {
@@ -66,20 +102,13 @@ int correct = 0;
 }
 
 - (void)viewDidUnload {
-    [self setMissingWordLabel1:nil];
-    [self setMissingWordLabel2:nil];
-    [self setMissingWordLabel3:nil];
-    [self setMissingWordLabel4:nil];
-    [self setMissingWordLabel5:nil];
-    [self setMissingWordLabel6:nil];
-    [self setPlainWordLabel1:nil];
-    [self setPlainWordLabel2:nil];
-    [self setPlainWordLabel3:nil];
-    [self setPlainWordLabel4:nil];
-    [self setPlainWordLabel5:nil];
-    [self setPlainWordLabel6:nil];
     [self setWSTextEntry:nil];
-    [self setTotalGuessLabel:nil];
+    [self setCheckmark1:nil];
+    [self setCheckmark2:nil];
+    [self setCheckmark3:nil];
+    [self setCheckmark4:nil];
+    [self setCheckmark4:nil];
+    [self setCheckmark6:nil];
     [super viewDidUnload];
 }
 @end

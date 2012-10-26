@@ -25,6 +25,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel5;
 @property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel6;
 
+@property (weak, nonatomic) IBOutlet UIImageView *Checkmark1;
+@property (weak, nonatomic) IBOutlet UIImageView *Checkmark2;
+@property (weak, nonatomic) IBOutlet UIImageView *Checkmark3;
+@property (weak, nonatomic) IBOutlet UIImageView *Checkmark4;
+@property (weak, nonatomic) IBOutlet UIImageView *Checkmark5;
+@property (weak, nonatomic) IBOutlet UIImageView *Checkmark6;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *TotalGuessLabel;
 
 
