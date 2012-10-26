@@ -1,18 +1,26 @@
 //
-//  MenuViewController.m
-//  Missing Letters
+//  PauseMenuViewController.m
+//  Word Scramble
 //
-//  Created by Chris on 2012-10-14.
+//  Created by Chris on 2012-09-22.
 //  Copyright (c) 2012 HHD. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import "PauseMenuViewController.h"
+#import "PauseMenuProtocol.h"
 
-@interface MenuViewController ()
+@interface PauseMenuViewController ()
 
 @end
 
-@implementation MenuViewController
+@implementation PauseMenuViewController
+
+
+
+- (IBAction)returnToGame:(id)sender {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate goToResume];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
