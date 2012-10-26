@@ -16,7 +16,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.30000000000000016" contentMode="scaleToFill" image="MLAbout.png" id="ESm-ET-Brw">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000015" contentMode="scaleToFill" image="MLAbout.png" id="ESm-ET-Brw">
                                 <rect key="frame" x="1" y="0.0" width="319" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -48,7 +48,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ep5-jN-hMI" kind="modal" id="cls-DI-ZpM"/>
+                                    <segue destination="Ep5-jN-hMI" kind="modal" modalTransitionStyle="flipHorizontal" id="cls-DI-ZpM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="b1a-P0-Eux">
@@ -78,6 +78,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zjY-PM-g8n" kind="modal" modalTransitionStyle="flipHorizontal" id="Nca-Zn-bUt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2WU-eY-R4f">
                                 <rect key="frame" x="84" y="356" width="153" height="44"/>
@@ -90,6 +93,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LrP-DK-fhh" kind="modal" modalTransitionStyle="flipHorizontal" id="wPe-t6-5JH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -531,6 +537,120 @@
             </objects>
             <point key="canvasLocation" x="138" y="868"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uQY-bm-9Dh">
+            <objects>
+                <viewController id="zjY-PM-g8n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tk3-8C-jIw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="MLAbout.png" id="bWj-pe-PHx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="Ykf-mD-sU0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Instructions" id="L49-a7-ZaK">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="bhO-qA-zSy">
+                                            <connections>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="4au-9b-M4C"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="WzC-Xw-tTS">
+                                <rect key="frame" x="14" y="52" width="286" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">The objective of Missing Letters is to fill in the blanks in the words. When you think you have figured out one of the words, type it into the submission box and press submit. If your guess was correct, a green checkmark will appear next to the word, otherwise keep guessing! </string>
+                                <color key="textColor" red="1" green="0.79060712710000003" blue="0.34272485580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="redpanda.png" id="e0q-kj-FTG">
+                                <rect key="frame" x="118" y="380" width="79" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIQ-Xe-9oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="868"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="99L-AB-MVz">
+            <objects>
+                <viewController id="LrP-DK-fhh" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RfO-ql-d0K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="MLAbout.png" id="PBI-LJ-5Cp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" id="31N-Eu-uky">
+                                <rect key="frame" x="0.0" y="264" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="oVH-El-aGb">
+                                <rect key="frame" x="120" y="63" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="goS-Kz-JGq">
+                                <rect key="frame" x="120" y="105" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GjX-Cr-N5t">
+                                <rect key="frame" x="20" y="67" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.79060712710000003" blue="0.34272485580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fX1-d2-0Xb">
+                                <rect key="frame" x="20" y="109" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.79060712710000003" blue="0.34272485580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" id="8Br-za-e4I">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings" id="jel-bC-Dfl">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="bVz-YV-LaJ">
+                                            <connections>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="X2U-AY-cjg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="ML_LanguageSelect" destination="31N-Eu-uky" id="Cjx-et-cAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPw-Po-fCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="859"/>
+        </scene>
         <!--Level Complete View Controller-->
         <scene sceneID="Zy2-2p-zk8">
             <objects>
@@ -591,7 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbL-9s-hRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="249"/>
+            <point key="canvasLocation" x="1203" y="159"/>
         </scene>
     </scenes>
     <resources>
@@ -639,6 +759,12 @@
                 <relationship kind="action" name="returnToGame:"/>
             </relationships>
         </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ML_LanguageSelect" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
         <class className="TRPViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TRPViewController.h"/>
             <relationships>
@@ -658,7 +784,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="4au-9b-M4C"/>
         <segue reference="JwO-Ti-51F"/>
-        <segue reference="DbH-KB-Z76"/>
     </inferredMetricsTieBreakers>
 </document>

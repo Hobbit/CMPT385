@@ -13,6 +13,7 @@
 		833E851F163B0821004E350E /* PauseMenuProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E851E163B0821004E350E /* PauseMenuProtocol.m */; };
 		833E8523163B085F004E350E /* PauseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E8522163B085F004E350E /* PauseMenuViewController.m */; };
 		833E8525163B2C9B004E350E /* wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 833E8524163B2C9B004E350E /* wordlist.txt */; };
+		833E8528163B352F004E350E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E8527163B352E004E350E /* SettingsViewController.m */; };
 		835C19D0162A9DE10097FA98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C19CF162A9DE10097FA98 /* UIKit.framework */; };
 		835C19D2162A9DE10097FA98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C19D1162A9DE10097FA98 /* Foundation.framework */; };
 		835C19D4162A9DE10097FA98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C19D3162A9DE10097FA98 /* CoreGraphics.framework */; };
@@ -60,6 +61,8 @@
 		833E8521163B085F004E350E /* PauseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuViewController.h; sourceTree = "<group>"; };
 		833E8522163B085F004E350E /* PauseMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseMenuViewController.m; sourceTree = "<group>"; };
 		833E8524163B2C9B004E350E /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordlist.txt; sourceTree = "<group>"; };
+		833E8526163B352E004E350E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = "Missing Letters/SettingsViewController.h"; sourceTree = "<group>"; };
+		833E8527163B352E004E350E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = "Missing Letters/SettingsViewController.m"; sourceTree = "<group>"; };
 		835C19CB162A9DE10097FA98 /* Missing Letters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Missing Letters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835C19CF162A9DE10097FA98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		835C19D1162A9DE10097FA98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -218,6 +221,8 @@
 				833E851B163B0808004E350E /* LevelCompleteViewController.m */,
 				8394D1D7162B4EE000FC6576 /* TRPViewController.h */,
 				8394D1D8162B4EE000FC6576 /* TRPViewController.m */,
+				833E8526163B352E004E350E /* SettingsViewController.h */,
+				833E8527163B352E004E350E /* SettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				833E851C163B0808004E350E /* LevelCompleteViewController.m in Sources */,
 				833E851F163B0821004E350E /* PauseMenuProtocol.m in Sources */,
 				833E8523163B085F004E350E /* PauseMenuViewController.m in Sources */,
+				833E8528163B352F004E350E /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
