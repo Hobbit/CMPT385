@@ -631,7 +631,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Settings" id="jel-bC-Dfl">
-                                        <barButtonItem key="leftBarButtonItem" title="Close" id="bVz-YV-LaJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" systemItem="done" id="bVz-YV-LaJ">
                                             <connections>
                                                 <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="X2U-AY-cjg"/>
                                             </connections>
@@ -649,7 +649,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPw-Po-fCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1202" y="859"/>
+            <point key="canvasLocation" x="1203" y="868"/>
         </scene>
         <!--Level Complete View Controller-->
         <scene sceneID="Zy2-2p-zk8">
@@ -784,7 +784,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4au-9b-M4C"/>
         <segue reference="JwO-Ti-51F"/>
+        <segue reference="X2U-AY-cjg"/>
     </inferredMetricsTieBreakers>
 </document>
