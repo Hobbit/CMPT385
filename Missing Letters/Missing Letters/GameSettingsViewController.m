@@ -6,14 +6,13 @@
 //  Copyright (c) 2012 HHD. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "GameSettingsViewController.h"
 
-@interface SettingsViewController ()
+@interface GameSettingsViewController ()
 
 @end
 
-@implementation SettingsViewController
-@synthesize ML_LanguageSelect;
+@implementation GameSettingsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,7 +37,6 @@
 }
 
 - (void)viewDidUnload {
-    [self setML_LanguageSelect:nil];
     [super viewDidUnload];
 }
 @end

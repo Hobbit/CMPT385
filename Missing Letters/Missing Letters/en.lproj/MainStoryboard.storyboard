@@ -107,6 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="152" y="159"/>
         </scene>
         <!--Pause Menu View Controller-->
         <scene sceneID="Bau-6N-Uq8">
@@ -584,10 +585,10 @@
             </objects>
             <point key="canvasLocation" x="692" y="868"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Game Settings View Controller-->
         <scene sceneID="99L-AB-MVz">
             <objects>
-                <viewController id="LrP-DK-fhh" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="LrP-DK-fhh" customClass="GameSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RfO-ql-d0K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -630,7 +631,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Settings" id="jel-bC-Dfl">
+                                    <navigationItem title="Game Settings" id="jel-bC-Dfl">
                                         <barButtonItem key="leftBarButtonItem" title="Close" systemItem="done" id="bVz-YV-LaJ">
                                             <connections>
                                                 <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="X2U-AY-cjg"/>
@@ -643,13 +644,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <connections>
-                        <outlet property="ML_LanguageSelect" destination="31N-Eu-uky" id="Cjx-et-cAa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPw-Po-fCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="868"/>
+            <point key="canvasLocation" x="1203" y="832"/>
         </scene>
         <!--Level Complete View Controller-->
         <scene sceneID="Zy2-2p-zk8">
@@ -723,6 +721,12 @@
         <image name="redpanda.png" width="361" height="359"/>
     </resources>
     <classes>
+        <class className="GameSettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameSettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ML_LanguageSelect" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
         <class className="GameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
             <relationships>
@@ -757,12 +761,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PauseMenuViewController.h"/>
             <relationships>
                 <relationship kind="action" name="returnToGame:"/>
-            </relationships>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="ML_LanguageSelect" candidateClass="UIPickerView"/>
             </relationships>
         </class>
         <class className="TRPViewController" superclassName="UIViewController">
