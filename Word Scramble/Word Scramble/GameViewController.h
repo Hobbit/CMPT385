@@ -10,36 +10,36 @@
 #import "PauseMenuProtocol.h"
 
 @interface GameViewController : UIViewController <PauseMenuProtocol, UIAlertViewDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *WSTextEntry;
+@property (weak, nonatomic) IBOutlet UITextField *WS_TextEntry;
 
-@property (weak, nonatomic) IBOutlet UILabel *ScrambledWordLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *ScrambledWordLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *ScrambledWordLabel3;
-@property (weak, nonatomic) IBOutlet UILabel *ScrambledWordLabel4;
-@property (weak, nonatomic) IBOutlet UILabel *ScrambledWordLabel5;
-@property (weak, nonatomic) IBOutlet UILabel *ScrambledWordLabel6;
+@property (weak, nonatomic) IBOutlet UILabel *WS_ScrambledWordLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *WS_ScrambledWordLabel2;
+@property (weak, nonatomic) IBOutlet UILabel *WS_ScrambledWordLabel3;
+@property (weak, nonatomic) IBOutlet UILabel *WS_ScrambledWordLabel4;
+@property (weak, nonatomic) IBOutlet UILabel *WS_ScrambledWordLabel5;
+@property (weak, nonatomic) IBOutlet UILabel *WS_ScrambledWordLabel6;
 
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel3;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel4;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel5;
-@property (weak, nonatomic) IBOutlet UILabel *PlainWordLabel6;
+@property (weak, nonatomic) IBOutlet UILabel *WS_PlainWordLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *WS_PlainWordLabel2;
+@property (weak, nonatomic) IBOutlet UILabel *WS_PlainWordLabel3;
+@property (weak, nonatomic) IBOutlet UILabel *WS_PlainWordLabel4;
+@property (weak, nonatomic) IBOutlet UILabel *WS_PlainWordLabel5;
+@property (weak, nonatomic) IBOutlet UILabel *WS_PlainWordLabel6;
 
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark1;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark2;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark3;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark4;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark5;
-@property (weak, nonatomic) IBOutlet UIImageView *Checkmark6;
+@property (weak, nonatomic) IBOutlet UIImageView *WS_Checkmark1;
+@property (weak, nonatomic) IBOutlet UIImageView *WS_Checkmark2;
+@property (weak, nonatomic) IBOutlet UIImageView *WS_Checkmark3;
+@property (weak, nonatomic) IBOutlet UIImageView *WS_Checkmark4;
+@property (weak, nonatomic) IBOutlet UIImageView *WS_Checkmark5;
+@property (weak, nonatomic) IBOutlet UIImageView *WS_Checkmark6;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *TotalGuessLabel;
+@property (weak, nonatomic) IBOutlet UILabel *WS_TotalGuessLabel;
 
 - (NSMutableString *)ScrambleWord:(NSString *)localCurrentWord;
 - (NSMutableArray *)GetWordList:(NSArray *)inputWordList;
 - (NSArray *)LoadWordlist;
--(void)generateGame:(NSArray *)inputWordList ;
+- (void)generateGame:(NSArray *)inputWordList ;
 
 
 @end

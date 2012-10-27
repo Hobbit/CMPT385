@@ -16,76 +16,76 @@
 
 @implementation GameViewController
 
-@synthesize ScrambledWordLabel1;
-@synthesize ScrambledWordLabel2;
-@synthesize ScrambledWordLabel3;
-@synthesize ScrambledWordLabel4;
-@synthesize ScrambledWordLabel5;
-@synthesize ScrambledWordLabel6;
+@synthesize WS_ScrambledWordLabel1;
+@synthesize WS_ScrambledWordLabel2;
+@synthesize WS_ScrambledWordLabel3;
+@synthesize WS_ScrambledWordLabel4;
+@synthesize WS_ScrambledWordLabel5;
+@synthesize WS_ScrambledWordLabel6;
 
-@synthesize PlainWordLabel1;
-@synthesize PlainWordLabel2;
-@synthesize PlainWordLabel3;
-@synthesize PlainWordLabel4;
-@synthesize PlainWordLabel5;
-@synthesize PlainWordLabel6;
+@synthesize WS_PlainWordLabel1;
+@synthesize WS_PlainWordLabel2;
+@synthesize WS_PlainWordLabel3;
+@synthesize WS_PlainWordLabel4;
+@synthesize WS_PlainWordLabel5;
+@synthesize WS_PlainWordLabel6;
 
-@synthesize Checkmark1;
-@synthesize Checkmark2;
-@synthesize Checkmark3;
-@synthesize Checkmark4;
-@synthesize Checkmark5;
-@synthesize Checkmark6;
+@synthesize WS_Checkmark1;
+@synthesize WS_Checkmark2;
+@synthesize WS_Checkmark3;
+@synthesize WS_Checkmark4;
+@synthesize WS_Checkmark5;
+@synthesize WS_Checkmark6;
 
-@synthesize WSTextEntry;
-@synthesize TotalGuessLabel;
+@synthesize WS_TextEntry;
+@synthesize WS_TotalGuessLabel;
 
-NSString *word;
-NSArray *currentGameList;
-NSMutableArray *scrambledWordLabelArray;
-NSMutableArray *plainWordLabelArray;
-NSMutableArray *checkmarkArray;
+//NSString *word;
+NSArray *WS_currentGameList;
+NSMutableArray *WS_scrambledWordLabelArray;
+NSMutableArray *WS_plainWordLabelArray;
+NSMutableArray *WS_checkmarkArray;
 int correctGuessCount = 0;
 int totalGuessCount = 0;
 
 
 -(void)initUIArrays {
-    scrambledWordLabelArray = [[NSMutableArray alloc] init];
-    [scrambledWordLabelArray insertObject:ScrambledWordLabel1 atIndex:0];
-    [scrambledWordLabelArray insertObject:ScrambledWordLabel2 atIndex:1];
-    [scrambledWordLabelArray insertObject:ScrambledWordLabel3 atIndex:2];
-    [scrambledWordLabelArray insertObject:ScrambledWordLabel4 atIndex:3];
-    [scrambledWordLabelArray insertObject:ScrambledWordLabel5 atIndex:4];
-    [scrambledWordLabelArray insertObject:ScrambledWordLabel6 atIndex:5];
+    WS_scrambledWordLabelArray = [[NSMutableArray alloc] init];
+    [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel1 atIndex:0];
+    [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel2 atIndex:1];
+    [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel3 atIndex:2];
+    [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel4 atIndex:3];
+    [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel5 atIndex:4];
+    [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel6 atIndex:5];
     
-    plainWordLabelArray = [[NSMutableArray alloc] init];
-    [plainWordLabelArray insertObject:PlainWordLabel1 atIndex:0];
-    [plainWordLabelArray insertObject:PlainWordLabel2 atIndex:1];
-    [plainWordLabelArray insertObject:PlainWordLabel3 atIndex:2];
-    [plainWordLabelArray insertObject:PlainWordLabel4 atIndex:3];
-    [plainWordLabelArray insertObject:PlainWordLabel5 atIndex:4];
-    [plainWordLabelArray insertObject:PlainWordLabel6 atIndex:5];
+    WS_plainWordLabelArray = [[NSMutableArray alloc] init];
+    [WS_plainWordLabelArray insertObject:WS_PlainWordLabel1 atIndex:0];
+    [WS_plainWordLabelArray insertObject:WS_PlainWordLabel2 atIndex:1];
+    [WS_plainWordLabelArray insertObject:WS_PlainWordLabel3 atIndex:2];
+    [WS_plainWordLabelArray insertObject:WS_PlainWordLabel4 atIndex:3];
+    [WS_plainWordLabelArray insertObject:WS_PlainWordLabel5 atIndex:4];
+    [WS_plainWordLabelArray insertObject:WS_PlainWordLabel6 atIndex:5];
     
-    checkmarkArray = [[NSMutableArray alloc] init];
-    [checkmarkArray insertObject:Checkmark1 atIndex:0];
-    [checkmarkArray insertObject:Checkmark2 atIndex:1];
-    [checkmarkArray insertObject:Checkmark3 atIndex:2];
-    [checkmarkArray insertObject:Checkmark4 atIndex:3];
-    [checkmarkArray insertObject:Checkmark5 atIndex:4];
-    [checkmarkArray insertObject:Checkmark6 atIndex:5];
+    WS_checkmarkArray = [[NSMutableArray alloc] init];
+    [WS_checkmarkArray insertObject:WS_Checkmark1 atIndex:0];
+    [WS_checkmarkArray insertObject:WS_Checkmark2 atIndex:1];
+    [WS_checkmarkArray insertObject:WS_Checkmark3 atIndex:2];
+    [WS_checkmarkArray insertObject:WS_Checkmark4 atIndex:3];
+    [WS_checkmarkArray insertObject:WS_Checkmark5 atIndex:4];
+    [WS_checkmarkArray insertObject:WS_Checkmark6 atIndex:5];
 }
 
 - (IBAction)PauseMenu:(id)sender {
 }
 
-- (IBAction)WSSubmit:(id)sender {
-    if ([WSTextEntry.text isEqualToString: @""]){
+- (IBAction)WS_Submit:(id)sender {
+    if ([WS_TextEntry.text isEqualToString: @""]){
     }
     else{
-        for (int i = 0; i < currentGameList.count; i++) {
-            if ([WSTextEntry.text.uppercaseString isEqualToString:[[currentGameList objectAtIndex:i] uppercaseString]]){
-                [[plainWordLabelArray objectAtIndex:i] setText:[currentGameList objectAtIndex:i]];
-                [[checkmarkArray objectAtIndex:i] setHidden:NO];
+        for (int i = 0; i < WS_currentGameList.count; i++) {
+            if ([WS_TextEntry.text.uppercaseString isEqualToString:[[WS_currentGameList objectAtIndex:i] uppercaseString]]){
+                [[WS_plainWordLabelArray objectAtIndex:i] setText:[WS_currentGameList objectAtIndex:i]];
+                [[WS_checkmarkArray objectAtIndex:i] setHidden:NO];
                 correctGuessCount++;
                 if (correctGuessCount >= 6) {
                     [self performSegueWithIdentifier:@"levelComplete" sender:self];
@@ -94,8 +94,8 @@ int totalGuessCount = 0;
         }
         totalGuessCount++;
     }
-    WSTextEntry.text = @"";
-    TotalGuessLabel.text = [NSString stringWithFormat:@"%d",totalGuessCount];
+    WS_TextEntry.text = @"";
+    WS_TotalGuessLabel.text = [NSString stringWithFormat:@"%d",totalGuessCount];
 }
 
 
@@ -146,8 +146,8 @@ int totalGuessCount = 0;
 }
 
 -(void)generateGame:(NSArray *)inputWordList {
-    for (NSUInteger i = 0; i < [currentGameList count]; i++) {
-        [[scrambledWordLabelArray objectAtIndex:i] setText:[self ScrambleWord:[inputWordList objectAtIndex:i]]];
+    for (NSUInteger i = 0; i < [WS_currentGameList count]; i++) {
+        [[WS_scrambledWordLabelArray objectAtIndex:i] setText:[self ScrambleWord:[inputWordList objectAtIndex:i]]];
     }
 }
 
@@ -158,15 +158,15 @@ int totalGuessCount = 0;
     
     [self initUIArrays];
     correctGuessCount = 0;
-    currentGameList = [self GetWordList:[self LoadWordlist]];
-    [self generateGame:currentGameList];
+    WS_currentGameList = [self GetWordList:[self LoadWordlist]];
+    [self generateGame:WS_currentGameList];
     
-    [WSTextEntry becomeFirstResponder];
+    [WS_TextEntry becomeFirstResponder];
 }
 
 - (void)viewDidUnload
 {
-    [self setWSTextEntry:nil];
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

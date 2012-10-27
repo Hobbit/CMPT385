@@ -423,7 +423,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" id="wey-uG-Q50"/>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="wey-uG-Q50"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kHj-uC-Sio">
@@ -478,7 +478,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="WSSubmit:" destination="2" eventType="touchUpInside" id="gFj-vF-0hb"/>
+                                    <action selector="WS_Submit:" destination="2" eventType="touchUpInside" id="EZp-jv-97T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="84d-XE-Ptp">
@@ -687,26 +687,26 @@
                     </view>
                     <navigationItem key="navigationItem" id="ei4-kY-Duz"/>
                     <connections>
-                        <outlet property="Checkmark1" destination="37x-8v-c43" id="WY2-hE-bpY"/>
-                        <outlet property="Checkmark2" destination="LiX-ZL-o1j" id="kwf-th-5c1"/>
-                        <outlet property="Checkmark3" destination="yzj-Nb-Rky" id="0Da-O4-DEB"/>
-                        <outlet property="Checkmark4" destination="3VZ-8b-jdp" id="bZc-F4-Tdd"/>
-                        <outlet property="Checkmark5" destination="IhC-3A-M1m" id="hD0-EN-Ehg"/>
-                        <outlet property="Checkmark6" destination="geB-5g-jpk" id="Ji1-Dt-ee8"/>
-                        <outlet property="PlainWordLabel1" destination="g0V-6l-Ul6" id="LXo-cX-YQ1"/>
-                        <outlet property="PlainWordLabel2" destination="8qW-8b-287" id="YkA-AX-fbN"/>
-                        <outlet property="PlainWordLabel3" destination="Mok-ss-5FI" id="V35-wz-fD5"/>
-                        <outlet property="PlainWordLabel4" destination="wHg-3b-cQA" id="5RK-iz-Jal"/>
-                        <outlet property="PlainWordLabel5" destination="2wp-0y-ZWd" id="Cco-Uf-jex"/>
-                        <outlet property="PlainWordLabel6" destination="86X-fe-jZX" id="dc7-QH-Kff"/>
-                        <outlet property="ScrambledWordLabel1" destination="iat-2V-Lgs" id="haq-05-C5C"/>
-                        <outlet property="ScrambledWordLabel2" destination="Cr9-Nx-9Yf" id="RUS-Lg-wqq"/>
-                        <outlet property="ScrambledWordLabel3" destination="leq-Z3-8YY" id="X02-3y-WrQ"/>
-                        <outlet property="ScrambledWordLabel4" destination="X3F-Je-iJ1" id="Ksr-R6-zqU"/>
-                        <outlet property="ScrambledWordLabel5" destination="xS2-KW-y4W" id="ycH-Js-Yd1"/>
-                        <outlet property="ScrambledWordLabel6" destination="r8s-el-m39" id="YE7-jj-Cz6"/>
-                        <outlet property="TotalGuessLabel" destination="GNI-S5-040" id="LnH-Ae-tXq"/>
-                        <outlet property="WSTextEntry" destination="aRh-jr-V4Z" id="cdB-Ym-88x"/>
+                        <outlet property="WS_Checkmark1" destination="37x-8v-c43" id="wv0-C8-rbL"/>
+                        <outlet property="WS_Checkmark2" destination="LiX-ZL-o1j" id="3fD-ZK-kG9"/>
+                        <outlet property="WS_Checkmark3" destination="yzj-Nb-Rky" id="hKA-6Q-9Q0"/>
+                        <outlet property="WS_Checkmark4" destination="3VZ-8b-jdp" id="Mim-RM-jmh"/>
+                        <outlet property="WS_Checkmark5" destination="IhC-3A-M1m" id="slp-1Z-PMd"/>
+                        <outlet property="WS_Checkmark6" destination="geB-5g-jpk" id="CJG-Ib-eC7"/>
+                        <outlet property="WS_PlainWordLabel1" destination="g0V-6l-Ul6" id="Yvl-Uj-XCJ"/>
+                        <outlet property="WS_PlainWordLabel2" destination="8qW-8b-287" id="TXT-6o-jm3"/>
+                        <outlet property="WS_PlainWordLabel3" destination="Mok-ss-5FI" id="xxe-pC-eFK"/>
+                        <outlet property="WS_PlainWordLabel4" destination="wHg-3b-cQA" id="rLg-gX-lzr"/>
+                        <outlet property="WS_PlainWordLabel5" destination="2wp-0y-ZWd" id="CMQ-Ke-dDF"/>
+                        <outlet property="WS_PlainWordLabel6" destination="86X-fe-jZX" id="5Zf-fG-czk"/>
+                        <outlet property="WS_ScrambledWordLabel1" destination="iat-2V-Lgs" id="WQu-Eb-5nF"/>
+                        <outlet property="WS_ScrambledWordLabel2" destination="Cr9-Nx-9Yf" id="lif-CS-1O2"/>
+                        <outlet property="WS_ScrambledWordLabel3" destination="leq-Z3-8YY" id="DHv-oV-pdg"/>
+                        <outlet property="WS_ScrambledWordLabel4" destination="X3F-Je-iJ1" id="iRD-eQ-XlU"/>
+                        <outlet property="WS_ScrambledWordLabel5" destination="xS2-KW-y4W" id="g3I-Du-glJ"/>
+                        <outlet property="WS_ScrambledWordLabel6" destination="r8s-el-m39" id="Q0m-jR-Qas"/>
+                        <outlet property="WS_TextEntry" destination="aRh-jr-V4Z" id="hXi-Mc-44F"/>
+                        <outlet property="WS_TotalGuessLabel" destination="GNI-S5-040" id="oiE-Ji-sNB"/>
                         <segue destination="YW8-u0-KCz" kind="modal" identifier="levelComplete" id="Cyk-b2-L4n"/>
                     </connections>
                 </viewController>
@@ -727,27 +727,27 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
             <relationships>
                 <relationship kind="action" name="PauseMenu:"/>
-                <relationship kind="action" name="WSSubmit:"/>
-                <relationship kind="outlet" name="Checkmark1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark5" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Checkmark6" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PlainWordLabel1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="PlainWordLabel6" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ScrambledWordLabel1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ScrambledWordLabel2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ScrambledWordLabel3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ScrambledWordLabel4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ScrambledWordLabel5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ScrambledWordLabel6" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="TotalGuessLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="WSTextEntry" candidateClass="UITextField"/>
+                <relationship kind="action" name="WS_Submit:"/>
+                <relationship kind="outlet" name="WS_Checkmark1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="WS_Checkmark2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="WS_Checkmark3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="WS_Checkmark4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="WS_Checkmark5" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="WS_Checkmark6" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="WS_PlainWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_PlainWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_PlainWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_PlainWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_PlainWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_PlainWordLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_ScrambledWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_ScrambledWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_ScrambledWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_ScrambledWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_ScrambledWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_ScrambledWordLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_TextEntry" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="WS_TotalGuessLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="LevelCompleteViewController" superclassName="UIViewController">
@@ -778,7 +778,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Az2-r3-OMq"/>
-        <segue reference="ATc-f3-vtR"/>
+        <segue reference="nuJ-CK-Ipf"/>
+        <segue reference="wey-uG-Q50"/>
     </inferredMetricsTieBreakers>
 </document>
