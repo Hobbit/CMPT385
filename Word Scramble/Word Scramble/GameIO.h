@@ -10,4 +10,6 @@
 
 @interface GameIO : NSObject
 
+- (void)DownloadWordList;
+
 @end
