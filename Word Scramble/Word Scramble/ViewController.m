@@ -14,35 +14,21 @@
 @end
 
 @implementation ViewController
-
+//Label for the version number
 @synthesize versionLabel;
-
-
-
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //Gets the current version and build of the app and displays on main menu
     versionLabel.text = [NSString stringWithFormat:@"Version %@ (Build %@)", [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
+    //Set file path to write file to
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
-    
     // Download and write to file
     NSURL *url = [NSURL URLWithString:@"http://thehhd.com/CMPT385/accounts/test_user/wordlist.txt"];
     NSData *urlData = [NSData dataWithContentsOfURL:url];
     [urlData writeToFile:filePath atomically:YES];
-    
 
-    
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

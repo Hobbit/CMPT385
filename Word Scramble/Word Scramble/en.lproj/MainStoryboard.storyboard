@@ -272,10 +272,10 @@
             </objects>
             <point key="canvasLocation" x="-61" y="789"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Settings View Controller-->
         <scene sceneID="0jh-Hr-N7q">
             <objects>
-                <viewController id="gQC-VF-v33" sceneMemberID="viewController">
+                <viewController id="gQC-VF-v33" customClass="GameSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ARd-b5-VQX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -723,7 +723,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="SVW-5K-78M"/>
+        <segue reference="Az2-r3-OMq"/>
         <segue reference="wey-uG-Q50"/>
     </inferredMetricsTieBreakers>
 </document>

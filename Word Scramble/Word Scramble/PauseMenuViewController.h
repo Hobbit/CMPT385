@@ -13,6 +13,7 @@
 
 @interface PauseMenuViewController : UIViewController
 
+//Adds delegate to this view
 @property (nonatomic, strong) id <PauseMenuProtocol> delegate;
 
 @end

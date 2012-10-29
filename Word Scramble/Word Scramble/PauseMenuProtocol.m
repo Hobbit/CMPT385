@@ -10,4 +10,6 @@
 
 @implementation PauseMenuProtocol
 
+//intentionally left empty
+
 @end

@@ -12,6 +12,7 @@
 
 @end
 
+//Adds new protocol for the pause menu
 @protocol PauseMenuProtocol <NSObject>
 
 @optional

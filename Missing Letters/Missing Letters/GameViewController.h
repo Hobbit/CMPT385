@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PauseMenuProtocol.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController <PauseMenuProtocol, UIAlertViewDelegate>
+
 
 //Text entry for use to input their guess
 @property (weak, nonatomic) IBOutlet UITextField *ML_TextEntry;
@@ -39,6 +41,13 @@
 
 //UI Label that displays the number of guesses
 @property (weak, nonatomic) IBOutlet UILabel *ML_TotalGuessLabel;
+
+//Declare the methods
+- (void)initUIArrays;
+- (NSMutableString *)ML_BlankOutWord:(NSString *)localCurrentWord;
+- (NSArray *)ML_LoadWordlist;
+- (NSMutableArray *)ML_GetWordList:(NSArray *)inputWordList;
+- (void)ML_generateGame:(NSArray *)ML_inputWordList ;
 
 
 @end

@@ -40,7 +40,7 @@
 @synthesize ML_Checkmark5;
 @synthesize ML_Checkmark6;
 
-//Texxt box for user to input guesses
+//Text box for user to input guesses
 @synthesize ML_TextEntry;
 
 //UI Label to display their number of guesses
@@ -59,7 +59,7 @@ int ML_correctGuessCount = 0;
 int ML_totalGuessCount = 0;
 
 //Initializes the arrays of UI objects and inserts the UI Objects
--(void)initUIArrays {
+- (void)initUIArrays {
     ML_missingWordLabelArray = [[NSMutableArray alloc] init];
     [ML_missingWordLabelArray insertObject:ML_MissingWordLabel1 atIndex:0];
     [ML_missingWordLabelArray insertObject:ML_MissingWordLabel2 atIndex:1];
@@ -126,7 +126,7 @@ int ML_totalGuessCount = 0;
 }
 
 
-//This function takes the a word and randonly blanks out one of the letters
+//This function takes the a word and randomly blanks out one of the letters
 - (NSMutableString *)ML_BlankOutWord:(NSString *)localCurrentWord {
     NSMutableString *localBlankedWord = [NSMutableString stringWithString:localCurrentWord];
     //Replaces a random char with an underscore to act as a "blank"
@@ -176,7 +176,7 @@ int ML_totalGuessCount = 0;
 }
 
 //Generates the game by loading up the labels with words selected for the game by blanking them out then modifying the label which displays them
--(void)ML_generateGame:(NSArray *)ML_inputWordList {
+- (void)ML_generateGame:(NSArray *)ML_inputWordList {
     for (NSUInteger i = 0; i < [ML_currentGameList count]; i++) {
         [[ML_missingWordLabelArray objectAtIndex:i] setText:[self ML_BlankOutWord:[ML_inputWordList objectAtIndex:i]]];
     }

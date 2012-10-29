@@ -200,8 +200,8 @@
 		8394D142162B411200FC6576 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				835C19DF162A9DE10097FA98 /* AppDelegate.m */,
 				835C19DE162A9DE10097FA98 /* AppDelegate.h */,
+				835C19DF162A9DE10097FA98 /* AppDelegate.m */,
 				833E851D163B0821004E350E /* PauseMenuProtocol.h */,
 				833E851E163B0821004E350E /* PauseMenuProtocol.m */,
 			);

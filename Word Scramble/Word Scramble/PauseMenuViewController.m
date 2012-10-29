@@ -16,20 +16,12 @@
 @implementation PauseMenuViewController
 
 
-
+//Handles dismissing the pause menu
 - (IBAction)returnToGame:(id)sender {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     [self.delegate goToResume];
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {

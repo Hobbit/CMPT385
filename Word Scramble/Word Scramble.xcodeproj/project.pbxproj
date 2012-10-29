@@ -25,6 +25,7 @@
 		83110C3A1639CEFD00DAE62D /* GreenCheckbox.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83110C391639CEFD00DAE62D /* GreenCheckbox.gif */; };
 		83110C3D1639D93500DAE62D /* bump_build_number.sh in Resources */ = {isa = PBXBuildFile; fileRef = 83110C3C1639D93500DAE62D /* bump_build_number.sh */; };
 		83110C401639EC0600DAE62D /* LevelCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83110C3F1639EC0600DAE62D /* LevelCompleteViewController.m */; };
+		832E2BFC163F424B00EC95C1 /* GameSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */; };
 		837FD92516304BE6003F89FA /* WSIcon_regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92416304BE6003F89FA /* WSIcon_regular.png */; };
 		837FD92716304BEB003F89FA /* WSIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92616304BEB003F89FA /* WSIcon_retina.png */; };
 		8394D152162B4C2400FC6576 /* PauseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D14F162B4C2400FC6576 /* PauseMenuViewController.m */; };
@@ -77,6 +78,8 @@
 		83110C3C1639D93500DAE62D /* bump_build_number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bump_build_number.sh; path = tools/bump_build_number.sh; sourceTree = "<group>"; };
 		83110C3E1639EC0600DAE62D /* LevelCompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelCompleteViewController.h; path = "Word Scramble/LevelCompleteViewController.h"; sourceTree = "<group>"; };
 		83110C3F1639EC0600DAE62D /* LevelCompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelCompleteViewController.m; path = "Word Scramble/LevelCompleteViewController.m"; sourceTree = "<group>"; };
+		832E2BFA163F424A00EC95C1 /* GameSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSettingsViewController.h; path = "Word Scramble/GameSettingsViewController.h"; sourceTree = "<group>"; };
+		832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameSettingsViewController.m; path = "Word Scramble/GameSettingsViewController.m"; sourceTree = "<group>"; };
 		837FD92416304BE6003F89FA /* WSIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_regular.png; sourceTree = "<group>"; };
 		837FD92616304BEB003F89FA /* WSIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_retina.png; sourceTree = "<group>"; };
 		8394D14E162B4C2400FC6576 /* PauseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenuViewController.h; path = "Word Scramble/PauseMenuViewController.h"; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				8394D156162B4C4800FC6576 /* TRPViewController.m */,
 				83110C3E1639EC0600DAE62D /* LevelCompleteViewController.h */,
 				83110C3F1639EC0600DAE62D /* LevelCompleteViewController.m */,
+				832E2BFA163F424A00EC95C1 /* GameSettingsViewController.h */,
+				832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				8394D15C162B4CEA00FC6576 /* GameIO.m in Sources */,
 				83110C311639C56300DAE62D /* PauseMenuProtocol.m in Sources */,
 				83110C401639EC0600DAE62D /* LevelCompleteViewController.m in Sources */,
+				832E2BFC163F424B00EC95C1 /* GameSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

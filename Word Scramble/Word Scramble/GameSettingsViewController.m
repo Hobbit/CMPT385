@@ -1,20 +1,20 @@
 //
-//  LevelCompleteViewController.m
+//  GameSettingsViewController.m
 //  Word Scramble
 //
-//  Created by Chris Hobbs on 2012-10-25.
+//  Created by Chris Hobbs on 2012-10-29.
 //  Copyright (c) 2012 Team Red Panda. All rights reserved.
 //
 
-#import "LevelCompleteViewController.h"
+#import "GameSettingsViewController.h"
 
-@interface LevelCompleteViewController ()
+@interface GameSettingsViewController ()
 
 @end
 
-@implementation LevelCompleteViewController
+@implementation GameSettingsViewController
 
-//Nothing to go here yet, place holder for futrue versions
+//Nothing to go here yet, place holder for future versions
 
 - (void)viewDidLoad
 {
