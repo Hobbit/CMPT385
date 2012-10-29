@@ -14,6 +14,7 @@
 
 @implementation TRPViewController
 
+//This method will open up safari and direct the user to the repository for this game
 - (IBAction)viewGitHub:(id)sender {
     NSURL *url = [NSURL URLWithString:@"https://www.github.com/Hobbit/CMPT385/tree/master/Missing%20Letters/"];
     
@@ -22,14 +23,6 @@
         NSLog(@"%@%@",@"Failed to open url:",[url description]);
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {

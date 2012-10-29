@@ -14,14 +14,7 @@
 
 @implementation GameSettingsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+//Nothing to go here yet, place holder for future versions
 
 - (void)viewDidLoad
 {

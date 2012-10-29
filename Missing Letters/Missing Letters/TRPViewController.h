@@ -10,4 +10,6 @@
 
 @interface TRPViewController : UIViewController
 
+- (IBAction)viewGitHub:(id)sender;
+
 @end

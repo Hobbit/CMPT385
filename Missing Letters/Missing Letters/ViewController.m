@@ -19,10 +19,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    //Gets the current version and build of the app and displays on main menu
     versionLabel.text = [NSString stringWithFormat:@"Version %@ (Build %@)", [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
+    //Set file path to write file to
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
-    
     // Download and write to file
     NSURL *url = [NSURL URLWithString:@"http://thehhd.com/CMPT385/accounts/test_user/wordlist.txt"];
     NSData *urlData = [NSData dataWithContentsOfURL:url];
