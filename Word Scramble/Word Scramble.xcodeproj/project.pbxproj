@@ -31,7 +31,6 @@
 		8394D153162B4C2400FC6576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D151162B4C2400FC6576 /* ViewController.m */; };
 		8394D157162B4C4800FC6576 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D156162B4C4800FC6576 /* TRPViewController.m */; };
 		8394D15C162B4CEA00FC6576 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D15A162B4CEA00FC6576 /* GameIO.m */; };
-		8394D1CD162B4D2C00FC6576 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C6162B4D2C00FC6576 /* logo.png */; };
 		8394D1CE162B4D2C00FC6576 /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C7162B4D2C00FC6576 /* redpanda.png */; };
 		8394D1E3162B653600FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E2162B653600FC6576 /* githubButton.png */; };
 		83D09B2B1631D3B300D96AE7 /* WSInGame_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */; };
@@ -89,7 +88,6 @@
 		8394D158162B4CEA00FC6576 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = "Word Scramble/Config.xcconfig"; sourceTree = "<group>"; };
 		8394D159162B4CEA00FC6576 /* GameIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameIO.h; path = "Word Scramble/GameIO.h"; sourceTree = "<group>"; };
 		8394D15A162B4CEA00FC6576 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameIO.m; path = "Word Scramble/GameIO.m"; sourceTree = "<group>"; };
-		8394D1C6162B4D2C00FC6576 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "Word Scramble/logo.png"; sourceTree = "<group>"; };
 		8394D1C7162B4D2C00FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redpanda.png; path = "Word Scramble/redpanda.png"; sourceTree = "<group>"; };
 		8394D1E2162B653600FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
 		83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSInGame_retina.png; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 				837FD92416304BE6003F89FA /* WSIcon_regular.png */,
 				83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */,
 				8394D1E2162B653600FC6576 /* githubButton.png */,
-				8394D1C6162B4D2C00FC6576 /* logo.png */,
 				8394D1C7162B4D2C00FC6576 /* redpanda.png */,
 				8305BCF915FC339400ABCF9E /* background.png */,
 			);
@@ -355,7 +352,6 @@
 				8305BCD815FC254000ABCF9E /* MainStoryboard.storyboard in Resources */,
 				8305BCFA15FC339400ABCF9E /* background.png in Resources */,
 				83FB493415FD17DC000E3E57 /* wordlist.txt in Resources */,
-				8394D1CD162B4D2C00FC6576 /* logo.png in Resources */,
 				8394D1CE162B4D2C00FC6576 /* redpanda.png in Resources */,
 				8394D1E3162B653600FC6576 /* githubButton.png in Resources */,
 				837FD92516304BE6003F89FA /* WSIcon_regular.png in Resources */,

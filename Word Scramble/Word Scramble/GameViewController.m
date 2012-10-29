@@ -1,8 +1,8 @@
 //
-//  ViewController.m
+//  GameViewController.m
 //  Word Scramble
 //
-//  Created by Chris on 2012-09-08.
+//  Created by Chris Hobbs on 2012-09-08.
 //  Copyright (c) 2012 Team Red Panda. All rights reserved.
 //
 
