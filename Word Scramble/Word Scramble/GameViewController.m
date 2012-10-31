@@ -5,6 +5,9 @@
 //  Created by Chris Hobbs on 2012-09-08.
 //  Copyright (c) 2012 Team Red Panda. All rights reserved.
 //
+//  Code Standard:
+//  http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html
+//
 
 #import "GameViewController.h"
 #import "LevelCompleteViewController.h"
@@ -165,7 +168,7 @@ int WS_totalGuessCount = 0;
         
         //runs through the list of currently selected indexes and compairs to the current index and if there is a match the boolean "duplicate" is set to YES and that index is not used and a new random index is selected
         for (int n = 0; n < [indexSelected count]; n++) {
-            if ([[indexSelected objectAtIndex:n] intValue ]== randIndex) {
+            if ([[indexSelected objectAtIndex:n] intValue]== randIndex) {
                 duplicate = YES;
             }
         }

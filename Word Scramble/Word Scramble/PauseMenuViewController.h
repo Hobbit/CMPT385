@@ -5,6 +5,9 @@
 //  Created by Chris Hobbs on 2012-09-22.
 //  Copyright (c) 2012 Team Read Panda. All rights reserved.
 //
+//  Code Standard:
+//  http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html
+//
 
 #import <UIKit/UIKit.h>
 #import "PauseMenuProtocol.h"
