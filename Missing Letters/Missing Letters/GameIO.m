@@ -13,6 +13,15 @@
 
 @implementation GameIO
 
-//Place Holder
++ (void) getCurrentList:(NSString *)base :(NSString *)user :(NSString *)file
+{
+    //Set file path to write file to
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
+    // Download and write to file
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", base, user, file]];
+    NSData *urlData = [NSData dataWithContentsOfURL:url];
+    [urlData writeToFile:filePath atomically:YES];
+    
+}
 
 @end

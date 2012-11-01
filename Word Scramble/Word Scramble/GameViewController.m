@@ -62,7 +62,8 @@ int WS_correctGuessCount = 0;
 int WS_totalGuessCount = 0;
 
 //Initializes the arrays of UI objects and inserts the UI Objects
--(void)initUIArrays {
+-(void)initUIArrays
+{
     WS_scrambledWordLabelArray = [[NSMutableArray alloc] init];
     [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel1 atIndex:0];
     [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel2 atIndex:1];
@@ -89,23 +90,28 @@ int WS_totalGuessCount = 0;
 }
 
 //Open Pause Menu
-- (IBAction)PauseMenu:(id)sender {
+- (IBAction)PauseMenu:(id)sender
+{
     //This is intentionally left empty
     //Action done by the delegate
     //To open the pause menu
 }
 
 //Action when user presses the submit button
-- (IBAction)WS_Submit:(id)sender {
+- (IBAction)WS_Submit:(id)sender
+{
     //Checks if the input is empty
     if ([WS_TextEntry.text isEqualToString: @""]){
         //If input is empty, do nothing
     }
-    else{
+    else
+    {
         //If the input is not empty
-        for (int i = 0; i < WS_currentGameList.count; i++) {
+        for (int i = 0; i < WS_currentGameList.count; i++)
+        {
             //check the the input againt the word list for the current game
-            if ([WS_TextEntry.text.uppercaseString isEqualToString:[[WS_currentGameList objectAtIndex:i] uppercaseString]]){
+            if ([WS_TextEntry.text.uppercaseString isEqualToString:[[WS_currentGameList objectAtIndex:i] uppercaseString]])
+            {
                 //If the words match:
                 //Check the plainword label from ????? to the correct word
                 [[WS_plainWordLabelArray objectAtIndex:i] setText:[WS_currentGameList objectAtIndex:i]];
@@ -113,7 +119,8 @@ int WS_totalGuessCount = 0;
                 [[WS_checkmarkArray objectAtIndex:i] setHidden:NO];
                 //Increase the correct guess counter
                 WS_correctGuessCount++;
-                if (WS_correctGuessCount >= 6) {
+                if (WS_correctGuessCount >= 6)
+                {
                     //if the number of correct guesses is equal to or greater than 6, go to level complete screen
                     [self performSegueWithIdentifier:@"levelComplete" sender:self];
                 }
@@ -129,7 +136,8 @@ int WS_totalGuessCount = 0;
 }
 
 //This function takes the a word and randomly scrambles it
-- (NSMutableString *)WS_ScrambleWord:(NSString *)localCurrentWord {
+- (NSMutableString *)WS_ScrambleWord:(NSString *)localCurrentWord
+{
     NSMutableString *localRandomizedWord = [NSMutableString stringWithString:localCurrentWord];
     
     NSString *buffer;
@@ -146,7 +154,8 @@ int WS_totalGuessCount = 0;
 }
 
 //Grabs the word list from the device memory and reads it into an array
-- (NSArray *)WS_LoadWordlist{
+- (NSArray *)WS_LoadWordlist
+{
     NSString *path = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
     NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
     NSArray *localWords = [contents componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
@@ -154,27 +163,32 @@ int WS_totalGuessCount = 0;
 }
 
 //Takes the array that contains the words from the word list file and choses 6 and creates a wordlist for the specific game instance
-- (NSMutableArray *)WS_GetWordList:(NSArray *)inputWordList{
+- (NSMutableArray *)WS_GetWordList:(NSArray *)inputWordList
+{
     //Array to tack the indexes that have already been selected to avoid duplicates
     NSMutableArray *indexSelected = [[NSMutableArray alloc] init];
     //Array to locally generate the list of words before exporting from the function
     NSMutableArray *localExportList = [[NSMutableArray alloc] init];
     int i = 0;
     
-    while (i < 6) {
+    while (i < 6)
+    {
         //choose random index value
         int randIndex = arc4random() %([inputWordList count]);
         bool duplicate = NO;
         
         //runs through the list of currently selected indexes and compairs to the current index and if there is a match the boolean "duplicate" is set to YES and that index is not used and a new random index is selected
-        for (int n = 0; n < [indexSelected count]; n++) {
-            if ([[indexSelected objectAtIndex:n] intValue]== randIndex) {
+        for (int n = 0; n < [indexSelected count]; n++)
+        {
+            if ([[indexSelected objectAtIndex:n] intValue]== randIndex)
+            {
                 duplicate = YES;
             }
         }
         
         //If the current is not a duplicate
-        if (duplicate == NO) {
+        if (duplicate == NO)
+        {
             //add the current index to the selected index list
             [indexSelected addObject: [NSNumber numberWithInt:randIndex]];
             //add the word at the current index to the local word list to be exported
@@ -187,8 +201,10 @@ int WS_totalGuessCount = 0;
 }
 
 //Generates the game by loading up the labels with words selected for the game by blanking them out then modifying the label which displays them
--(void)WS_generateGame:(NSArray *)inputWordList {
-    for (NSUInteger i = 0; i < [WS_currentGameList count]; i++) {
+-(void)WS_generateGame:(NSArray *)inputWordList
+{
+    for (NSUInteger i = 0; i < [WS_currentGameList count]; i++)
+    {
         [[WS_scrambledWordLabelArray objectAtIndex:i] setText:[self WS_ScrambleWord:[inputWordList objectAtIndex:i]]];
     }
 }

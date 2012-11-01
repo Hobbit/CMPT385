@@ -20,7 +20,8 @@
 
 
 //Handles dismissing the pause menu
-- (IBAction)returnToGame:(id)sender {
+- (IBAction)returnToGame:(id)sender
+{
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     [self.delegate goToResume];
 }

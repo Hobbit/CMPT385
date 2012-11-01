@@ -13,6 +13,6 @@
 
 @interface GameIO : NSObject
 
-//Place Holder
++ (void) getCurrentList:(NSString *)base :(NSString *)user :(NSString *)file;
 
 @end
