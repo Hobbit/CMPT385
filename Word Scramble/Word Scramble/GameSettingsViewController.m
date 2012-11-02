@@ -10,6 +10,7 @@
 //
 
 #import "GameSettingsViewController.h"
+#import "GameIO.h"
 
 @interface GameSettingsViewController ()
 
@@ -17,7 +18,11 @@
 
 @implementation GameSettingsViewController
 
-//Nothing to go here yet, place holder for future versions
+
+- (IBAction)manualUpdate:(id)sender
+{
+    [GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
+}
 
 - (void)viewDidLoad
 {

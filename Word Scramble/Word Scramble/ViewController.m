@@ -21,12 +21,18 @@
 //Label for the version number
 @synthesize versionLabel;
 
+bool isFirstLoad = YES;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     //Gets the current version and build of the app and displays on main menu
     versionLabel.text = [NSString stringWithFormat:@"Version %@ (Build %@)", [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
-    [GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
+    if (isFirstLoad)
+    {
+        [GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
+        isFirstLoad = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning

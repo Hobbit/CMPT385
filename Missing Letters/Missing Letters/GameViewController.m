@@ -142,7 +142,7 @@ int ML_totalGuessCount = 0;
 {
     NSMutableString *localBlankedWord = [NSMutableString stringWithString:localCurrentWord];
     //Replaces a random char with an underscore to act as a "blank"
-    [localBlankedWord replaceCharactersInRange:NSMakeRange((random()%[localBlankedWord length]), 1) withString:@"_"];
+    [localBlankedWord replaceCharactersInRange:NSMakeRange((random()%[localBlankedWord length]), 1) withString:@"_"]; 
     return localBlankedWord;
 }
 
