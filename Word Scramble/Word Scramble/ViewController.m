@@ -25,7 +25,8 @@
 @synthesize versionLabel;
 
 bool isFirstLoad = YES;
-
+NSMutableArray *firstWordName;
+NSMutableArray *spellingpattern;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -55,19 +56,37 @@ bool isFirstLoad = YES;
 
 - (void)fetchedData:(NSData *)responseData
 { //parse the JSON data
-    NSError* error;
-    NSDictionary* json = [NSJSONSerialization
+    firstWordName =[[NSMutableArray alloc]init];
+    spellingpattern = [[NSMutableArray alloc]init];
+    NSError *error;
+    NSDictionary *json = [NSJSONSerialization
                           JSONObjectWithData:responseData
                           options:kNilOptions error:&error];
     
     NSArray* latestWordlist = [json objectForKey:@"words"];
     
     //NSLog(@"words: %@", latestWordlist);
+    int i;
+    for (i = 0; i<(latestWordlist.count); i++)
+    {
     
-    NSDictionary* wordtest = [latestWordlist objectAtIndex:1];
-    NSArray* firstWordName = [wordtest objectForKey:@"name"];
+        NSDictionary *wordname = [latestWordlist objectAtIndex:i];
+        [firstWordName addObject:[wordname objectForKey:@"name"]];
+        //NSLog(@"first words name: %@", firstWordName);
     
-    NSLog(@"first words name: %@", firstWordName);
+    }
+    //NSLog(@"Names: %@", firstWordName);
+    
+    
+    int j;
+    for (j = 0; j<(latestWordlist.count); j++)
+    {
+        NSDictionary *wordname = [latestWordlist objectAtIndex:j];
+        [spellingpattern addObject:[wordname objectForKey:@"spelling_patterns"]];
+        //NSLog(@"spell patterns: %@", spellingpattern);
+    }
+    NSLog(@"spell patterns: %@", spellingpattern);
+
 }
 
 @end
