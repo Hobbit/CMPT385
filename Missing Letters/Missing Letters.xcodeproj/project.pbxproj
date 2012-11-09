@@ -39,6 +39,8 @@
 		83D09B211631CDBC00D96AE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B201631CDBC00D96AE7 /* Default@2x.png */; };
 		83D09B231631CDC000D96AE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B221631CDC000D96AE7 /* Default.png */; };
 		83D09B251631CDFF00D96AE7 /* MLInGame_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B241631CDFF00D96AE7 /* MLInGame_retina.png */; };
+		83D719C0164D836300A95EEE /* check2.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D719BF164D836300A95EEE /* check2.png */; };
+		83D719C3164D836900A95EEE /* redX.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D719C2164D836900A95EEE /* redX.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		83D09B201631CDBC00D96AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		83D09B221631CDC000D96AE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		83D09B241631CDFF00D96AE7 /* MLInGame_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLInGame_retina.png; sourceTree = "<group>"; };
+		83D719BF164D836300A95EEE /* check2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check2.png; sourceTree = "<group>"; };
+		83D719C2164D836900A95EEE /* redX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redX.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,8 @@
 				83D09B17163082A200D96AE7 /* MLIcon_regular.png */,
 				83D09B241631CDFF00D96AE7 /* MLInGame_retina.png */,
 				83D09B141630829F00D96AE7 /* MLIcon_retina.png */,
+				83D719C2164D836900A95EEE /* redX.png */,
+				83D719BF164D836300A95EEE /* check2.png */,
 				833E8518163AE57A004E350E /* GreenCheckbox.gif */,
 				833E8516163AE4F2004E350E /* MLAbout.png */,
 				83D09B221631CDC000D96AE7 /* Default.png */,
@@ -367,6 +373,8 @@
 				833E8517163AE4F2004E350E /* MLAbout.png in Resources */,
 				833E8519163AE57A004E350E /* GreenCheckbox.gif in Resources */,
 				833E8525163B2C9B004E350E /* wordlist.txt in Resources */,
+				83D719C0164D836300A95EEE /* check2.png in Resources */,
+				83D719C3164D836900A95EEE /* redX.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

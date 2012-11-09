@@ -700,7 +700,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="gQe-IX-fjQ"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="Mmt-1y-pPk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="agY-Qo-hh9">
@@ -715,7 +715,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="t9c-EH-rlK"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="ecs-Yv-DZV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="APk-qa-bcI">
@@ -730,7 +730,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="hkX-VW-ujR"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="jOC-hi-JUc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EXK-7b-jAV">
@@ -745,7 +745,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="vbl-UA-EYO"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="HJS-GH-Km3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Ap-i0-kwX">
@@ -760,7 +760,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="nvw-qt-0Sf"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="EXp-94-b5u"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ibk-mt-DW7">
@@ -775,7 +775,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="PzR-tk-dCE"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="eUO-qL-bp2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zgh-ti-RZA">
@@ -790,7 +790,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="Vfg-mn-kv0"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="oz7-hF-79Q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u7O-7T-yVY">
@@ -805,7 +805,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="InK-6k-BdO"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="3U1-lZ-AlR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2ep-d4-hAT">
@@ -820,7 +820,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="1M1-qX-dur"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="I6e-Oz-mFc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IBL-0s-2Qi">
@@ -835,7 +835,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="dyT-az-PlH"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="EMx-s6-F61"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ntZ-PS-P4U">
@@ -850,7 +850,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="Hkh-sa-Hxy"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="oSH-Tk-aF9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lrh-C3-Dup">
@@ -865,7 +865,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="zZh-3n-yPx"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="0aC-X3-p9i"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yrw-E0-1zu">
@@ -880,7 +880,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="mR1-oX-iBP"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="kbC-av-dE9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fNh-rK-6z2">
@@ -895,7 +895,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="tBM-92-xoi"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="G4a-54-XcN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nXh-mB-E0F">
@@ -910,7 +910,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="RqL-qk-FOy"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="SZI-dB-qtQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="prA-dX-xMv">
@@ -925,7 +925,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="yf4-QM-pMS"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="5FW-eE-3eY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="srn-SV-iIb">
@@ -940,7 +940,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="dFH-jH-T2S"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="4rP-oz-PVZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2cC-K2-UPz">
@@ -955,7 +955,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="CSC-bB-8tN"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="yw3-1w-TRT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uRI-pL-zfW">
@@ -970,7 +970,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="h8y-sG-LAP"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="CCG-eg-zRv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yRC-nZ-MOC">
@@ -985,7 +985,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="ocB-Yg-yJs"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="JXi-z7-cNw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="466-Wu-kqz">
@@ -1000,7 +1000,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="DmQ-I4-HI1"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="kDT-Sx-VIl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KIp-dl-XDd">
@@ -1015,7 +1015,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="mMO-Tk-Zc2"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="g5T-jl-Wm5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H6W-tk-mEi">
@@ -1030,7 +1030,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="wbH-Ey-ARv"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="LiD-tW-6js"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dzP-zt-673">
@@ -1045,7 +1045,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="7Je-2a-dVf"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="Mvk-aU-kRJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tHd-Aw-boi">
@@ -1060,7 +1060,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="bhK-h4-AuE"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="2Do-vt-8jE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bCQ-Al-GdX">
@@ -1075,7 +1075,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="keyPressed:" destination="2" eventType="touchUpInside" id="I49-a8-wDE"/>
+                                            <action selector="WS_keyPressed:" destination="2" eventType="touchUpInside" id="xf1-3I-AcJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xvb-RP-GsF">
@@ -1105,7 +1105,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="cancelInput:" destination="2" eventType="touchUpInside" id="2lU-2d-Ih8"/>
+                                            <action selector="WS_cancelInput:" destination="2" eventType="touchUpInside" id="cRQ-6F-gIr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1114,7 +1114,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ei4-kY-Duz"/>
                     <connections>
                         <outlet property="WS_Checkmark1" destination="37x-8v-c43" id="wv0-C8-rbL"/>
                         <outlet property="WS_Checkmark2" destination="LiX-ZL-o1j" id="3fD-ZK-kG9"/>
@@ -1136,7 +1135,7 @@
                         <outlet property="WS_ScrambledWordLabel6" destination="r8s-el-m39" id="Q0m-jR-Qas"/>
                         <outlet property="WS_TextEntry" destination="aRh-jr-V4Z" id="hXi-Mc-44F"/>
                         <outlet property="WS_TotalGuessLabel" destination="GNI-S5-040" id="oiE-Ji-sNB"/>
-                        <outlet property="keyboardView" destination="dKa-FN-Jby" id="2Qb-yr-fcN"/>
+                        <outlet property="WS_keyboardViewEN" destination="dKa-FN-Jby" id="5aV-Rj-6jv"/>
                         <segue destination="YW8-u0-KCz" kind="modal" identifier="levelComplete" id="Cyk-b2-L4n"/>
                     </connections>
                 </viewController>
@@ -1166,7 +1165,8 @@
             <relationships>
                 <relationship kind="action" name="PauseMenu:"/>
                 <relationship kind="action" name="WS_Submit:"/>
-                <relationship kind="action" name="backSpace:"/>
+                <relationship kind="action" name="WS_cancelInput:"/>
+                <relationship kind="action" name="WS_keyPressed:" candidateClass="UIButton"/>
                 <relationship kind="action" name="cancelInput:"/>
                 <relationship kind="action" name="enter:"/>
                 <relationship kind="action" name="keyPressed:" candidateClass="UIButton"/>
@@ -1191,7 +1191,7 @@
                 <relationship kind="outlet" name="WS_ScrambledWordLabel6" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="WS_TextEntry" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="WS_TotalGuessLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="keyboardView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="WS_keyboardViewEN" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="LevelCompleteViewController" superclassName="UIViewController">
