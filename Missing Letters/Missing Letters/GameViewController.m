@@ -43,11 +43,14 @@
 @synthesize ML_Checkmark5;
 @synthesize ML_Checkmark6;
 
-//Text box for user to input guesses
-@synthesize ML_TextEntry;
-
 //UI Label to display their number of guesses
 @synthesize ML_TotalGuessLabel;
+
+//Text box for user to input guesses
+@synthesize ML_TextEntry;
+@synthesize ML_keyboardViewEN;
+
+
 
 //Array to store the words randomly selected for the current game from the current word list
 NSArray *ML_currentGameList;
@@ -97,6 +100,17 @@ int ML_totalGuessCount = 0;
     //To open the pause menu
 }
 
+- (IBAction)ML_keyPressed:(UIButton *)sender
+{
+    NSString *character = sender.currentTitle;
+    ML_TextEntry.text = [ML_TextEntry.text stringByAppendingString:character];
+    
+}
+
+- (IBAction)ML_cancelInput:(id)sender
+{
+    ML_TextEntry.text = [NSString stringWithFormat:@""];
+}
 //Action when user presses the submit button 
 - (IBAction)ML_Submit:(id)sender
 {
@@ -215,7 +229,7 @@ int ML_totalGuessCount = 0;
     //generates the game
     [self ML_generateGame:ML_currentGameList];
     //displays the keyboard
-    [ML_TextEntry becomeFirstResponder];
+    //[ML_TextEntry becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

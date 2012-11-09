@@ -17,6 +17,7 @@
 
 //Text entry for use to input their guess
 @property (weak, nonatomic) IBOutlet UITextField *ML_TextEntry;
+@property (strong, nonatomic) IBOutlet UIView *ML_keyboardViewEN;
 
 //UI Labels for the words with the missing letters in the game
 @property (weak, nonatomic) IBOutlet UILabel *ML_MissingWordLabel1;
@@ -51,6 +52,10 @@
 - (NSArray *)ML_LoadWordlist;
 - (NSMutableArray *)ML_GetWordList:(NSArray *)inputWordList;
 - (void)ML_generateGame:(NSArray *)ML_inputWordList ;
+
+- (IBAction)ML_keyPressed:(UIButton *)sender;
+- (IBAction)ML_cancelInput:(id)sender;
+
 
 
 @end

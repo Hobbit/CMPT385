@@ -45,7 +45,7 @@
 
 //Text box for user to input guesses
 @synthesize WS_TextEntry;
-@synthesize keyboardView;
+@synthesize WS_keyboardViewEN;
 
 //UI Label to display their number of guesses
 @synthesize WS_TotalGuessLabel;
@@ -99,26 +99,17 @@ int WS_totalGuessCount = 0;
     //To open the pause menu
 }
 
-- (IBAction)keyPressed:(UIButton *)sender
+- (IBAction)WS_keyPressed:(UIButton *)sender
 {
     NSString *character = sender.currentTitle;
     WS_TextEntry.text = [WS_TextEntry.text stringByAppendingString:character];
 }
 
-- (IBAction)cancelInput:(id)sender
+- (IBAction)WS_cancelInput:(id)sender
 {
     WS_TextEntry.text = [NSString stringWithFormat:@""];
 }
 
-- (IBAction)backSpace:(id)sender{
-    NSString *backspace = WS_TextEntry.text;
-    int lengthOfString = backspace.length;
-    if (lengthOfString > 0)
-    {
-        backspace = [backspace substringToIndex:lengthOfString-1];
-    }
-    WS_TextEntry.text = backspace;
-}
 
 - (void)showKeyboard
 {
@@ -126,7 +117,7 @@ int WS_totalGuessCount = 0;
     [UIView setAnimationDuration:1.0];
     //CGRect keyboardViewRect = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
    // keyboardView.frame = keyboardViewRect;
-    keyboardView.alpha = 1.0;
+    WS_keyboardViewEN.alpha = 1.0;
     [UIView commitAnimations];
 }
 
@@ -136,7 +127,7 @@ int WS_totalGuessCount = 0;
     [UIView setAnimationDuration:1.0];
     //CGRect keyboardViewRect = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
    // keyboardView.frame = keyboardViewRect;
-    keyboardView.alpha = 1.0;
+    WS_keyboardViewEN.alpha = 1.0;
     [UIView commitAnimations];
 }
 
