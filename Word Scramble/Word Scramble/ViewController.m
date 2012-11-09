@@ -62,8 +62,12 @@ bool isFirstLoad = YES;
     
     NSArray* latestWordlist = [json objectForKey:@"words"];
     
-    NSLog(@"words: %@", latestWordlist);
+    //NSLog(@"words: %@", latestWordlist);
     
+    NSDictionary* wordtest = [latestWordlist objectAtIndex:1];
+    NSArray* firstWordName = [wordtest objectForKey:@"name"];
+    
+    NSLog(@"first words name: %@", firstWordName);
 }
 
 @end
