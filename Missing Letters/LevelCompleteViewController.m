@@ -10,6 +10,7 @@
 //
 
 #import "LevelCompleteViewController.h"
+#import "GameViewController.h"
 
 @interface LevelCompleteViewController ()
 
@@ -17,12 +18,17 @@
 
 @implementation LevelCompleteViewController
 
+//ML_totalGuessCount;
+
+
 //Nothing to go here yet, place holder for future versions
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

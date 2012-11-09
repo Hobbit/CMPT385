@@ -52,6 +52,7 @@
 
 
 
+
 //Array to store the words randomly selected for the current game from the current word list
 NSArray *ML_currentGameList;
 
@@ -61,8 +62,7 @@ NSMutableArray *ML_plainWordLabelArray;
 NSMutableArray *ML_checkmarkArray;
 
 //Intergers to keep track of the number of guesses total and the number current correct guesses
-int ML_correctGuessCount = 0;
-int ML_totalGuessCount = 0;
+
 
 //Initializes the arrays of UI objects and inserts the UI Objects
 - (void)initUIArrays
@@ -193,7 +193,7 @@ int ML_totalGuessCount = 0;
         }
         
         //If the current is not a duplicate
-        if (duplicate == NO)
+        if ((duplicate == NO) && ([inputWordList objectAtIndex:randIndex] != @""))
         {
             //add the current index to the selected index list
             [indexSelected addObject: [NSNumber numberWithInt:randIndex]];
@@ -222,8 +222,8 @@ int ML_totalGuessCount = 0;
     //initializes the arrays
 	[self initUIArrays];
     //zero's out score from previous games
-    ML_correctGuessCount = 0;
-    ML_totalGuessCount = 0;
+    self->ML_correctGuessCount = 0;
+    self->ML_totalGuessCount = 0;
     //gets wordlist for the game
     ML_currentGameList = [self ML_GetWordList:[self ML_LoadWordlist]];
     //generates the game
