@@ -16,6 +16,7 @@
 
 //Text entry for use to input their guess
 @property (weak, nonatomic) IBOutlet UITextField *WS_TextEntry;
+@property (strong, nonatomic) IBOutlet UIView *keyboardView;
 
 //UI Labels for the scrambled words in the game
 @property (weak, nonatomic) IBOutlet UILabel *WS_ScrambledWordLabel1;
@@ -51,6 +52,11 @@
 - (NSArray *)WS_LoadWordlist;
 - (void)WS_generateGame:(NSArray *)inputWordList ;
 
+- (IBAction)keyPressed:(UIButton *)sender;
+- (IBAction)cancelInput:(id)sender;
+- (IBAction)backSpace:(id)sender;
+- (IBAction)enter:(id)sender;
+- (IBAction)showKeyboard:(id)sender;
 
 @end
 

@@ -45,6 +45,7 @@
 
 //Text box for user to input guesses
 @synthesize WS_TextEntry;
+@synthesize keyboardView;
 
 //UI Label to display their number of guesses
 @synthesize WS_TotalGuessLabel;
@@ -95,6 +96,58 @@ int WS_totalGuessCount = 0;
     //This is intentionally left empty
     //Action done by the delegate
     //To open the pause menu
+}
+
+- (IBAction)keyPressed:(UIButton *)sender
+{
+    NSString *character = sender.currentTitle;
+    WS_TextEntry.text = [WS_TextEntry.text stringByAppendingString:character];
+}
+
+- (IBAction)cancelInput:(id)sender
+{
+    WS_TextEntry.text = [NSString stringWithFormat:@""];
+}
+
+- (IBAction)backSpace:(id)sender{
+    NSString *backspace = WS_TextEntry.text;
+    int lengthOfString = backspace.length;
+    if (lengthOfString > 0)
+    {
+        backspace = [backspace substringToIndex:lengthOfString-1];
+    }
+    WS_TextEntry.text = backspace;
+}
+
+- (void)showKeyboard
+{
+    [UIView beginAnimations:@"animateView" context:nil];
+    [UIView setAnimationDuration:1.0];
+    //CGRect keyboardViewRect = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+   // keyboardView.frame = keyboardViewRect;
+    keyboardView.alpha = 1.0;
+    [UIView commitAnimations];
+}
+
+- (void)hideKeyboard
+{
+    [UIView beginAnimations:@"animateView" context:nil];
+    [UIView setAnimationDuration:1.0];
+    //CGRect keyboardViewRect = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+   // keyboardView.frame = keyboardViewRect;
+    keyboardView.alpha = 1.0;
+    [UIView commitAnimations];
+}
+
+- (IBAction)enter:(id)sender
+{
+    [self hideKeyboard];
+    
+}
+
+- (IBAction)showKeyboard:(id)sender
+{
+    [self showKeyboard];
 }
 
 //Action when user presses the submit button
@@ -223,7 +276,7 @@ int WS_totalGuessCount = 0;
     //generates the game
     [self WS_generateGame:WS_currentGameList];
     //displays the keyboard
-    [WS_TextEntry becomeFirstResponder];
+    //[WS_TextEntry becomeFirstResponder];
 }
 
 - (void)viewDidUnload
