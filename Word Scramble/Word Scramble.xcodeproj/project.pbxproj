@@ -38,6 +38,8 @@
 		83D09B321631F9E800D96AE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B311631F9E800D96AE7 /* Default@2x.png */; };
 		83D09B341631F9F700D96AE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B331631F9F700D96AE7 /* Default.png */; };
 		83D09B361631FA0000D96AE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B351631FA0000D96AE7 /* Default-568h@2x.png */; };
+		83D719B3164C8BC400A95EEE /* check2.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D719B2164C8BC400A95EEE /* check2.png */; };
+		83D719B6164C8BFF00A95EEE /* redX.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D719B5164C8BFF00A95EEE /* redX.png */; };
 		83FB493415FD17DC000E3E57 /* wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FB493315FD17DC000E3E57 /* wordlist.txt */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		83D09B311631F9E800D96AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		83D09B331631F9F700D96AE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		83D09B351631FA0000D96AE7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		83D719B2164C8BC400A95EEE /* check2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check2.png; sourceTree = "<group>"; };
+		83D719B5164C8BFF00A95EEE /* redX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redX.png; sourceTree = "<group>"; };
 		83FB493315FD17DC000E3E57 /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wordlist.txt; path = "Word Scramble/wordlist.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				83110C391639CEFD00DAE62D /* GreenCheckbox.gif */,
+				83D719B2164C8BC400A95EEE /* check2.png */,
+				83D719B5164C8BFF00A95EEE /* redX.png */,
 				83D09B351631FA0000D96AE7 /* Default-568h@2x.png */,
 				83D09B331631F9F700D96AE7 /* Default.png */,
 				83D09B311631F9E800D96AE7 /* Default@2x.png */,
@@ -367,6 +373,8 @@
 				83D09B361631FA0000D96AE7 /* Default-568h@2x.png in Resources */,
 				83110C3A1639CEFD00DAE62D /* GreenCheckbox.gif in Resources */,
 				83110C3D1639D93500DAE62D /* bump_build_number.sh in Resources */,
+				83D719B3164C8BC400A95EEE /* check2.png in Resources */,
+				83D719B6164C8BFF00A95EEE /* redX.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
