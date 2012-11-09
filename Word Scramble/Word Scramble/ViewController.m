@@ -12,6 +12,9 @@
 #import "ViewController.h"
 #import "GameIO.h"
 
+//following lines for importing JSON file
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) 
+#define LatestsynPhonywordsURL [NSURL URLWithString: @"http://synphony.herokuapp.com/api/simplified/simple_english/words?focus=b&known=b,a,t,r,s"]
 
 @interface ViewController ()
 
@@ -26,10 +29,19 @@ bool isFirstLoad = YES;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     //Gets the current version and build of the app and displays on main menu
     versionLabel.text = [NSString stringWithFormat:@"Version %@ (Build %@)", [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
     if (isFirstLoad)
     {
+        
+        //importing JSON file
+        dispatch_async(kBgQueue, ^{ NSData* data = [NSData dataWithContentsOfURL:LatestsynPhonywordsURL];
+            [self performSelectorOnMainThread:@selector(fetchedData:)
+                                   withObject:data waitUntilDone:YES];
+        });
+        
+        
         [GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
         isFirstLoad = NO;
     }
@@ -39,6 +51,19 @@ bool isFirstLoad = YES;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)fetchedData:(NSData *)responseData
+{ //parse the JSON data
+    NSError* error;
+    NSDictionary* json = [NSJSONSerialization
+                          JSONObjectWithData:responseData
+                          options:kNilOptions error:&error];
+    
+    NSArray* latestWordlist = [json objectForKey:@"words"];
+    
+    NSLog(@"words: %@", latestWordlist);
+    
 }
 
 @end

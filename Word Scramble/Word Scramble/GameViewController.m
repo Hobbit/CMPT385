@@ -53,6 +53,7 @@
 //Array to store the words randomly selected for the current game from the current word list
 NSArray *WS_currentGameList;
 
+
 //Array to hold the UI objects so that we can access them iteratively
 NSMutableArray *WS_scrambledWordLabelArray;
 NSMutableArray *WS_plainWordLabelArray;
@@ -206,14 +207,31 @@ int WS_totalGuessCount = 0;
     return localRandomizedWord;
 }
 
+
+
 //Grabs the word list from the device memory and reads it into an array
 - (NSArray *)WS_LoadWordlist
 {
+    /*creates new JSON Parser
+    //SBJSON *parser = [[SBJSON alloc] init];
+    
+    //Prepares request to download JSON from synphony location
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://synphony.herokuapp.com/api/simplified/simple_english/words?focus=b&known=b,a,t,r,s"]];
+    
+    //Perform request and get JSON back as a NSData object
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    //Get JSON as a NSString from NSData response
+    NSString *json_string = [[NSString alloc] initWithData: response encoding:NSUTF8StringEncoding];
+    */
+    
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
     NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
     NSArray *localWords = [contents componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     return localWords;
 }
+ 
 
 //Takes the array that contains the words from the word list file and choses 6 and creates a wordlist for the specific game instance
 - (NSMutableArray *)WS_GetWordList:(NSArray *)inputWordList
