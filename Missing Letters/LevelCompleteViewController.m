@@ -18,6 +18,7 @@
 
 @implementation LevelCompleteViewController
 
+@synthesize ML_levelCompleteGradeLabel;
 //ML_totalGuessCount;
 
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    ML_levelCompleteGradeLabel.text;
 	// Do any additional setup after loading the view.
     
     
@@ -37,4 +39,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setML_levelCompleteGradeLabel:nil];
+    [super viewDidUnload];
+}
 @end

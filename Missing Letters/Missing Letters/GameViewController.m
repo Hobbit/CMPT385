@@ -222,8 +222,8 @@ NSMutableArray *ML_checkmarkArray;
     //initializes the arrays
 	[self initUIArrays];
     //zero's out score from previous games
-    self->ML_correctGuessCount = 0;
-    self->ML_totalGuessCount = 0;
+    ML_correctGuessCount = 0;
+    ML_totalGuessCount = 0;
     //gets wordlist for the game
     ML_currentGameList = [self ML_GetWordList:[self ML_LoadWordlist]];
     //generates the game

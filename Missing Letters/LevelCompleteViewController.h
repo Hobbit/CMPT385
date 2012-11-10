@@ -14,5 +14,6 @@
 @interface LevelCompleteViewController : UIViewController
 
 //Place Holder
+@property (weak, nonatomic) IBOutlet UILabel *ML_levelCompleteGradeLabel;
 
 @end

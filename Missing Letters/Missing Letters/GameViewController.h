@@ -18,6 +18,9 @@
     int ML_correctGuessCount;
 }
 
+@property (nonatomic)int ML_totalGuessCount;
+@property (nonatomic)int ML_correctGuessCount;
+
 //Text entry for use to input their guess
 @property (weak, nonatomic) IBOutlet UITextField *ML_TextEntry;
 @property (strong, nonatomic) IBOutlet UIView *ML_keyboardViewEN;
