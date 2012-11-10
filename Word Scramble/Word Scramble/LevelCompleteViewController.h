@@ -13,6 +13,11 @@
 
 @interface LevelCompleteViewController : UIViewController
 
-//Place Holder
+
+@property (strong,nonatomic)NSString *WS_importTotalGuessCount;
+@property (strong,nonatomic)NSString *WS_importCorrectGuessCount;
+
+@property (weak, nonatomic) IBOutlet UIImageView *WS_starImageView;
+@property (weak, nonatomic) IBOutlet UILabel *WS_letterGradeView;
 
 @end

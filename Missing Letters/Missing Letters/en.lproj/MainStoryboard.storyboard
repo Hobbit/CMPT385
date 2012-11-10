@@ -1137,7 +1137,7 @@
                                     <segue destination="2" kind="modal" id="0Og-yE-kV0"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="5star.png" id="FxX-Fj-H7N">
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="nostar.png" id="FxX-Fj-H7N">
                                 <rect key="frame" x="10" y="162" width="301" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1163,16 +1163,79 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5star.png" width="299" height="57"/>
         <image name="Default@2x.png" width="640" height="960"/>
         <image name="GreenCheckbox.gif" width="32" height="28"/>
         <image name="MLAbout.png" width="641" height="961"/>
         <image name="MLInGame_retina.png" width="640" height="960"/>
         <image name="check2.png" width="60" height="76"/>
         <image name="githubButton.png" width="404" height="156"/>
+        <image name="nostar.png" width="81" height="57"/>
         <image name="redX.png" width="61" height="65"/>
         <image name="redpanda.png" width="361" height="359"/>
     </resources>
+    <classes>
+        <class className="GameSettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameSettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="manualUpdate:"/>
+            </relationships>
+        </class>
+        <class className="GameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ML_PauseMenu:"/>
+                <relationship kind="action" name="ML_Submit:"/>
+                <relationship kind="action" name="ML_cancelInput:"/>
+                <relationship kind="action" name="ML_keyPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ML_Checkmark1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark5" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_Checkmark6" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_MissingWordLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_PlainWordLabel6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_TextEntry" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ML_TotalGuessLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_keyboardViewEN" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="LevelCompleteViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LevelCompleteViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ML_letterGradeView" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ML_starImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="PauseMenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PauseMenuViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="returnToGame:"/>
+            </relationships>
+        </class>
+        <class className="TRPViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TRPViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="viewGitHub:"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="versionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

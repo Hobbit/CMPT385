@@ -428,11 +428,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level Complete!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sV1-UT-G7a">
-                                <rect key="frame" x="54" y="76" width="213" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level Complete!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wv1-Wc-s7t">
+                                <rect key="frame" x="54" y="20" width="213" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="nostar.png" id="zOg-cg-19G">
+                                <rect key="frame" x="10" y="162" width="301" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O06-ic-z3i">
+                                <rect key="frame" x="105" y="86" width="111" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                <color key="textColor" red="1" green="0.79060712710000003" blue="0.34272485580000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5p1-zh-D2S">
@@ -447,7 +458,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="wey-uG-Q50"/>
+                                    <segue destination="2" kind="modal" identifier="" modalTransitionStyle="crossDissolve" id="wey-uG-Q50"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kHj-uC-Sio">
@@ -469,10 +480,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="WS_letterGradeView" destination="O06-ic-z3i" id="5FN-Mh-SWM"/>
+                        <outlet property="WS_starImageView" destination="zOg-cg-19G" id="7uX-3H-9qP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Vi-6O-lBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606" y="173"/>
+            <point key="canvasLocation" x="704" y="158"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="5">
@@ -487,11 +502,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="aRh-jr-V4Z">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="aRh-jr-V4Z">
                                 <rect key="frame" x="20" y="224" width="280" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="84d-XE-Ptp">
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
@@ -1136,7 +1151,7 @@
                         <outlet property="WS_TextEntry" destination="aRh-jr-V4Z" id="hXi-Mc-44F"/>
                         <outlet property="WS_TotalGuessLabel" destination="GNI-S5-040" id="oiE-Ji-sNB"/>
                         <outlet property="WS_keyboardViewEN" destination="dKa-FN-Jby" id="5aV-Rj-6jv"/>
-                        <segue destination="YW8-u0-KCz" kind="modal" identifier="levelComplete" id="Cyk-b2-L4n"/>
+                        <segue destination="YW8-u0-KCz" kind="modal" identifier="WS_levelComplete" id="Cyk-b2-L4n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -1150,6 +1165,7 @@
         <image name="WSInGame_retina.png" width="640" height="960"/>
         <image name="check2.png" width="60" height="76"/>
         <image name="githubButton.png" width="404" height="156"/>
+        <image name="nostar.png" width="81" height="57"/>
         <image name="redX.png" width="61" height="65"/>
         <image name="redpanda.png" width="361" height="359"/>
     </resources>
@@ -1167,9 +1183,7 @@
                 <relationship kind="action" name="WS_Submit:"/>
                 <relationship kind="action" name="WS_cancelInput:"/>
                 <relationship kind="action" name="WS_keyPressed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="cancelInput:"/>
                 <relationship kind="action" name="enter:"/>
-                <relationship kind="action" name="keyPressed:" candidateClass="UIButton"/>
                 <relationship kind="action" name="showKeyboard:"/>
                 <relationship kind="outlet" name="WS_Checkmark1" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="WS_Checkmark2" candidateClass="UIImageView"/>
@@ -1196,6 +1210,10 @@
         </class>
         <class className="LevelCompleteViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LevelCompleteViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="WS_letterGradeView" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WS_starImageView" candidateClass="UIImageView"/>
+            </relationships>
         </class>
         <class className="PauseMenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PauseMenuViewController.h"/>
@@ -1222,7 +1240,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="nuJ-CK-Ipf"/>
         <segue reference="wey-uG-Q50"/>
-        <segue reference="Az2-r3-OMq"/>
     </inferredMetricsTieBreakers>
 </document>

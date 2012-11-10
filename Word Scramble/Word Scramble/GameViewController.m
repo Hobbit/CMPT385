@@ -167,7 +167,7 @@ int WS_totalGuessCount = 0;
                 if (WS_correctGuessCount >= 6)
                 {
                     //if the number of correct guesses is equal to or greater than 6, go to level complete screen
-                    [self performSegueWithIdentifier:@"levelComplete" sender:self];
+                    [self performSegueWithIdentifier:@"WS_levelComplete" sender:self];
                 }
             }
         }
@@ -178,6 +178,15 @@ int WS_totalGuessCount = 0;
     WS_TextEntry.text = @"";
     //Update the total guess counter label
     WS_TotalGuessLabel.text = [NSString stringWithFormat:@"%d",WS_totalGuessCount];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"WS_levelComplete"]) {
+        LevelCompleteViewController *destViewController = segue.destinationViewController;
+        destViewController.WS_importTotalGuessCount = [NSString stringWithFormat:@"%d",WS_totalGuessCount];
+        destViewController.WS_importCorrectGuessCount = [NSString stringWithFormat:@"%d",WS_correctGuessCount];
+        
+    }
 }
 
 //This function takes the a word and randomly scrambles it
