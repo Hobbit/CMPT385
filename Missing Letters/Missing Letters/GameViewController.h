@@ -13,13 +13,7 @@
 #import "PauseMenuProtocol.h"
 
 @interface GameViewController : UIViewController <PauseMenuProtocol, UIAlertViewDelegate>
-{
-    int ML_totalGuessCount;
-    int ML_correctGuessCount;
-}
 
-@property (nonatomic)int ML_totalGuessCount;
-@property (nonatomic)int ML_correctGuessCount;
 
 //Text entry for use to input their guess
 @property (weak, nonatomic) IBOutlet UITextField *ML_TextEntry;

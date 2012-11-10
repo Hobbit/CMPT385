@@ -62,7 +62,8 @@ NSMutableArray *ML_plainWordLabelArray;
 NSMutableArray *ML_checkmarkArray;
 
 //Intergers to keep track of the number of guesses total and the number current correct guesses
-
+int ML_totalGuessCount = 0;
+int ML_correctGuessCount = 0;
 
 //Initializes the arrays of UI objects and inserts the UI Objects
 - (void)initUIArrays
@@ -111,6 +112,9 @@ NSMutableArray *ML_checkmarkArray;
 {
     ML_TextEntry.text = [NSString stringWithFormat:@""];
 }
+
+
+
 //Action when user presses the submit button 
 - (IBAction)ML_Submit:(id)sender
 {
@@ -138,6 +142,7 @@ NSMutableArray *ML_checkmarkArray;
                 {
                     //if the number of correct guesses is equal to or greater than 6, go to level complete screen
                     [self performSegueWithIdentifier:@"ML_levelComplete" sender:self];
+
                 }
             }
         }
@@ -150,6 +155,14 @@ NSMutableArray *ML_checkmarkArray;
     ML_TotalGuessLabel.text = [NSString stringWithFormat:@"%d",ML_totalGuessCount];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ML_levelComplete"]) {
+        LevelCompleteViewController *destViewController = segue.destinationViewController;
+        destViewController.ML_importTotalGuessCount = [NSString stringWithFormat:@"%d",ML_totalGuessCount];
+        destViewController.ML_importCorrectGuessCount = [NSString stringWithFormat:@"%d",ML_correctGuessCount];
+
+    }
+}
 
 //This function takes the a word and randomly blanks out one of the letters
 - (NSMutableString *)ML_BlankOutWord:(NSString *)localCurrentWord
@@ -230,6 +243,7 @@ NSMutableArray *ML_checkmarkArray;
     [self ML_generateGame:ML_currentGameList];
     //displays the keyboard
     //[ML_TextEntry becomeFirstResponder];
+    
 }
 
 - (void)didReceiveMemoryWarning

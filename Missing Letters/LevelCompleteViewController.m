@@ -18,8 +18,11 @@
 
 @implementation LevelCompleteViewController
 
-@synthesize ML_levelCompleteGradeLabel;
-//ML_totalGuessCount;
+@synthesize ML_importCorrectGuessCount;
+@synthesize ML_importTotalGuessCount;
+@synthesize ML_starImageView;
+@synthesize ML_letterGradeView;
+
 
 
 //Nothing to go here yet, place holder for future versions
@@ -27,9 +30,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ML_levelCompleteGradeLabel.text;
-	// Do any additional setup after loading the view.
-    
+    switch ((int)([ML_importCorrectGuessCount floatValue]/([ML_importTotalGuessCount floatValue]+1)*110))
+    {
+        case 88 ... 1000:
+            ML_letterGradeView.text = @"A";
+            ML_starImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"5star" ofType:@"png"]];
+            break;
+        case 75 ... 87:
+            ML_letterGradeView.text = @"B";
+            ML_starImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"4star" ofType:@"png"]];
+            break;
+        case 63 ... 74:
+            ML_letterGradeView.text = @"C";
+            ML_starImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3star" ofType:@"png"]];
+            break;
+        case 50 ... 62:
+            ML_letterGradeView.text = @"D";
+            ML_starImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"2star" ofType:@"png"]];
+            break;
+        case 26 ... 49:
+            ML_letterGradeView.text = @"F";
+            ML_starImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"1star" ofType:@"png"]];
+            break;
+        case -1000 ... 25:
+            ML_letterGradeView.text = @"F";
+            ML_starImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"nostar" ofType:@"png"]];
+            break;
+            
+        default:
+            ML_starImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"null" ofType:@"png"]];
+            break;
+    }    
     
 }
 
@@ -40,7 +71,8 @@
 }
 
 - (void)viewDidUnload {
-    [self setML_levelCompleteGradeLabel:nil];
+    [self setML_starImageView:nil];
+    [self setML_letterGradeView:nil];
     [super viewDidUnload];
 }
 @end
