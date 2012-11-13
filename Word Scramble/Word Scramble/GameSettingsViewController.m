@@ -21,7 +21,8 @@
 
 - (IBAction)manualUpdate:(id)sender
 {
-    [GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
+    
+    [GameIO getCurrentTextListFrom:@"http://thehhd.com/CMPT385/accounts/" forUser:@"test_user" remoteFilename:@"/wordlist.txt"];
 }
 
 - (void)viewDidLoad

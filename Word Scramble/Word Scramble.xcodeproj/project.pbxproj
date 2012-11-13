@@ -28,6 +28,7 @@
 		832E2BFC163F424B00EC95C1 /* GameSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */; };
 		837FD92516304BE6003F89FA /* WSIcon_regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92416304BE6003F89FA /* WSIcon_regular.png */; };
 		837FD92716304BEB003F89FA /* WSIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92616304BEB003F89FA /* WSIcon_retina.png */; };
+		83949E161652476200CC6624 /* wordlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 83949E151652476200CC6624 /* wordlist.json */; };
 		8394D152162B4C2400FC6576 /* PauseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D14F162B4C2400FC6576 /* PauseMenuViewController.m */; };
 		8394D153162B4C2400FC6576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D151162B4C2400FC6576 /* ViewController.m */; };
 		8394D157162B4C4800FC6576 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D156162B4C4800FC6576 /* TRPViewController.m */; };
@@ -90,6 +91,7 @@
 		832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameSettingsViewController.m; path = "Word Scramble/GameSettingsViewController.m"; sourceTree = "<group>"; };
 		837FD92416304BE6003F89FA /* WSIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_regular.png; sourceTree = "<group>"; };
 		837FD92616304BEB003F89FA /* WSIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_retina.png; sourceTree = "<group>"; };
+		83949E151652476200CC6624 /* wordlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wordlist.json; sourceTree = "<group>"; };
 		8394D14E162B4C2400FC6576 /* PauseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenuViewController.h; path = "Word Scramble/PauseMenuViewController.h"; sourceTree = "<group>"; };
 		8394D14F162B4C2400FC6576 /* PauseMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseMenuViewController.m; path = "Word Scramble/PauseMenuViewController.m"; sourceTree = "<group>"; };
 		8394D150162B4C2400FC6576 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Word Scramble/ViewController.h"; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		830BB74D160EE01A009BC210 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				83949E151652476200CC6624 /* wordlist.json */,
 				83FB493315FD17DC000E3E57 /* wordlist.txt */,
 			);
 			name = Data;
@@ -399,6 +402,7 @@
 				83D71A0D164E2B5700A95EEE /* 2star.png in Resources */,
 				83D71A0E164E2B5700A95EEE /* 1star.png in Resources */,
 				83D71A0F164E2B5700A95EEE /* nostar.png in Resources */,
+				83949E161652476200CC6624 /* wordlist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

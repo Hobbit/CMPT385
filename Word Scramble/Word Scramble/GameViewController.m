@@ -9,9 +9,10 @@
 //  http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html
 //
 
+#import "GameIO.h"
 #import "GameViewController.h"
 #import "LevelCompleteViewController.h"
-
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) 
 
 @interface GameViewController ()
 
@@ -51,13 +52,16 @@
 @synthesize WS_TotalGuessLabel;
 
 //Array to store the words randomly selected for the current game from the current word list
-NSArray *WS_currentGameList;
+NSMutableArray *WS_currentGameWordList;
+NSMutableArray *WS_currentGameSpellingList;
 
 
 //Array to hold the UI objects so that we can access them iteratively
 NSMutableArray *WS_scrambledWordLabelArray;
 NSMutableArray *WS_plainWordLabelArray;
 NSMutableArray *WS_checkmarkArray;
+NSMutableArray *WS_wordsArray;
+NSMutableArray *WS_spellingPatternArray;
 
 //Intergers to keep track of the number of guesses total and the number current correct guesses
 int WS_correctGuessCount = 0;
@@ -66,6 +70,11 @@ int WS_totalGuessCount = 0;
 //Initializes the arrays of UI objects and inserts the UI Objects
 -(void)initUIArrays
 {
+    WS_currentGameSpellingList = [[NSMutableArray alloc] init];
+    WS_currentGameWordList = [[NSMutableArray alloc] init];
+    WS_wordsArray = [[NSMutableArray alloc] init];
+    WS_spellingPatternArray = [[NSMutableArray alloc] init];
+    
     WS_scrambledWordLabelArray = [[NSMutableArray alloc] init];
     [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel1 atIndex:0];
     [WS_scrambledWordLabelArray insertObject:WS_ScrambledWordLabel2 atIndex:1];
@@ -152,14 +161,14 @@ int WS_totalGuessCount = 0;
     else
     {
         //If the input is not empty
-        for (int i = 0; i < WS_currentGameList.count; i++)
+        for (int i = 0; i < WS_currentGameWordList.count; i++)
         {
             //check the the input againt the word list for the current game
-            if ([WS_TextEntry.text.uppercaseString isEqualToString:[[WS_currentGameList objectAtIndex:i] uppercaseString]])
+            if ([WS_TextEntry.text.uppercaseString isEqualToString:[[WS_currentGameWordList objectAtIndex:i] uppercaseString]])
             {
                 //If the words match:
                 //Check the plainword label from ????? to the correct word
-                [[WS_plainWordLabelArray objectAtIndex:i] setText:[WS_currentGameList objectAtIndex:i]];
+                [[WS_plainWordLabelArray objectAtIndex:i] setText:[WS_currentGameWordList objectAtIndex:i]];
                 //Display the green checkmark
                 [[WS_checkmarkArray objectAtIndex:i] setHidden:NO];
                 //Increase the correct guess counter
@@ -190,42 +199,54 @@ int WS_totalGuessCount = 0;
 }
 
 //This function takes the a word and randomly scrambles it
-- (NSMutableString *)WS_ScrambleWord:(NSString *)localCurrentWord
+- (NSString *)WS_ScrambleWord:(NSMutableArray *)inputCurrentSpelling atComplexity:(int)complexityLevel
 {
-    NSMutableString *localRandomizedWord = [NSMutableString stringWithString:localCurrentWord];
-    
-    NSString *buffer;
+    NSMutableArray *localCurrentSpelling = [inputCurrentSpelling mutableCopy];
+    NSMutableString *localRandomizedWord = [[NSMutableString alloc] init];
+    int i = 0;
     //performs randomizing on each letter in the word
-    for (NSInteger i = localRandomizedWord.length - 1, j; i >= 0; i--)
+    if (localCurrentSpelling.count == 2)
     {
-        j = arc4random() % (i + 1);
-        
-        buffer = [localRandomizedWord substringWithRange:NSMakeRange(i, 1)];
-        [localRandomizedWord replaceCharactersInRange:NSMakeRange(i, 1) withString:[localRandomizedWord substringWithRange:NSMakeRange(j, 1)]];
-        [localRandomizedWord replaceCharactersInRange:NSMakeRange(j, 1) withString:buffer];
+        [localCurrentSpelling exchangeObjectAtIndex:0 withObjectAtIndex:1];
     }
-    return localRandomizedWord;
+    else
+    {
+        while(i < complexityLevel)
+        {
+            int randIndex1 = arc4random() % (localCurrentSpelling.count - 1);
+            int randIndex2 = arc4random() % (localCurrentSpelling.count - 1);
+            if (randIndex1 != randIndex2)
+            {
+                [localCurrentSpelling exchangeObjectAtIndex:randIndex1 withObjectAtIndex:randIndex2];
+                i++;
+            }
+        }
+    }
+    for (int i = 0; i < localCurrentSpelling.count; i++) {
+        [localRandomizedWord stringByAppendingString:[NSString stringWithFormat:@"%@",[localCurrentSpelling objectAtIndex:i]]];
+        
+    }
+    //NSLog(@"test: %@", localRandomizedWord);
+    //return localRandomizedWord;
+    return [[localCurrentSpelling valueForKey:@"description"] componentsJoinedByString:@""];
 }
 
-
-
+- (void) WS_loadGameData
+{
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"json"];
+    //dispatch_async(kBgQueue, ^{
+      //  [self performSelectorOnMainThread:@selector(WS_localGameDataFromJSON:) withObject:filepath waitUntilDone:YES];
+       // NSLog(@"WordList: %@",WS_wordsArray);
+        //NSData* data = [NSData dataWithContentsOfFile:filepath];
+        //[self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
+        
+   // });
+    [GameIO gameDataFromJSON:filepath outputWordsTo:WS_wordsArray outputSpellingsTo:WS_spellingPatternArray];
+    
+}
 //Grabs the word list from the device memory and reads it into an array
 - (NSArray *)WS_LoadWordlist
-{
-    /*creates new JSON Parser
-    //SBJSON *parser = [[SBJSON alloc] init];
-    
-    //Prepares request to download JSON from synphony location
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://synphony.herokuapp.com/api/simplified/simple_english/words?focus=b&known=b,a,t,r,s"]];
-    
-    //Perform request and get JSON back as a NSData object
-    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    
-    //Get JSON as a NSString from NSData response
-    NSString *json_string = [[NSString alloc] initWithData: response encoding:NSUTF8StringEncoding];
-    */
-    
-    
+{    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
     NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
     NSArray *localWords = [contents componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
@@ -234,12 +255,12 @@ int WS_totalGuessCount = 0;
  
 
 //Takes the array that contains the words from the word list file and choses 6 and creates a wordlist for the specific game instance
-- (NSMutableArray *)WS_GetWordList:(NSArray *)inputWordList
+- (void)WS_buildCurrentGameDataFrom:(NSMutableArray *)inputWordList :(NSMutableArray *)inputSpellingList to:(NSMutableArray *)outputCurrentWords :(NSMutableArray *)outputCurrentSpellings
 {
     //Array to tack the indexes that have already been selected to avoid duplicates
     NSMutableArray *indexSelected = [[NSMutableArray alloc] init];
     //Array to locally generate the list of words before exporting from the function
-    NSMutableArray *localExportList = [[NSMutableArray alloc] init];
+    //NSMutableArray *localExportList = [[NSMutableArray alloc] init];
     int i = 0;
     
     while (i < 6)
@@ -263,20 +284,22 @@ int WS_totalGuessCount = 0;
             //add the current index to the selected index list
             [indexSelected addObject: [NSNumber numberWithInt:randIndex]];
             //add the word at the current index to the local word list to be exported
-            [localExportList addObject:[inputWordList objectAtIndex:randIndex]];
+            [outputCurrentWords addObject:[inputWordList objectAtIndex:randIndex]];
+            [outputCurrentSpellings addObject:[inputSpellingList objectAtIndex:randIndex]];
+            
             i++;
         }
     }
-    //return generated list for the current game
-    return localExportList;
 }
 
 //Generates the game by loading up the labels with words selected for the game by blanking them out then modifying the label which displays them
--(void)WS_generateGame:(NSArray *)inputWordList
+-(void)WS_generateGame:(NSMutableArray *)inputWordList
 {
-    for (NSUInteger i = 0; i < [WS_currentGameList count]; i++)
+    for (NSUInteger i = 0; i < [WS_currentGameSpellingList count]; i++)
     {
-        [[WS_scrambledWordLabelArray objectAtIndex:i] setText:[self WS_ScrambleWord:[inputWordList objectAtIndex:i]]];
+        NSString *localWord = [self WS_ScrambleWord:[inputWordList objectAtIndex:i] atComplexity:5];
+        NSLog(@"%@", localWord);
+        [[WS_scrambledWordLabelArray objectAtIndex:i] setText: localWord];
     }
 }
 
@@ -286,15 +309,15 @@ int WS_totalGuessCount = 0;
     [super viewDidLoad];
     //initializes the arrays
     [self initUIArrays];
+    [self WS_loadGameData];
     //zero's out score from previous games
     WS_correctGuessCount = 0;
     WS_totalGuessCount = 0;
     //gets wordlist for the game
-    WS_currentGameList = [self WS_GetWordList:[self WS_LoadWordlist]];
+    [self WS_buildCurrentGameDataFrom:WS_wordsArray :WS_spellingPatternArray to:WS_currentGameWordList :WS_currentGameSpellingList];
     //generates the game
-    [self WS_generateGame:WS_currentGameList];
-    //displays the keyboard
-    //[WS_TextEntry becomeFirstResponder];
+   [self WS_generateGame:WS_currentGameSpellingList];
+
 }
 
 - (void)viewDidUnload

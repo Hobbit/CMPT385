@@ -26,7 +26,7 @@
 
 bool isFirstLoad = YES;
 NSMutableArray *firstWordName;
-NSMutableArray *spellingpattern;
+NSMutableArray *spellingPattern;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,13 +37,11 @@ NSMutableArray *spellingpattern;
     {
         
         //importing JSON file
-        dispatch_async(kBgQueue, ^{ NSData* data = [NSData dataWithContentsOfURL:LatestsynPhonywordsURL];
-            [self performSelectorOnMainThread:@selector(fetchedData:)
-                                   withObject:data waitUntilDone:YES];
-        });
         
         
-        //[GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
+        [GameIO getCurrentJSONListFrom:@"http://thehhd.com/CMPT385/accounts/" forUser:@"test_user" remoteFilename:@"wordlist.json"];
+        
+        //[GameIO getCurrentTestList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
         isFirstLoad = NO;
     }
 }
@@ -54,39 +52,6 @@ NSMutableArray *spellingpattern;
     // Dispose of any resources that can be recreated.
 }
 
-- (void)fetchedData:(NSData *)responseData
-{ //parse the JSON data
-    firstWordName =[[NSMutableArray alloc]init];
-    spellingpattern = [[NSMutableArray alloc]init];
-    NSError *error;
-    NSDictionary *json = [NSJSONSerialization
-                          JSONObjectWithData:responseData
-                          options:kNilOptions error:&error];
-    
-    NSArray* latestWordlist = [json objectForKey:@"words"];
-    
-    //NSLog(@"words: %@", latestWordlist);
-    int i;
-    for (i = 0; i<(latestWordlist.count); i++)
-    {
-    
-        NSDictionary *wordname = [latestWordlist objectAtIndex:i];
-        [firstWordName addObject:[wordname objectForKey:@"name"]];
-        //NSLog(@"first words name: %@", firstWordName);
-    
-    }
-    //NSLog(@"Names: %@", firstWordName);
-    
-    
-    int j;
-    for (j = 0; j<(latestWordlist.count); j++)
-    {
-        NSDictionary *wordname = [latestWordlist objectAtIndex:j];
-        [spellingpattern addObject:[wordname objectForKey:@"spelling_patterns"]];
-        //NSLog(@"spell patterns: %@", spellingpattern);
-    }
-    NSLog(@"spell patterns: %@", spellingpattern);
 
-}
 
 @end

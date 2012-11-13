@@ -54,8 +54,7 @@
 
 - (IBAction)WS_keyPressed:(UIButton *)sender;
 - (IBAction)WS_cancelInput:(id)sender;
-- (IBAction)enter:(id)sender;
-- (IBAction)showKeyboard:(id)sender;
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
