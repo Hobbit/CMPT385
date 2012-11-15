@@ -101,6 +101,7 @@
 		8394D1DD162B509700FC6576 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = "Missing Letters/Config.xcconfig"; sourceTree = "<group>"; };
 		8394D1DE162B562700FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpanda.png; sourceTree = "<group>"; };
 		8394D1E0162B5B9000FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
+		83CE204316559A9600DC4ACC /* Missing Letters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Missing Letters.entitlements"; path = "Missing Letters/Missing Letters.entitlements"; sourceTree = "<group>"; };
 		83D09B141630829F00D96AE7 /* MLIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_retina.png; sourceTree = "<group>"; };
 		83D09B17163082A200D96AE7 /* MLIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_regular.png; sourceTree = "<group>"; };
 		83D09B201631CDBC00D96AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 		835C19C0162A9DE10097FA98 = {
 			isa = PBXGroup;
 			children = (
+				83CE204316559A9600DC4ACC /* Missing Letters.entitlements */,
 				8394D140162B410B00FC6576 /* Classes */,
 				8394D145162B413200FC6576 /* Resources */,
 				835C19D6162A9DE10097FA98 /* Supporting Files */,
@@ -559,6 +561,7 @@
 		835C1A05162A9DE10097FA98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Missing Letters/Missing Letters.entitlements";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Missing Letters/Missing Letters-Prefix.pch";
 				INFOPLIST_FILE = "Missing Letters/Missing Letters-Info.plist";
@@ -571,6 +574,7 @@
 		835C1A06162A9DE10097FA98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Missing Letters/Missing Letters.entitlements";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Missing Letters/Missing Letters-Prefix.pch";
 				INFOPLIST_FILE = "Missing Letters/Missing Letters-Info.plist";
