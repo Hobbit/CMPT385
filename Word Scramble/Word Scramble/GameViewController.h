@@ -47,10 +47,11 @@
 
 //Declare the methods
 - (void)initUIArrays;
-- (NSMutableString *)WS_ScrambleWord:(NSString *)localCurrentWord;
-- (NSMutableArray *)WS_GetWordList:(NSArray *)inputWordList;
+- (NSString *)WS_ScrambleWord:(NSMutableArray *)inputCurrentSpelling atComplexity:(int)complexityLevel;
 - (NSArray *)WS_LoadWordlist;
-- (void)WS_generateGame:(NSArray *)inputWordList ;
+- (void) WS_loadGameData;
+- (void)WS_buildCurrentGameDataFrom:(NSMutableArray *)inputWordList :(NSMutableArray *)inputSpellingList to:(NSMutableArray *)outputCurrentWords :(NSMutableArray *)outputCurrentSpellings;
+- (void)WS_generateGame:(NSMutableArray *)inputWordList ;
 
 - (IBAction)WS_keyPressed:(UIButton *)sender;
 - (IBAction)WS_cancelInput:(id)sender;

@@ -17,7 +17,23 @@
 @end
 
 @implementation GameSettingsViewController
+@synthesize WS_password;
+@synthesize WS_username;
 
+- (IBAction)WS_doneButton:(id)sender
+{
+    NSUserDefaults *userPreferences = [NSUserDefaults standardUserDefaults];
+    if (![WS_username.text isEqualToString:[userPreferences stringForKey:@"username"]])
+    {
+        [userPreferences setObject:WS_username.text forKey:@"username"];
+    }
+    if (![WS_password.text isEqualToString:[userPreferences stringForKey:@"password"]])
+    {
+        [userPreferences setObject:WS_password.text forKey:@"password"];
+    }
+
+    [self performSegueWithIdentifier:@"WS_SettingsDone" sender:self];
+}
 
 - (IBAction)manualUpdate:(id)sender
 {
@@ -29,7 +45,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    WS_username.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"username"];
+    WS_password.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"password"];
+
 }
+
 
 - (void)didReceiveMemoryWarning
 {

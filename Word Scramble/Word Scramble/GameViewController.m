@@ -120,36 +120,7 @@ int WS_totalGuessCount = 0;
 }
 
 
-- (void)showKeyboard
-{
-    [UIView beginAnimations:@"animateView" context:nil];
-    [UIView setAnimationDuration:1.0];
-    //CGRect keyboardViewRect = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
-   // keyboardView.frame = keyboardViewRect;
-    WS_keyboardViewEN.alpha = 1.0;
-    [UIView commitAnimations];
-}
 
-- (void)hideKeyboard
-{
-    [UIView beginAnimations:@"animateView" context:nil];
-    [UIView setAnimationDuration:1.0];
-    //CGRect keyboardViewRect = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
-   // keyboardView.frame = keyboardViewRect;
-    WS_keyboardViewEN.alpha = 1.0;
-    [UIView commitAnimations];
-}
-
-- (IBAction)enter:(id)sender
-{
-    [self hideKeyboard];
-    
-}
-
-- (IBAction)showKeyboard:(id)sender
-{
-    [self showKeyboard];
-}
 
 //Action when user presses the submit button
 - (IBAction)WS_Submit:(id)sender
@@ -226,23 +197,13 @@ int WS_totalGuessCount = 0;
         [localRandomizedWord stringByAppendingString:[NSString stringWithFormat:@"%@",[localCurrentSpelling objectAtIndex:i]]];
         
     }
-    //NSLog(@"test: %@", localRandomizedWord);
-    //return localRandomizedWord;
     return [[localCurrentSpelling valueForKey:@"description"] componentsJoinedByString:@""];
 }
 
 - (void) WS_loadGameData
 {
     NSString *filepath = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"json"];
-    //dispatch_async(kBgQueue, ^{
-      //  [self performSelectorOnMainThread:@selector(WS_localGameDataFromJSON:) withObject:filepath waitUntilDone:YES];
-       // NSLog(@"WordList: %@",WS_wordsArray);
-        //NSData* data = [NSData dataWithContentsOfFile:filepath];
-        //[self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
-        
-   // });
     [GameIO gameDataFromJSON:filepath outputWordsTo:WS_wordsArray outputSpellingsTo:WS_spellingPatternArray];
-    
 }
 //Grabs the word list from the device memory and reads it into an array
 - (NSArray *)WS_LoadWordlist
@@ -298,7 +259,6 @@ int WS_totalGuessCount = 0;
     for (NSUInteger i = 0; i < [WS_currentGameSpellingList count]; i++)
     {
         NSString *localWord = [self WS_ScrambleWord:[inputWordList objectAtIndex:i] atComplexity:5];
-        NSLog(@"%@", localWord);
         [[WS_scrambledWordLabelArray objectAtIndex:i] setText: localWord];
     }
 }

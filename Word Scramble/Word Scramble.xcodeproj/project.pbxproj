@@ -35,6 +35,8 @@
 		8394D15C162B4CEA00FC6576 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D15A162B4CEA00FC6576 /* GameIO.m */; };
 		8394D1CE162B4D2C00FC6576 /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C7162B4D2C00FC6576 /* redpanda.png */; };
 		8394D1E3162B653600FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E2162B653600FC6576 /* githubButton.png */; };
+		83CE204C1655A11B00DC4ACC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83CE204B1655A11B00DC4ACC /* Settings.bundle */; };
+		83CE20591655C6B400DC4ACC /* redPandaJumping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83CE20581655C6B400DC4ACC /* redPandaJumping.gif */; };
 		83D09B2B1631D3B300D96AE7 /* WSInGame_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */; };
 		83D09B321631F9E800D96AE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B311631F9E800D96AE7 /* Default@2x.png */; };
 		83D09B341631F9F700D96AE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B331631F9F700D96AE7 /* Default.png */; };
@@ -98,12 +100,13 @@
 		8394D151162B4C2400FC6576 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Word Scramble/ViewController.m"; sourceTree = "<group>"; };
 		8394D155162B4C4800FC6576 /* TRPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRPViewController.h; path = "Word Scramble/TRPViewController.h"; sourceTree = "<group>"; };
 		8394D156162B4C4800FC6576 /* TRPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRPViewController.m; path = "Word Scramble/TRPViewController.m"; sourceTree = "<group>"; };
-		8394D158162B4CEA00FC6576 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = "Word Scramble/Config.xcconfig"; sourceTree = "<group>"; };
 		8394D159162B4CEA00FC6576 /* GameIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameIO.h; path = "Word Scramble/GameIO.h"; sourceTree = "<group>"; };
 		8394D15A162B4CEA00FC6576 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameIO.m; path = "Word Scramble/GameIO.m"; sourceTree = "<group>"; };
 		8394D1C7162B4D2C00FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redpanda.png; path = "Word Scramble/redpanda.png"; sourceTree = "<group>"; };
 		8394D1E2162B653600FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
 		83CE204216559A7A00DC4ACC /* Word Scramble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Word Scramble.entitlements"; path = "Word Scramble/Word Scramble.entitlements"; sourceTree = "<group>"; };
+		83CE204B1655A11B00DC4ACC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		83CE20581655C6B400DC4ACC /* redPandaJumping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = redPandaJumping.gif; sourceTree = "<group>"; };
 		83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSInGame_retina.png; sourceTree = "<group>"; };
 		83D09B311631F9E800D96AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		83D09B331631F9F700D96AE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -269,6 +272,7 @@
 				83D71A09164E2B5700A95EEE /* nostar.png */,
 				83110C391639CEFD00DAE62D /* GreenCheckbox.gif */,
 				83D719B2164C8BC400A95EEE /* check2.png */,
+				83CE20581655C6B400DC4ACC /* redPandaJumping.gif */,
 				83D719B5164C8BFF00A95EEE /* redX.png */,
 				83D09B351631FA0000D96AE7 /* Default-568h@2x.png */,
 				83D09B331631F9F700D96AE7 /* Default.png */,
@@ -303,9 +307,9 @@
 		83A9ADF41620E84F00484400 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				8394D158162B4CEA00FC6576 /* Config.xcconfig */,
 				8394D159162B4CEA00FC6576 /* GameIO.h */,
 				8394D15A162B4CEA00FC6576 /* GameIO.m */,
+				83CE204B1655A11B00DC4ACC /* Settings.bundle */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -405,6 +409,8 @@
 				83D71A0E164E2B5700A95EEE /* 1star.png in Resources */,
 				83D71A0F164E2B5700A95EEE /* nostar.png in Resources */,
 				83949E161652476200CC6624 /* wordlist.json in Resources */,
+				83CE204C1655A11B00DC4ACC /* Settings.bundle in Resources */,
+				83CE20591655C6B400DC4ACC /* redPandaJumping.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

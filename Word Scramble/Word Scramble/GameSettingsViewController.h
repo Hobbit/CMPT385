@@ -14,5 +14,8 @@
 @interface GameSettingsViewController : UIViewController
 
 //Place Holer
+@property (weak, nonatomic) IBOutlet UITextField *WS_username;
+@property (weak, nonatomic) IBOutlet UITextField *WS_password;
+@property (weak, nonatomic) IBOutlet UISwitch *autoUpdateToggle;
 
 @end

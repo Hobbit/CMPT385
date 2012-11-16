@@ -259,8 +259,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="redpanda.png" id="max-wE-q3Y">
-                                <rect key="frame" x="121" y="380" width="79" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="redpanda.png" id="SXy-be-OL4">
+                                <rect key="frame" x="118" y="381" width="84" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -287,7 +287,7 @@
                                     <navigationItem title="Game Settings" id="L5F-WO-ALa">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="T9c-lt-hOA">
                                             <connections>
-                                                <segue destination="95m-iL-c6o" kind="modal" modalTransitionStyle="flipHorizontal" id="Az2-r3-OMq"/>
+                                                <action selector="WS_doneButton:" destination="gQC-VF-v33" id="pSP-dh-ykD"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -297,38 +297,27 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" id="tNG-FZ-gbw">
-                                <rect key="frame" x="0.0" y="264" width="320" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Reb-Pt-WvT">
-                                <rect key="frame" x="20" y="125" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="Reb-Pt-WvT">
+                                <rect key="frame" x="20" y="130" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" id="weC-Sv-shc">
+                                <rect key="frame" x="20" y="84" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="weC-Sv-shc">
-                                <rect key="frame" x="20" y="71" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Jm-Zz-UvL">
-                                <rect key="frame" x="20" y="50" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.97976817260000004" green="0.97976817260000004" blue="0.97976817260000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jTf-aV-cvY">
-                                <rect key="frame" x="20" y="104" width="85" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="User Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Jm-Zz-UvL">
+                                <rect key="frame" x="20" y="55" width="178" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.97976817260000004" green="0.97976817260000004" blue="0.97976817260000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A7p-Iz-eZi">
-                                <rect key="frame" x="95" y="163" width="131" height="44"/>
+                                <rect key="frame" x="95" y="397" width="131" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Manual Update">
@@ -342,10 +331,27 @@
                                     <action selector="manualUpdate:" destination="gQC-VF-v33" eventType="touchUpInside" id="7C9-ke-dSv"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ZeV-ue-ANB">
+                                <rect key="frame" x="223" y="199" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Automatic Updates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YxW-za-Vgc">
+                                <rect key="frame" x="20" y="202" width="190" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="WS_password" destination="Reb-Pt-WvT" id="rjs-ih-p3n"/>
+                        <outlet property="WS_username" destination="weC-Sv-shc" id="qNB-jC-gTW"/>
+                        <outlet property="autoUpdateToggle" destination="ZeV-ue-ANB" id="RzJ-Ux-4IE"/>
+                        <segue destination="95m-iL-c6o" kind="modal" identifier="WS_SettingsDone" modalTransitionStyle="flipHorizontal" id="jqX-g2-LZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFe-ls-Qf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1175,18 +1181,18 @@
         <class className="GameSettingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameSettingsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="WS_doneButton:"/>
                 <relationship kind="action" name="manualUpdate:"/>
+                <relationship kind="outlet" name="WS_password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="WS_username" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="autoUpdateToggle" candidateClass="UISwitch"/>
             </relationships>
         </class>
         <class className="GameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
             <relationships>
-                <relationship kind="action" name="PauseMenu:"/>
-                <relationship kind="action" name="WS_Submit:"/>
                 <relationship kind="action" name="WS_cancelInput:"/>
                 <relationship kind="action" name="WS_keyPressed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="enter:"/>
-                <relationship kind="action" name="showKeyboard:"/>
                 <relationship kind="outlet" name="WS_Checkmark1" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="WS_Checkmark2" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="WS_Checkmark3" candidateClass="UIImageView"/>
@@ -1242,7 +1248,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3Rb-ID-7pn"/>
-        <segue reference="Oal-1x-W6U"/>
+        <segue reference="jqX-g2-LZj"/>
+        <segue reference="ATc-f3-vtR"/>
     </inferredMetricsTieBreakers>
 </document>

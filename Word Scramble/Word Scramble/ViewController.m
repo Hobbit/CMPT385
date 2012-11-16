@@ -27,6 +27,8 @@
 bool isFirstLoad = YES;
 NSMutableArray *firstWordName;
 NSMutableArray *spellingPattern;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,15 +37,10 @@ NSMutableArray *spellingPattern;
     versionLabel.text = [NSString stringWithFormat:@"Version %@ (Build %@)", [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"], [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
     if (isFirstLoad)
     {
-        
-        //importing JSON file
-        
-        
         [GameIO getCurrentJSONListFrom:@"http://thehhd.com/CMPT385/accounts/" forUser:@"test_user" remoteFilename:@"wordlist.json"];
-        
-        //[GameIO getCurrentTestList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
         isFirstLoad = NO;
     }
+
 }
 
 - (void)didReceiveMemoryWarning
