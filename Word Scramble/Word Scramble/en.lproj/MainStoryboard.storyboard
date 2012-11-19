@@ -414,6 +414,13 @@
                                     <action selector="returnToGame:" destination="kyP-iJ-Z8k" eventType="touchUpInside" id="Sfe-0N-GmO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Game Paused" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6aw-J6-pTS">
+                                <rect key="frame" x="45" y="425" width="231" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.79060712710000003" blue="0.34272485580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -519,7 +526,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <state key="normal" title="[Menu]">
+                                <state key="normal" title="[Pause]">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1250,7 +1257,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nuJ-CK-Ipf"/>
-        <segue reference="wey-uG-Q50"/>
+        <segue reference="3Rb-ID-7pn"/>
+        <segue reference="Oal-1x-W6U"/>
     </inferredMetricsTieBreakers>
 </document>

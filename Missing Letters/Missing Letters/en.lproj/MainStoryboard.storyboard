@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -121,6 +121,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000015" contentMode="scaleToFill" image="background.png" id="IP7-HA-hD4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZlF-t4-XAB">
                                 <rect key="frame" x="84" y="362" width="153" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -166,9 +170,17 @@
                                     <action selector="returnToGame:" destination="dPY-6n-GDj" eventType="touchUpInside" id="r5h-ux-pHh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Game Paused" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lVr-Gl-fm8">
+                                <rect key="frame" x="46" y="436" width="228" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.97976817260000004" green="0.97976817260000004" blue="0.97976817260000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHq-xc-HeH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -774,7 +786,7 @@
                                 <rect key="frame" x="0.0" y="-4" width="75" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <state key="normal" title="[Menu]">
+                                <state key="normal" title="[Pause]">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1167,6 +1179,7 @@
         <image name="GreenCheckbox.gif" width="32" height="28"/>
         <image name="MLAbout.png" width="641" height="961"/>
         <image name="MLInGame_retina.png" width="640" height="960"/>
+        <image name="background.png" width="640" height="960"/>
         <image name="check2.png" width="60" height="76"/>
         <image name="githubButton.png" width="404" height="156"/>
         <image name="nostar.png" width="81" height="57"/>
@@ -1242,7 +1255,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Y1M-SV-8dr"/>
-        <segue reference="0Og-yE-kV0"/>
+        <segue reference="qDv-EK-RPj"/>
+        <segue reference="LnY-91-IMP"/>
     </inferredMetricsTieBreakers>
 </document>

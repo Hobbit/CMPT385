@@ -50,7 +50,7 @@
 - (void)initUIArrays;
 - (NSString *)ML_BlankOutWord:(NSMutableArray *)inputCurrentSpelling withNumberOfBlanks:(int)blanks;
 - (void) ML_loadGameData;
-- (NSMutableArray *)ML_GetWordList:(NSArray *)inputWordList;
+- (void)ML_buildCurrentGameDataFrom:(NSMutableArray *)inputWordList :(NSMutableArray *)inputSpellingList to:(NSMutableArray *)outputCurrentWords :(NSMutableArray *)outputCurrentSpellings;
 - (void)ML_generateGame:(NSArray *)ML_inputWordList ;
 
 - (IBAction)ML_keyPressed:(UIButton *)sender;
