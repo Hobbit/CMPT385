@@ -34,6 +34,7 @@
 		8394D1DC162B500F00FC6576 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D1DB162B500F00FC6576 /* GameIO.m */; };
 		8394D1DF162B562700FC6576 /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1DE162B562700FC6576 /* redpanda.png */; };
 		8394D1E1162B5B9000FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E0162B5B9000FC6576 /* githubButton.png */; };
+		83CE2067165A023400DC4ACC /* wordlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 83CE2066165A023400DC4ACC /* wordlist.json */; };
 		83D09B151630829F00D96AE7 /* MLIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B141630829F00D96AE7 /* MLIcon_retina.png */; };
 		83D09B18163082A200D96AE7 /* MLIcon_regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B17163082A200D96AE7 /* MLIcon_regular.png */; };
 		83D09B211631CDBC00D96AE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B201631CDBC00D96AE7 /* Default@2x.png */; };
@@ -102,6 +103,7 @@
 		8394D1DE162B562700FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpanda.png; sourceTree = "<group>"; };
 		8394D1E0162B5B9000FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
 		83CE204316559A9600DC4ACC /* Missing Letters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Missing Letters.entitlements"; path = "Missing Letters/Missing Letters.entitlements"; sourceTree = "<group>"; };
+		83CE2066165A023400DC4ACC /* wordlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wordlist.json; sourceTree = "<group>"; };
 		83D09B141630829F00D96AE7 /* MLIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_retina.png; sourceTree = "<group>"; };
 		83D09B17163082A200D96AE7 /* MLIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLIcon_regular.png; sourceTree = "<group>"; };
 		83D09B201631CDBC00D96AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 		8394D148162B414C00FC6576 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				83CE2066165A023400DC4ACC /* wordlist.json */,
 				833E8524163B2C9B004E350E /* wordlist.txt */,
 			);
 			name = Data;
@@ -401,6 +404,7 @@
 				83D719FC164E1C6C00A95EEE /* 2star.png in Resources */,
 				83D719FD164E1C6C00A95EEE /* 1star.png in Resources */,
 				83D719FE164E1C6C00A95EEE /* nostar.png in Resources */,
+				83CE2067165A023400DC4ACC /* wordlist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

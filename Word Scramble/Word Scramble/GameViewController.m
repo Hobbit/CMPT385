@@ -51,6 +51,9 @@
 //UI Label to display their number of guesses
 @synthesize WS_TotalGuessLabel;
 
+NSMutableArray *WS_wordsArray;
+NSMutableArray *WS_spellingPatternArray;
+
 //Array to store the words randomly selected for the current game from the current word list
 NSMutableArray *WS_currentGameWordList;
 NSMutableArray *WS_currentGameSpellingList;
@@ -60,8 +63,7 @@ NSMutableArray *WS_currentGameSpellingList;
 NSMutableArray *WS_scrambledWordLabelArray;
 NSMutableArray *WS_plainWordLabelArray;
 NSMutableArray *WS_checkmarkArray;
-NSMutableArray *WS_wordsArray;
-NSMutableArray *WS_spellingPatternArray;
+
 
 //Intergers to keep track of the number of guesses total and the number current correct guesses
 int WS_correctGuessCount = 0;
@@ -118,9 +120,6 @@ int WS_totalGuessCount = 0;
 {
     WS_TextEntry.text = [NSString stringWithFormat:@""];
 }
-
-
-
 
 //Action when user presses the submit button
 - (IBAction)WS_Submit:(id)sender
@@ -204,24 +203,13 @@ int WS_totalGuessCount = 0;
 {
     NSString *filepath = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"json"];
     [GameIO gameDataFromJSON:filepath outputWordsTo:WS_wordsArray outputSpellingsTo:WS_spellingPatternArray];
-}
-//Grabs the word list from the device memory and reads it into an array
-- (NSArray *)WS_LoadWordlist
-{    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
-    NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
-    NSArray *localWords = [contents componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-    return localWords;
-}
- 
+} 
 
 //Takes the array that contains the words from the word list file and choses 6 and creates a wordlist for the specific game instance
 - (void)WS_buildCurrentGameDataFrom:(NSMutableArray *)inputWordList :(NSMutableArray *)inputSpellingList to:(NSMutableArray *)outputCurrentWords :(NSMutableArray *)outputCurrentSpellings
 {
     //Array to tack the indexes that have already been selected to avoid duplicates
     NSMutableArray *indexSelected = [[NSMutableArray alloc] init];
-    //Array to locally generate the list of words before exporting from the function
-    //NSMutableArray *localExportList = [[NSMutableArray alloc] init];
     int i = 0;
     
     while (i < 6)
@@ -282,7 +270,6 @@ int WS_totalGuessCount = 0;
 
 - (void)viewDidUnload
 {
-    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

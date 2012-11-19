@@ -48,8 +48,8 @@
 
 //Declare the methods
 - (void)initUIArrays;
-- (NSMutableString *)ML_BlankOutWord:(NSString *)localCurrentWord;
-- (NSArray *)ML_LoadWordlist;
+- (NSString *)ML_BlankOutWord:(NSMutableArray *)inputCurrentSpelling withNumberOfBlanks:(int)blanks;
+- (void) ML_loadGameData;
 - (NSMutableArray *)ML_GetWordList:(NSArray *)inputWordList;
 - (void)ML_generateGame:(NSArray *)ML_inputWordList ;
 

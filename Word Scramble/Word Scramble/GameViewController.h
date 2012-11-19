@@ -48,7 +48,6 @@
 //Declare the methods
 - (void)initUIArrays;
 - (NSString *)WS_ScrambleWord:(NSMutableArray *)inputCurrentSpelling atComplexity:(int)complexityLevel;
-- (NSArray *)WS_LoadWordlist;
 - (void) WS_loadGameData;
 - (void)WS_buildCurrentGameDataFrom:(NSMutableArray *)inputWordList :(NSMutableArray *)inputSpellingList to:(NSMutableArray *)outputCurrentWords :(NSMutableArray *)outputCurrentSpellings;
 - (void)WS_generateGame:(NSMutableArray *)inputWordList ;

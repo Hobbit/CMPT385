@@ -11,6 +11,7 @@
 
 #import "GameViewController.h"
 #import "LevelCompleteViewController.h"
+#import "GameIO.h"
 
 @interface GameViewController ()
 
@@ -43,18 +44,19 @@
 @synthesize ML_Checkmark5;
 @synthesize ML_Checkmark6;
 
-//UI Label to display their number of guesses
-@synthesize ML_TotalGuessLabel;
-
 //Text box for user to input guesses
 @synthesize ML_TextEntry;
 @synthesize ML_keyboardViewEN;
 
+//UI Label to display their number of guesses
+@synthesize ML_TotalGuessLabel;
 
-
+NSMutableArray *ML_wordsArray;
+NSMutableArray *ML_spellingPatternArray;
 
 //Array to store the words randomly selected for the current game from the current word list
-NSArray *ML_currentGameList;
+NSMutableArray *ML_currentGameWordList;
+NSMutableArray *ML_currentGameSpellingList;
 
 //Array to hold the UI objects so that we can access them iteratively
 NSMutableArray *ML_missingWordLabelArray;
@@ -68,6 +70,11 @@ int ML_correctGuessCount = 0;
 //Initializes the arrays of UI objects and inserts the UI Objects
 - (void)initUIArrays
 {
+    ML_currentGameSpellingList = [[NSMutableArray alloc] init];
+    ML_currentGameWordList = [[NSMutableArray alloc] init];
+    ML_wordsArray = [[NSMutableArray alloc] init];
+    ML_spellingPatternArray = [[NSMutableArray alloc] init];
+    
     ML_missingWordLabelArray = [[NSMutableArray alloc] init];
     [ML_missingWordLabelArray insertObject:ML_MissingWordLabel1 atIndex:0];
     [ML_missingWordLabelArray insertObject:ML_MissingWordLabel2 atIndex:1];
@@ -113,8 +120,6 @@ int ML_correctGuessCount = 0;
     ML_TextEntry.text = [NSString stringWithFormat:@""];
 }
 
-
-
 //Action when user presses the submit button 
 - (IBAction)ML_Submit:(id)sender
 {
@@ -126,14 +131,14 @@ int ML_correctGuessCount = 0;
     else
     {
         //If the input is not empty
-        for (int i = 0; i < ML_currentGameList.count; i++)
+        for (int i = 0; i < ML_currentGameWordList.count; i++)
         {
             //check the the input againt the word list for the current game
-            if ([ML_TextEntry.text.uppercaseString isEqualToString:[[ML_currentGameList objectAtIndex:i] uppercaseString]])
+            if ([ML_TextEntry.text.uppercaseString isEqualToString:[[ML_currentGameWordList objectAtIndex:i] uppercaseString]])
             {
                 //If the words match:
                 //Check the plainword label from ????? to the correct word
-                [[ML_plainWordLabelArray objectAtIndex:i] setText:[ML_currentGameList objectAtIndex:i]];
+                [[ML_plainWordLabelArray objectAtIndex:i] setText:[ML_currentGameWordList objectAtIndex:i]];
                 //Display the green checkmark
                 [[ML_checkmarkArray objectAtIndex:i] setHidden:NO];
                 //Increase the correct guess counter
@@ -165,30 +170,27 @@ int ML_correctGuessCount = 0;
 }
 
 //This function takes the a word and randomly blanks out one of the letters
-- (NSMutableString *)ML_BlankOutWord:(NSString *)localCurrentWord
+- (NSString *)ML_BlankOutWord:(NSMutableArray *)inputCurrentSpelling withNumberOfBlanks:(int)blanks
 {
-    NSMutableString *localBlankedWord = [NSMutableString stringWithString:localCurrentWord];
+    NSMutableArray *localCurrentSpelling = [inputCurrentSpelling mutableCopy];
+    //NSMutableString *localBlankedWord = [NSMutableString stringWithString:localCurrentWord];
     //Replaces a random char with an underscore to act as a "blank"
-    [localBlankedWord replaceCharactersInRange:NSMakeRange((random()%[localBlankedWord length]), 1) withString:@"_"]; 
-    return localBlankedWord;
+    [localCurrentSpelling replaceObjectAtIndex:(random()%[inputCurrentSpelling count]) withObject:@"_"];
+    //[localBlankedWord replaceCharactersInRange:NSMakeRange((random()%[localBlankedWord length]), 1) withString:@"_"];
+    return [localCurrentSpelling componentsJoinedByString:@""];
 }
 
-//Grabs the word list from the device memory and reads it into an array
-- (NSArray *)ML_LoadWordlist
+- (void) ML_loadGameData
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"txt"];
-    NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSASCIIStringEncoding error:nil];
-    NSArray *localWords = [contents componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-    return localWords;
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"wordlist" ofType:@"json"];
+    [GameIO gameDataFromJSON:filepath outputWordsTo:ML_wordsArray outputSpellingsTo:ML_spellingPatternArray];
 }
 
 //Takes the array that contains the words from the word list file and choses 6 and creates a wordlist for the specific game instance
-- (NSMutableArray *)ML_GetWordList:(NSArray *)inputWordList
+- (void)ML_buildCurrentGameDataFrom:(NSMutableArray *)inputWordList :(NSMutableArray *)inputSpellingList to:(NSMutableArray *)outputCurrentWords :(NSMutableArray *)outputCurrentSpellings
 {
     //Array to tack the indexes that have already been selected to avoid duplicates
     NSMutableArray *indexSelected = [[NSMutableArray alloc] init];
-    //Array to locally generate the list of words before exporting from the function
-    NSMutableArray *localExportList = [[NSMutableArray alloc] init];
     int i = 0;
     
     while (i < 6)
@@ -206,25 +208,26 @@ int ML_correctGuessCount = 0;
         }
         
         //If the current is not a duplicate
-        if ((duplicate == NO) && ([inputWordList objectAtIndex:randIndex] != @""))
+        if (duplicate == NO)
         {
             //add the current index to the selected index list
             [indexSelected addObject: [NSNumber numberWithInt:randIndex]];
             //add the word at the current index to the local word list to be exported
-            [localExportList addObject:[inputWordList objectAtIndex:randIndex]];
+            [outputCurrentWords addObject:[inputWordList objectAtIndex:randIndex]];
+            [outputCurrentSpellings addObject:[inputSpellingList objectAtIndex:randIndex]];
+            
             i++;
         }
     }
-    //return generated list for the current game
-    return localExportList;
 }
 
 //Generates the game by loading up the labels with words selected for the game by blanking them out then modifying the label which displays them
-- (void)ML_generateGame:(NSArray *)ML_inputWordList
+- (void)ML_generateGame:(NSMutableArray *)inputWordList
 {
-    for (NSUInteger i = 0; i < [ML_currentGameList count]; i++)
+    for (NSUInteger i = 0; i < [ML_currentGameWordList count]; i++)
     {
-        [[ML_missingWordLabelArray objectAtIndex:i] setText:[self ML_BlankOutWord:[ML_inputWordList objectAtIndex:i]]];
+        NSString *localWord = [self ML_BlankOutWord:[inputWordList objectAtIndex:i] withNumberOfBlanks:1];
+        [[ML_missingWordLabelArray objectAtIndex:i] setText:localWord];
     }
 }
 
@@ -234,13 +237,14 @@ int ML_correctGuessCount = 0;
     [super viewDidLoad];
     //initializes the arrays
 	[self initUIArrays];
+    [self ML_loadGameData];
     //zero's out score from previous games
     ML_correctGuessCount = 0;
     ML_totalGuessCount = 0;
     //gets wordlist for the game
-    ML_currentGameList = [self ML_GetWordList:[self ML_LoadWordlist]];
+    [self ML_buildCurrentGameDataFrom:ML_wordsArray :ML_spellingPatternArray to:ML_currentGameWordList :ML_currentGameSpellingList];
     //generates the game
-    [self ML_generateGame:ML_currentGameList];
+    [self ML_generateGame:ML_currentGameSpellingList];
     //displays the keyboard
     //[ML_TextEntry becomeFirstResponder];
     

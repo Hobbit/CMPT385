@@ -21,7 +21,7 @@
 
 - (IBAction)manualUpdate:(id)sender
 {
-    [GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
+    //[GameIO getCurrentList:@"http://thehhd.com/CMPT385/accounts/" :@"test_user" :@"/wordlist.txt"];
 }
 
 - (void)viewDidLoad
