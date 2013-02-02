@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8305BCC515FC254000ABCF9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305BCC415FC254000ABCF9E /* UIKit.framework */; };
+		8305BCC715FC254000ABCF9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305BCC615FC254000ABCF9E /* Foundation.framework */; };
+		8305BCC915FC254000ABCF9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305BCC815FC254000ABCF9E /* CoreGraphics.framework */; };
+		8305BCCF15FC254000ABCF9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8305BCCD15FC254000ABCF9E /* InfoPlist.strings */; };
+		8305BCD115FC254000ABCF9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305BCD015FC254000ABCF9E /* main.m */; };
+		8305BCD515FC254000ABCF9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305BCD415FC254000ABCF9E /* AppDelegate.m */; };
+		8305BCD815FC254000ABCF9E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305BCD615FC254000ABCF9E /* MainStoryboard.storyboard */; };
+		8305BCDB15FC254000ABCF9E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305BCDA15FC254000ABCF9E /* GameViewController.m */; };
+		8305BCE315FC254000ABCF9E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305BCE215FC254000ABCF9E /* SenTestingKit.framework */; };
+		8305BCE415FC254000ABCF9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305BCC415FC254000ABCF9E /* UIKit.framework */; };
+		8305BCE515FC254000ABCF9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305BCC615FC254000ABCF9E /* Foundation.framework */; };
+		8305BCED15FC254000ABCF9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8305BCEB15FC254000ABCF9E /* InfoPlist.strings */; };
+		8305BCF015FC254000ABCF9E /* Word_ScrambleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305BCEF15FC254000ABCF9E /* Word_ScrambleTests.m */; };
+		8305BCFA15FC339400ABCF9E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8305BCF915FC339400ABCF9E /* background.png */; };
+		83110C311639C56300DAE62D /* PauseMenuProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 83110C301639C56300DAE62D /* PauseMenuProtocol.m */; };
+		83110C3A1639CEFD00DAE62D /* GreenCheckbox.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83110C391639CEFD00DAE62D /* GreenCheckbox.gif */; };
+		83110C3D1639D93500DAE62D /* bump_build_number.sh in Resources */ = {isa = PBXBuildFile; fileRef = 83110C3C1639D93500DAE62D /* bump_build_number.sh */; };
+		83110C401639EC0600DAE62D /* LevelCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83110C3F1639EC0600DAE62D /* LevelCompleteViewController.m */; };
+		832E2BFC163F424B00EC95C1 /* GameSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */; };
+		834720CF16601A9100B42448 /* bitbucket_logo_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 834720CE16601A9100B42448 /* bitbucket_logo_1x.png */; };
+		835A1E771669699D005B6891 /* logonoedges.png in Resources */ = {isa = PBXBuildFile; fileRef = 835A1E761669699D005B6891 /* logonoedges.png */; };
+		835A1E7A166969F8005B6891 /* RedPandaTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 835A1E79166969F8005B6891 /* RedPandaTeamLogo.png */; };
+		837FD92516304BE6003F89FA /* WSIcon_regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92416304BE6003F89FA /* WSIcon_regular.png */; };
+		837FD92716304BEB003F89FA /* WSIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 837FD92616304BEB003F89FA /* WSIcon_retina.png */; };
+		8394D152162B4C2400FC6576 /* PauseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D14F162B4C2400FC6576 /* PauseMenuViewController.m */; };
+		8394D153162B4C2400FC6576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D151162B4C2400FC6576 /* ViewController.m */; };
+		8394D157162B4C4800FC6576 /* TRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D156162B4C4800FC6576 /* TRPViewController.m */; };
+		8394D15C162B4CEA00FC6576 /* GameIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8394D15A162B4CEA00FC6576 /* GameIO.m */; };
+		8394D1CE162B4D2C00FC6576 /* redpanda.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1C7162B4D2C00FC6576 /* redpanda.png */; };
+		8394D1E3162B653600FC6576 /* githubButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8394D1E2162B653600FC6576 /* githubButton.png */; };
+		83C09990166FCA58004B8B8D /* wordlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 83C0998F166FCA58004B8B8D /* wordlist.json */; };
+		83CE204C1655A11B00DC4ACC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83CE204B1655A11B00DC4ACC /* Settings.bundle */; };
+		83CE20591655C6B400DC4ACC /* redPandaJumping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83CE20581655C6B400DC4ACC /* redPandaJumping.gif */; };
+		83D09B2B1631D3B300D96AE7 /* WSInGame_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */; };
+		83D09B321631F9E800D96AE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B311631F9E800D96AE7 /* Default@2x.png */; };
+		83D09B341631F9F700D96AE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B331631F9F700D96AE7 /* Default.png */; };
+		83D09B361631FA0000D96AE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09B351631FA0000D96AE7 /* Default-568h@2x.png */; };
+		83D719B3164C8BC400A95EEE /* check2.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D719B2164C8BC400A95EEE /* check2.png */; };
+		83D719B6164C8BFF00A95EEE /* redX.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D719B5164C8BFF00A95EEE /* redX.png */; };
+		83D71A0A164E2B5700A95EEE /* 5star.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D71A04164E2B5700A95EEE /* 5star.png */; };
+		83D71A0B164E2B5700A95EEE /* 4star.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D71A05164E2B5700A95EEE /* 4star.png */; };
+		83D71A0C164E2B5700A95EEE /* 3star.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D71A06164E2B5700A95EEE /* 3star.png */; };
+		83D71A0D164E2B5700A95EEE /* 2star.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D71A07164E2B5700A95EEE /* 2star.png */; };
+		83D71A0E164E2B5700A95EEE /* 1star.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D71A08164E2B5700A95EEE /* 1star.png */; };
+		83D71A0F164E2B5700A95EEE /* nostar.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D71A09164E2B5700A95EEE /* nostar.png */; };
+		83FB493415FD17DC000E3E57 /* wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FB493315FD17DC000E3E57 /* wordlist.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8305BCE615FC254000ABCF9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8305BCB715FC254000ABCF9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8305BCBF15FC254000ABCF9E;
+			remoteInfo = "Word Scramble";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8305BCC015FC254000ABCF9E /* Word Scramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Scramble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8305BCC415FC254000ABCF9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8305BCC615FC254000ABCF9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8305BCC815FC254000ABCF9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8305BCCC15FC254000ABCF9E /* Word Scramble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Word Scramble-Info.plist"; sourceTree = "<group>"; };
+		8305BCCE15FC254000ABCF9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8305BCD015FC254000ABCF9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8305BCD215FC254000ABCF9E /* Word Scramble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Word Scramble-Prefix.pch"; sourceTree = "<group>"; };
+		8305BCD315FC254000ABCF9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Word Scramble/AppDelegate.h"; sourceTree = "<group>"; };
+		8305BCD415FC254000ABCF9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Word Scramble/AppDelegate.m"; sourceTree = "<group>"; };
+		8305BCD715FC254000ABCF9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8305BCD915FC254000ABCF9E /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = "Word Scramble/GameViewController.h"; sourceTree = "<group>"; };
+		8305BCDA15FC254000ABCF9E /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = "Word Scramble/GameViewController.m"; sourceTree = "<group>"; };
+		8305BCE115FC254000ABCF9E /* Word ScrambleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word ScrambleTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8305BCE215FC254000ABCF9E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8305BCEA15FC254000ABCF9E /* Word ScrambleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Word ScrambleTests-Info.plist"; sourceTree = "<group>"; };
+		8305BCEC15FC254000ABCF9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8305BCEE15FC254000ABCF9E /* Word_ScrambleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Word_ScrambleTests.h; sourceTree = "<group>"; };
+		8305BCEF15FC254000ABCF9E /* Word_ScrambleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Word_ScrambleTests.m; sourceTree = "<group>"; };
+		8305BCF915FC339400ABCF9E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = "Word Scramble/background.png"; sourceTree = "<group>"; };
+		83110C2F1639C56300DAE62D /* PauseMenuProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenuProtocol.h; path = "Word Scramble/PauseMenuProtocol.h"; sourceTree = "<group>"; };
+		83110C301639C56300DAE62D /* PauseMenuProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseMenuProtocol.m; path = "Word Scramble/PauseMenuProtocol.m"; sourceTree = "<group>"; };
+		83110C391639CEFD00DAE62D /* GreenCheckbox.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GreenCheckbox.gif; sourceTree = "<group>"; };
+		83110C3C1639D93500DAE62D /* bump_build_number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bump_build_number.sh; path = tools/bump_build_number.sh; sourceTree = "<group>"; };
+		83110C3E1639EC0600DAE62D /* LevelCompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelCompleteViewController.h; path = "Word Scramble/LevelCompleteViewController.h"; sourceTree = "<group>"; };
+		83110C3F1639EC0600DAE62D /* LevelCompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelCompleteViewController.m; path = "Word Scramble/LevelCompleteViewController.m"; sourceTree = "<group>"; };
+		832E2BFA163F424A00EC95C1 /* GameSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSettingsViewController.h; path = "Word Scramble/GameSettingsViewController.h"; sourceTree = "<group>"; };
+		832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameSettingsViewController.m; path = "Word Scramble/GameSettingsViewController.m"; sourceTree = "<group>"; };
+		834720CE16601A9100B42448 /* bitbucket_logo_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitbucket_logo_1x.png; sourceTree = "<group>"; };
+		835A1E761669699D005B6891 /* logonoedges.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logonoedges.png; sourceTree = "<group>"; };
+		835A1E79166969F8005B6891 /* RedPandaTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedPandaTeamLogo.png; sourceTree = "<group>"; };
+		837FD92416304BE6003F89FA /* WSIcon_regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_regular.png; sourceTree = "<group>"; };
+		837FD92616304BEB003F89FA /* WSIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSIcon_retina.png; sourceTree = "<group>"; };
+		8394D14E162B4C2400FC6576 /* PauseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenuViewController.h; path = "Word Scramble/PauseMenuViewController.h"; sourceTree = "<group>"; };
+		8394D14F162B4C2400FC6576 /* PauseMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseMenuViewController.m; path = "Word Scramble/PauseMenuViewController.m"; sourceTree = "<group>"; };
+		8394D150162B4C2400FC6576 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Word Scramble/ViewController.h"; sourceTree = "<group>"; };
+		8394D151162B4C2400FC6576 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Word Scramble/ViewController.m"; sourceTree = "<group>"; };
+		8394D155162B4C4800FC6576 /* TRPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRPViewController.h; path = "Word Scramble/TRPViewController.h"; sourceTree = "<group>"; };
+		8394D156162B4C4800FC6576 /* TRPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRPViewController.m; path = "Word Scramble/TRPViewController.m"; sourceTree = "<group>"; };
+		8394D159162B4CEA00FC6576 /* GameIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameIO.h; path = "Word Scramble/GameIO.h"; sourceTree = "<group>"; };
+		8394D15A162B4CEA00FC6576 /* GameIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameIO.m; path = "Word Scramble/GameIO.m"; sourceTree = "<group>"; };
+		8394D1C7162B4D2C00FC6576 /* redpanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redpanda.png; path = "Word Scramble/redpanda.png"; sourceTree = "<group>"; };
+		8394D1E2162B653600FC6576 /* githubButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubButton.png; sourceTree = "<group>"; };
+		83C0998F166FCA58004B8B8D /* wordlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wordlist.json; sourceTree = "<group>"; };
+		83CE204216559A7A00DC4ACC /* Word Scramble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Word Scramble.entitlements"; path = "Word Scramble/Word Scramble.entitlements"; sourceTree = "<group>"; };
+		83CE204B1655A11B00DC4ACC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		83CE20581655C6B400DC4ACC /* redPandaJumping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = redPandaJumping.gif; sourceTree = "<group>"; };
+		83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSInGame_retina.png; sourceTree = "<group>"; };
+		83D09B311631F9E800D96AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		83D09B331631F9F700D96AE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		83D09B351631FA0000D96AE7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		83D719B2164C8BC400A95EEE /* check2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check2.png; sourceTree = "<group>"; };
+		83D719B5164C8BFF00A95EEE /* redX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redX.png; sourceTree = "<group>"; };
+		83D71A04164E2B5700A95EEE /* 5star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5star.png; sourceTree = "<group>"; };
+		83D71A05164E2B5700A95EEE /* 4star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4star.png; sourceTree = "<group>"; };
+		83D71A06164E2B5700A95EEE /* 3star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3star.png; sourceTree = "<group>"; };
+		83D71A07164E2B5700A95EEE /* 2star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2star.png; sourceTree = "<group>"; };
+		83D71A08164E2B5700A95EEE /* 1star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1star.png; sourceTree = "<group>"; };
+		83D71A09164E2B5700A95EEE /* nostar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nostar.png; sourceTree = "<group>"; };
+		83FB493315FD17DC000E3E57 /* wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wordlist.txt; path = "Word Scramble/wordlist.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8305BCBD15FC254000ABCF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305BCC515FC254000ABCF9E /* UIKit.framework in Frameworks */,
+				8305BCC715FC254000ABCF9E /* Foundation.framework in Frameworks */,
+				8305BCC915FC254000ABCF9E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305BCDD15FC254000ABCF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305BCE315FC254000ABCF9E /* SenTestingKit.framework in Frameworks */,
+				8305BCE415FC254000ABCF9E /* UIKit.framework in Frameworks */,
+				8305BCE515FC254000ABCF9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8305BCB515FC254000ABCF9E = {
+			isa = PBXGroup;
+			children = (
+				83CE204216559A7A00DC4ACC /* Word Scramble.entitlements */,
+				830BB748160EDF46009BC210 /* Classes */,
+				830BB74A160EDFA0009BC210 /* Resources */,
+				8305BCCB15FC254000ABCF9E /* Supporting Files */,
+				8305BCE815FC254000ABCF9E /* Word ScrambleTests */,
+				8305BCC315FC254000ABCF9E /* Frameworks */,
+				8305BCC115FC254000ABCF9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8305BCC115FC254000ABCF9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8305BCC015FC254000ABCF9E /* Word Scramble.app */,
+				8305BCE115FC254000ABCF9E /* Word ScrambleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8305BCC315FC254000ABCF9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8305BCC415FC254000ABCF9E /* UIKit.framework */,
+				8305BCC615FC254000ABCF9E /* Foundation.framework */,
+				8305BCC815FC254000ABCF9E /* CoreGraphics.framework */,
+				8305BCE215FC254000ABCF9E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8305BCCB15FC254000ABCF9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83110C3C1639D93500DAE62D /* bump_build_number.sh */,
+				8305BCCC15FC254000ABCF9E /* Word Scramble-Info.plist */,
+				8305BCCD15FC254000ABCF9E /* InfoPlist.strings */,
+				8305BCD015FC254000ABCF9E /* main.m */,
+				8305BCD215FC254000ABCF9E /* Word Scramble-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "Word Scramble";
+			sourceTree = "<group>";
+		};
+		8305BCE815FC254000ABCF9E /* Word ScrambleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8305BCEE15FC254000ABCF9E /* Word_ScrambleTests.h */,
+				8305BCEF15FC254000ABCF9E /* Word_ScrambleTests.m */,
+				8305BCE915FC254000ABCF9E /* Supporting Files */,
+			);
+			path = "Word ScrambleTests";
+			sourceTree = "<group>";
+		};
+		8305BCE915FC254000ABCF9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8305BCEA15FC254000ABCF9E /* Word ScrambleTests-Info.plist */,
+				8305BCEB15FC254000ABCF9E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		830BB747160EDF37009BC210 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8394D14E162B4C2400FC6576 /* PauseMenuViewController.h */,
+				8394D14F162B4C2400FC6576 /* PauseMenuViewController.m */,
+				8394D150162B4C2400FC6576 /* ViewController.h */,
+				8394D151162B4C2400FC6576 /* ViewController.m */,
+				8305BCD915FC254000ABCF9E /* GameViewController.h */,
+				8305BCDA15FC254000ABCF9E /* GameViewController.m */,
+				8394D155162B4C4800FC6576 /* TRPViewController.h */,
+				8394D156162B4C4800FC6576 /* TRPViewController.m */,
+				83110C3E1639EC0600DAE62D /* LevelCompleteViewController.h */,
+				83110C3F1639EC0600DAE62D /* LevelCompleteViewController.m */,
+				832E2BFA163F424A00EC95C1 /* GameSettingsViewController.h */,
+				832E2BFB163F424A00EC95C1 /* GameSettingsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		830BB748160EDF46009BC210 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				830BB749160EDF93009BC210 /* AppDelegate */,
+				830BB747160EDF37009BC210 /* Controllers */,
+				83A9ADF41620E84F00484400 /* Support */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		830BB749160EDF93009BC210 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8305BCD315FC254000ABCF9E /* AppDelegate.h */,
+				8305BCD415FC254000ABCF9E /* AppDelegate.m */,
+				83110C2F1639C56300DAE62D /* PauseMenuProtocol.h */,
+				83110C301639C56300DAE62D /* PauseMenuProtocol.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		830BB74A160EDFA0009BC210 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				830BB74C160EDFB6009BC210 /* Storyboards */,
+				830BB74B160EDFAE009BC210 /* Images */,
+				830BB74D160EE01A009BC210 /* Data */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		830BB74B160EDFAE009BC210 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				83D71A04164E2B5700A95EEE /* 5star.png */,
+				83D71A05164E2B5700A95EEE /* 4star.png */,
+				83D71A06164E2B5700A95EEE /* 3star.png */,
+				83D71A07164E2B5700A95EEE /* 2star.png */,
+				835A1E761669699D005B6891 /* logonoedges.png */,
+				835A1E79166969F8005B6891 /* RedPandaTeamLogo.png */,
+				83D71A08164E2B5700A95EEE /* 1star.png */,
+				834720CE16601A9100B42448 /* bitbucket_logo_1x.png */,
+				83D71A09164E2B5700A95EEE /* nostar.png */,
+				83110C391639CEFD00DAE62D /* GreenCheckbox.gif */,
+				83D719B2164C8BC400A95EEE /* check2.png */,
+				83CE20581655C6B400DC4ACC /* redPandaJumping.gif */,
+				83D719B5164C8BFF00A95EEE /* redX.png */,
+				83D09B351631FA0000D96AE7 /* Default-568h@2x.png */,
+				83D09B331631F9F700D96AE7 /* Default.png */,
+				83D09B311631F9E800D96AE7 /* Default@2x.png */,
+				837FD92616304BEB003F89FA /* WSIcon_retina.png */,
+				837FD92416304BE6003F89FA /* WSIcon_regular.png */,
+				83D09B2A1631D3B300D96AE7 /* WSInGame_retina.png */,
+				8394D1E2162B653600FC6576 /* githubButton.png */,
+				8394D1C7162B4D2C00FC6576 /* redpanda.png */,
+				8305BCF915FC339400ABCF9E /* background.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		830BB74C160EDFB6009BC210 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8305BCD615FC254000ABCF9E /* MainStoryboard.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		830BB74D160EE01A009BC210 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				83C0998F166FCA58004B8B8D /* wordlist.json */,
+				83FB493315FD17DC000E3E57 /* wordlist.txt */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		83A9ADF41620E84F00484400 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8394D159162B4CEA00FC6576 /* GameIO.h */,
+				8394D15A162B4CEA00FC6576 /* GameIO.m */,
+				83CE204B1655A11B00DC4ACC /* Settings.bundle */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8305BCBF15FC254000ABCF9E /* Word Scramble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8305BCF315FC254000ABCF9E /* Build configuration list for PBXNativeTarget "Word Scramble" */;
+			buildPhases = (
+				83110C3B1639D4CA00DAE62D /* ShellScript */,
+				8305BCBC15FC254000ABCF9E /* Sources */,
+				8305BCBD15FC254000ABCF9E /* Frameworks */,
+				8305BCBE15FC254000ABCF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Word Scramble";
+			productName = "Word Scramble";
+			productReference = 8305BCC015FC254000ABCF9E /* Word Scramble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8305BCE015FC254000ABCF9E /* Word ScrambleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8305BCF615FC254000ABCF9E /* Build configuration list for PBXNativeTarget "Word ScrambleTests" */;
+			buildPhases = (
+				8305BCDC15FC254000ABCF9E /* Sources */,
+				8305BCDD15FC254000ABCF9E /* Frameworks */,
+				8305BCDE15FC254000ABCF9E /* Resources */,
+				8305BCDF15FC254000ABCF9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8305BCE715FC254000ABCF9E /* PBXTargetDependency */,
+			);
+			name = "Word ScrambleTests";
+			productName = "Word ScrambleTests";
+			productReference = 8305BCE115FC254000ABCF9E /* Word ScrambleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8305BCB715FC254000ABCF9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = HHD;
+			};
+			buildConfigurationList = 8305BCBA15FC254000ABCF9E /* Build configuration list for PBXProject "Word Scramble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8305BCB515FC254000ABCF9E;
+			productRefGroup = 8305BCC115FC254000ABCF9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8305BCBF15FC254000ABCF9E /* Word Scramble */,
+				8305BCE015FC254000ABCF9E /* Word ScrambleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8305BCBE15FC254000ABCF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305BCCF15FC254000ABCF9E /* InfoPlist.strings in Resources */,
+				8305BCD815FC254000ABCF9E /* MainStoryboard.storyboard in Resources */,
+				8305BCFA15FC339400ABCF9E /* background.png in Resources */,
+				83FB493415FD17DC000E3E57 /* wordlist.txt in Resources */,
+				8394D1CE162B4D2C00FC6576 /* redpanda.png in Resources */,
+				8394D1E3162B653600FC6576 /* githubButton.png in Resources */,
+				837FD92516304BE6003F89FA /* WSIcon_regular.png in Resources */,
+				837FD92716304BEB003F89FA /* WSIcon_retina.png in Resources */,
+				83D09B2B1631D3B300D96AE7 /* WSInGame_retina.png in Resources */,
+				83D09B321631F9E800D96AE7 /* Default@2x.png in Resources */,
+				83D09B341631F9F700D96AE7 /* Default.png in Resources */,
+				83D09B361631FA0000D96AE7 /* Default-568h@2x.png in Resources */,
+				83110C3A1639CEFD00DAE62D /* GreenCheckbox.gif in Resources */,
+				83110C3D1639D93500DAE62D /* bump_build_number.sh in Resources */,
+				83D719B3164C8BC400A95EEE /* check2.png in Resources */,
+				83D719B6164C8BFF00A95EEE /* redX.png in Resources */,
+				83D71A0A164E2B5700A95EEE /* 5star.png in Resources */,
+				83D71A0B164E2B5700A95EEE /* 4star.png in Resources */,
+				83D71A0C164E2B5700A95EEE /* 3star.png in Resources */,
+				83D71A0D164E2B5700A95EEE /* 2star.png in Resources */,
+				83D71A0E164E2B5700A95EEE /* 1star.png in Resources */,
+				83D71A0F164E2B5700A95EEE /* nostar.png in Resources */,
+				83CE204C1655A11B00DC4ACC /* Settings.bundle in Resources */,
+				83CE20591655C6B400DC4ACC /* redPandaJumping.gif in Resources */,
+				834720CF16601A9100B42448 /* bitbucket_logo_1x.png in Resources */,
+				835A1E771669699D005B6891 /* logonoedges.png in Resources */,
+				835A1E7A166969F8005B6891 /* RedPandaTeamLogo.png in Resources */,
+				83C09990166FCA58004B8B8D /* wordlist.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305BCDE15FC254000ABCF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305BCED15FC254000ABCF9E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8305BCDF15FC254000ABCF9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		83110C3B1639D4CA00DAE62D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"${PROJECT_DIR}/Word Scramble\"/tools/bump_build_number.sh \"${PROJECT_DIR}/Word Scramble/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8305BCBC15FC254000ABCF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305BCD115FC254000ABCF9E /* main.m in Sources */,
+				8305BCD515FC254000ABCF9E /* AppDelegate.m in Sources */,
+				8305BCDB15FC254000ABCF9E /* GameViewController.m in Sources */,
+				8394D152162B4C2400FC6576 /* PauseMenuViewController.m in Sources */,
+				8394D153162B4C2400FC6576 /* ViewController.m in Sources */,
+				8394D157162B4C4800FC6576 /* TRPViewController.m in Sources */,
+				8394D15C162B4CEA00FC6576 /* GameIO.m in Sources */,
+				83110C311639C56300DAE62D /* PauseMenuProtocol.m in Sources */,
+				83110C401639EC0600DAE62D /* LevelCompleteViewController.m in Sources */,
+				832E2BFC163F424B00EC95C1 /* GameSettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8305BCDC15FC254000ABCF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8305BCF015FC254000ABCF9E /* Word_ScrambleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8305BCE715FC254000ABCF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8305BCBF15FC254000ABCF9E /* Word Scramble */;
+			targetProxy = 8305BCE615FC254000ABCF9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8305BCCD15FC254000ABCF9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8305BCCE15FC254000ABCF9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8305BCD615FC254000ABCF9E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8305BCD715FC254000ABCF9E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			path = "Word Scramble";
+			sourceTree = "<group>";
+		};
+		8305BCEB15FC254000ABCF9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8305BCEC15FC254000ABCF9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8305BCF115FC254000ABCF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Hobbs (4ZD7V8J38J)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8305BCF215FC254000ABCF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Hobbs (4ZD7V8J38J)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8305BCF415FC254000ABCF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Word Scramble/Word Scramble.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Word Scramble/Word Scramble-Prefix.pch";
+				INFOPLIST_FILE = "Word Scramble/Word Scramble-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8305BCF515FC254000ABCF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Word Scramble/Word Scramble.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Word Scramble/Word Scramble-Prefix.pch";
+				INFOPLIST_FILE = "Word Scramble/Word Scramble-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8305BCF715FC254000ABCF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Word Scramble.app/Word Scramble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Word Scramble/Word Scramble-Prefix.pch";
+				INFOPLIST_FILE = "Word ScrambleTests/Word ScrambleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8305BCF815FC254000ABCF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Word Scramble.app/Word Scramble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Word Scramble/Word Scramble-Prefix.pch";
+				INFOPLIST_FILE = "Word ScrambleTests/Word ScrambleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8305BCBA15FC254000ABCF9E /* Build configuration list for PBXProject "Word Scramble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8305BCF115FC254000ABCF9E /* Debug */,
+				8305BCF215FC254000ABCF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8305BCF315FC254000ABCF9E /* Build configuration list for PBXNativeTarget "Word Scramble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8305BCF415FC254000ABCF9E /* Debug */,
+				8305BCF515FC254000ABCF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8305BCF615FC254000ABCF9E /* Build configuration list for PBXNativeTarget "Word ScrambleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8305BCF715FC254000ABCF9E /* Debug */,
+				8305BCF815FC254000ABCF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8305BCB715FC254000ABCF9E /* Project object */;
+}
